@@ -11,8 +11,7 @@
       "Degree": "Bachelor of Science in Computer Science",
       "Institution": "International University-VNU, HCMC",
       "Duration": "2022-2026",
-      "GPA": "3.47/4.0",
-      "ClassRank": "Top 1.5%"
+      "GPA": "3.47/4.0"
     },
     "TechnicalSkills": {
       "Tools": ["Docker", "Git", "Airflow", "Github Actions"],
