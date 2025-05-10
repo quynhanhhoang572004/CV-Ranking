@@ -1,0 +1,81 @@
+{
+  "Level": "Fresher",
+  "FullName": "Wayne Cruz",
+  "Contact": {
+    "Phone": "835-674-8110x61848",
+    "Email": "fhenry@example.com",
+    "GitHub": "github.com/wbrown",
+    "LinkedIn": "linkedin.com/in/burkecarrie"
+  },
+  "Profile": "I am a experienced ML Engineer focusing on cloud infrastructure.",
+  "Education": {
+    "Degree": "PhD of Science in Computer Science",
+    "Institution": "Ton Duc Thang University",
+    "Duration": "2017-2023",
+    "GPA": 3.58
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Github Actions",
+      "Jenkins",
+      "Docker"
+    ],
+    "ProgrammingLanguages": [
+      "Rust",
+      "Typescript",
+      "Python"
+    ],
+    "FrameworksLibraries": [
+      "Tensorflow",
+      "Pytorch",
+      "Numpy",
+      "NextJS",
+      "Scikit-learn"
+    ],
+    "DatabasesCloudServices": [
+      "Faiss",
+      "Neo4j",
+      "PostgreSQL"
+    ],
+    "Languages": {
+      "English": "C1",
+      "German": "A1",
+      "Japanese": "A1"
+    }
+  },
+  "Projects": [
+    {
+      "Name": "AR Furniture Visualization",
+      "Role": "AR/VR Developer",
+      "Duration": "July 2023 - January 2023",
+      "Details": [
+        "Developed ARKit/ARCore application for furniture visualization",
+        "Implemented 3D model rendering with Unity",
+        "Added physics for realistic placement",
+        "Integrated with e-commerce backend"
+      ]
+    },
+    {
+      "Name": "Data Lake for IoT Devices",
+      "Role": "Data Engineer",
+      "Duration": "April 2023 - December 2023",
+      "Details": [
+        "Designed data ingestion pipeline processing 10M+ events daily",
+        "Implemented stream processing using Apache Flink",
+        "Built data quality monitoring with Great Expectations",
+        "Optimized Parquet storage for efficient querying"
+      ]
+    }
+  ],
+  "Leadership": [
+    {
+      "Organization": "IEEE",
+      "Role": "Technical Mentor",
+      "Duration": "2023-2023",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ],
+  "References": []
+}

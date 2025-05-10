@@ -1,0 +1,7 @@
+we are looking for a/an backend developer senior
+whose stack is: tools: docker git; programming languages: python react; framework libraries: react django; databases cloud services: mysql aws. 
+education should be: computer science bachelor gpa >= 3.2. 
+they should know english.
+candidate should have 2 years of experience. 
+desired activities: open-source hackathon. candidate should be referred from internal external.
+
