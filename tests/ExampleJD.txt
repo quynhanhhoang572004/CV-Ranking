@@ -1,0 +1,27 @@
+REQUIREMENTS {
+  position: backend developer
+  level: junior
+  stack: {
+    tools: Git Docker
+    programming languages: Python Java
+    framework libraries: Spring Boot
+    databases cloud services: PostgreSQL AWS
+  }
+  education: {
+    major: computer science
+    degree: bachelor
+    gpa: >= 3.5
+  }
+  experience: 2 years of experience
+  language: english
+  activities: contribute open-source
+  references: referred by Mr.Binh from FSoft
+}
+
+PREFERENCES {
+  programming languages: Go
+  degree: master
+  gpa: >= 3.8
+  experience: 3 years of experience
+}
+
