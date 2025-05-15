@@ -3,7 +3,7 @@ REQUIREMENTS {
   level: junior
   stack: {
     tools: Git Docker
-    programming languages: Python Java
+    programming languages: python java
     framework libraries: Spring Boot
     databases cloud services: PostgreSQL AWS
   }
@@ -19,9 +19,8 @@ REQUIREMENTS {
 }
 
 PREFERENCES {
-  programming languages: Go
+  programming languages: node.js
   degree: master
   gpa: >= 3.8
   experience: 3 years of experience
 }
-

@@ -2,15 +2,21 @@ grammar JSONMatcher;
 program: json;
 json: jsonObject | array;
 
-jsonObject: OPEN_CURLY multLine? CLOSE_CURLY;
 
-array: OPEN_SQUARE multString? CLOSE_SQUARE;
-
-multLine: line (COMMA line)*;
-line: string COLON (string | number | array | jsonObject);
+multLine: (string COLON value) (COMMA (string COLON value))+;
 
 multString: string (COMMA string)*;
+jsonObject: OPEN_CURLY multLine CLOSE_CURLY;
+
+value: string | number | array | jsonObject;
+
+array: OPEN_SQUARE multValue? CLOSE_SQUARE;
+multValue: value (COMMA value)*;
+
 string: PARATHESIS ID+ PARATHESIS;
+number: INT | FLOAT;
+
+
 OPEN_CURLY: '{';
 CLOSE_CURLY: '}';
 OPEN_SQUARE: '[';
@@ -20,7 +26,6 @@ COMMA: ',';
 COLON: ':';
 
 
-number: INT | FLOAT;
 INT: [0-9]+;
 FLOAT: [0-9]+'.'[0-9]+;
 ID: ~[ \t\r\n"]+; 

@@ -7,7 +7,9 @@ from antlr4 import *
 # Define your variables
 DIR = os.path.dirname(__file__)
 ANTLR_JAR = 'D:/Software/antlr4-4.9.2-complete.jar'
-CPL_Dest = 'CompiledFiles'
+
+CPL_Dest = 'parse'
+SRC = 'Sample.g4'
 TESTS = os.path.join(DIR, './tests')
 
 
@@ -28,8 +30,9 @@ def generateAntlr2Python():
 def runTest():
     print('Running testcases...')
     
-    from CompiledFiles.JSONMatcherLexer import JSONMatcherLexer
-    from CompiledFiles.JSONMatcherParser import JSONMatcherParser
+
+    from CompiledFiles.JDMatcherLexer import JDMatcherLexer
+    from CompiledFiles.JDMatcherParser import JDMatcherParser
     from antlr4.error.ErrorListener import ErrorListener
 
     class CustomErrorListener(ErrorListener):
@@ -37,11 +40,11 @@ def runTest():
             print(f"Input rejected: {msg}")
             exit(1)  # Exit the program with an error
 
-    filename = 'ExampleJSON.json'
+    filename = 'ListCV.txt'
     inputFile = os.path.join(DIR, './tests', filename)    
 
     print('List of token: ')
-    lexer = JSONMatcherLexer(FileStream(inputFile))        
+    lexer = JDMatcherLexer(FileStream(inputFile))        
     tokens = []
     token = lexer.nextToken()
     while token.type != Token.EOF:
@@ -52,9 +55,9 @@ def runTest():
 
     # test
     input_stream = FileStream(inputFile)
-    lexer = JSONMatcherLexer(input_stream)
+    lexer = JDMatcherLexer(input_stream)
     stream = CommonTokenStream(lexer)
-    parser = JSONMatcherParser(stream)
+    parser = JDMatcherParser(stream)
     tree = parser.program()  # Start parsing at the `program` rule
 
     # Print the parse tree (for debugging)
@@ -63,10 +66,10 @@ def runTest():
 
     
     # Reset the input stream for parsing and catch the error
-    lexer = JSONMatcherLexer(FileStream(inputFile))
+    lexer = JDMatcherLexer(FileStream(inputFile))
     token_stream = CommonTokenStream(lexer)
 
-    parser = JSONMatcherParser(token_stream)   
+    parser = JDMatcherParser(token_stream)   
     parser.removeErrorListeners()
     parser.addErrorListener(CustomErrorListener())    
     try:
