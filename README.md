@@ -5,8 +5,7 @@ This tool allows you to rank and filter CVs using a domain-specific language (DS
 ## Installation
 
 - Python 3.13.3: [Download here](https://www.python.org/downloads/)
-- ANTLR: [Download here]( https://repo1.maven.org/maven2/org/antlr/antlr4/4.
-  9.2/)
+- ANTLR: [Download here](https://repo1.maven.org/maven2/org/antlr/antlr4/4.9.2/)
 
 ## Runing the repository
 
@@ -31,11 +30,11 @@ This tool allows you to rank and filter CVs using a domain-specific language (DS
 ```
 
 b. Compile and test the grammar:
-Suppose the ANTLR jar is saved in YOUR_ANTLR_FILE_PATH in your local computer.
+Suppose the ANTLR jar is saved in YOUR_ANTLR_JAR_PATH in your local computer.
 
 ```bash
  cd grammars
- java -jar YOUR_ANTLR_FILE_PATH -Dlanguage=Python3 -o ../CompiledFiles JDMatcher.g4
+ java -jar YOUR_ANTLR_JAR_PATH -Dlanguage=Python3 -o ../CompiledFiles JDMatcher.g4
  cd ..
  python runMatcher.py test
 ```
@@ -43,7 +42,7 @@ Suppose the ANTLR jar is saved in YOUR_ANTLR_FILE_PATH in your local computer.
 c. Generate the Visitor classes
 
 ```bash
- java -jar YOUR_ANTLR_FILE_PATH -Dlanguage=Python3 -o visitor -visitor JDMatcher.g4
+java -jar YOUR_ANTLR_JAR_PATH -Dlanguage=Python3 -o ../parse  -visitor JD.g4
 ```
 
 d. Run the visitor
@@ -67,5 +66,5 @@ d. Run the visitor
 ```
 
 ```bash
- jd input (read ExampleJD.txt)
+ jd input (read JD.txt)
 ```

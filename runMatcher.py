@@ -6,16 +6,16 @@ from antlr4 import *
 
 # Define your variables
 DIR = os.path.dirname(__file__)
-ANTLR_JAR = 'D:/Software/antlr4-4.9.2-complete.jar'
+ANTLR_JAR = 'YOUR_ANTLR_JAR_PATH'  # Replace with the path to your ANTLR jar file
 
 CPL_Dest = 'parse'
-SRC = 'Sample.g4'
+SRC = 'JDMatcher.g4'
 TESTS = os.path.join(DIR, './tests')
 
 
 def printUsage():
-    print('python Hello.py gen')
-    print('python Hello.py test')
+    print('python run.py gen')
+    print('python run.py test')
 
 
 def printBreak():
@@ -31,8 +31,8 @@ def runTest():
     print('Running testcases...')
     
 
-    from CompiledFiles.JDMatcherLexer import JDMatcherLexer
-    from CompiledFiles.JDMatcherParser import JDMatcherParser
+    from parse.JDMatcherLexer import JDMatcherLexer
+    from parse.JDMatcherParser import JDMatcherParser
     from antlr4.error.ErrorListener import ErrorListener
 
     class CustomErrorListener(ErrorListener):
@@ -40,7 +40,7 @@ def runTest():
             print(f"Input rejected: {msg}")
             exit(1)  # Exit the program with an error
 
-    filename = 'ListCV.txt'
+    filename = 'ShowConditional.txt'
     inputFile = os.path.join(DIR, './tests', filename)    
 
     print('List of token: ')

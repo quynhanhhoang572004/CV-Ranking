@@ -3,8 +3,8 @@ REQUIREMENTS {
   level: junior
   stack: {
     tools: Git Docker
-    programming languages: python java
-    framework libraries: Spring Boot
+    programming languages: Python Java
+    framework libraries: SpringBoot
     databases cloud services: PostgreSQL AWS
   }
   education: {

@@ -4,7 +4,7 @@ program: listCV | jd | show_X_best | showConditional;
 
 listCV: LIST_CV POSITION;
 
-showConditional: SHOW_CV_WITH (requirePosition | requireLevel 
+showConditional: SHOW_CV_WITH requirePosition AND (requireLevel 
              | requireTools | requireProLang | requireFrameworks | requireDB
              | requireDegree | requireGPA | requireExperience | requireLanguage
              | requireActivites | requireReferences);
@@ -51,6 +51,7 @@ LIST_CV: 'list all CVs for job';
 SHOW_TOP: 'show top';
 SHOW_CV_WITH: 'show CV with';
 BEST_FOR: 'best CV for';
+AND: 'and';
 
 REQUIRE_SECTION: 'REQUIREMENTS'; 
 PREFER_SECTION: 'PREFERENCES'; 
