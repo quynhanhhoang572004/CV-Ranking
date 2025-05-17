@@ -1,43 +1,79 @@
 grammar JDMatcher;
 
-program: jobDescription;
+program: listCV | jd | show_X_best | showConditional;
 
-jobDescription: CONST_START requirePosition requireLevel requireTechnicalSkills DOT requireEducation
-                (DOT requireLanguage)? (DOT requireExperience)? (DOT requireActivites)? (DOT requireReferences)?;
+listCV: LIST_CV POSITION;
 
-requirePosition: POSITION;
-requireLevel: LEVEL;
-requireTechnicalSkills: CONST_STACK requireTools SEMICOLON requireProLang SEMICOLON requireFrameworks SEMICOLON requireDB;
-requireEducation: CONST_EDU requireMajor requireDegree? requireGPA?;
-requireMajor: MAJOR;
-requireDegree: DEGREE;
-requireGPA: CONST_GPA COMPARATOR FLOAT;
-requireLanguage: CONST_LANG LANGUAGE;
-requireExperience: INT 'years of experience';
-requireActivites: ID+;
-requireReferences: ID+; 
+showConditional: SHOW_CV_WITH requirePosition AND (requireLevel 
+             | requireTools | requireProLang | requireFrameworks | requireDB
+             | requireDegree | requireGPA | requireExperience | requireLanguage
+             | requireActivites | requireReferences);
 
-requireTools: CONST_TOOL ID+;
-requireProLang: CONST_PRO_LANG ID+;
-requireFrameworks: CONST_FRAMEWORK ID+;
-requireDB: CONST_DB ID+;
+show_X_best: SHOW_TOP INT BEST_FOR POSITION;
+
+jd: requirements (preferences)?;
+requirements: REQUIRE_SECTION OPEN_CURLY 
+                requirePosition requireLevel requireTechnicalSkills 
+                requireEducation requireExperience requireLanguage? 
+                requireActivites? requireReferences? CLOSE_CURLY;
+preferences: PREFER_SECTION OPEN_CURLY requireTools? requireProLang? requireFrameworks? requireDB?
+             requireDegree? requireGPA?
+             requireExperience? requireLanguage? 
+             requireActivites? requireReferences? CLOSE_CURLY;
 
 
-//Constants
-CONST_START: 'we are looking for a/an ';
-CONST_STACK: 'whose stack is: ';
-CONST_EDU: 'education should be: ';
-CONST_LANG: 'they should know ';
-CONST_ACT: 'desired activities: '; 
-CONST_EXP: 'candidate should have ';
-CONST_REF: 'candidate should be referred from ';
-CONST_TOOL: 'tools:';
-CONST_PRO_LANG: 'programming languages: ';
-CONST_FRAMEWORK: 'framework libraries: ';
-CONST_DB: 'databases cloud services: ';
-CONST_GPA: 'gpa';
-DOT: '. ';
-SEMICOLON: ';';
+//Compulsory
+
+requirePosition: POSITION_LABEL POSITION;
+requireLevel: LEVEL_LABEL LEVEL;
+requireTechnicalSkills: STACK_SECTION OPEN_CURLY requireTools requireProLang requireFrameworks? requireDB? CLOSE_CURLY;
+requireTools: TOOL_LABEL ID+;
+requireProLang: PROG_LANG_LABEL ID+;
+requireFrameworks: FRAMEWORK_LABEL ID+;
+requireDB: DATA_LABEL ID+;
+requireEducation: EDU_SECTION OPEN_CURLY requireMajor requireDegree? requireGPA? CLOSE_CURLY;
+requireMajor: MAJOR_LABEL MAJOR;
+requireDegree: DEGREE_LABEL DEGREE;
+requireGPA: GPA_LABEL COMPARATOR FLOAT;
+requireExperience: EXP_LABEL INT 'years';
+
+
+//Optional
+
+requireLanguage: LANG_LABEL LANGUAGE;
+requireActivites: ACTIVITY_LABEL ID+;
+requireReferences: REF_LABEL ID+; 
+
+
+//Constants:
+
+LIST_CV: 'list all CVs for job';
+SHOW_TOP: 'show top';
+SHOW_CV_WITH: 'show CV with';
+BEST_FOR: 'best CV for';
+AND: 'and';
+
+REQUIRE_SECTION: 'REQUIREMENTS'; 
+PREFER_SECTION: 'PREFERENCES'; 
+POSITION_LABEL: 'position:';
+LEVEL_LABEL: 'level:';
+STACK_SECTION: 'stack';
+EDU_SECTION: 'education';
+LANG_LABEL: 'language:';
+ACTIVITY_LABEL: 'activities:'; 
+EXP_LABEL: 'experience:';
+REF_LABEL: 'references:';
+TOOL_LABEL: 'tools:';
+PROG_LANG_LABEL: 'programming languages:';
+FRAMEWORK_LABEL: 'framework libraries:';
+DATA_LABEL: 'databases cloud services:';
+MAJOR_LABEL: 'major:';
+DEGREE_LABEL: 'degree:';
+GPA_LABEL: 'gpa:';
+
+OPEN_CURLY: '{';
+CLOSE_CURLY: '}';
+
 
 //Variables 
 POSITION: 
@@ -47,14 +83,20 @@ POSITION:
 'network engineer' | 'embedded engineer' | 'mobile developer' | 'android developer' |'ios developer' |
 'solution architect' | 'technical lead' | 'product manager' | 'scrum master' | 'game developer' |
 'blockchain developer' | 'research engineer';
+
 LEVEL: 'intern' | 'fresher' | 'junior' | 'medium' | 'senior' | 'director' | 'manager';
+
 DEGREE: 'bachelor' | 'engineering' | 'master' | 'phd';
+
 MAJOR: 'computer science' | 'computer engineering' | 'network engineering' | 'data science'|
 'artificial intelligence' | 'cybersecurity' | 'information systems';
+
 COMPARATOR: '>' | '>=';
+
 LANGUAGE:'english' | 'japanese' | 'chinese' | 'korean'| 'german' | 'portugeese' | 'french';
 
 INT: [0-9]+;
 FLOAT: [0-9]+'.'[0-9]+;
-ID: [a-zA-Z_\-]+;
+ID: ~[ \t\r\n{}]+; 
 WS: [ \t\r\n]+ -> skip ;
+

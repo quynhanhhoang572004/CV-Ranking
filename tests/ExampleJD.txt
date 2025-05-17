@@ -19,9 +19,8 @@ REQUIREMENTS {
 }
 
 PREFERENCES {
-  programming languages: Go
+  programming languages: node.js
   degree: master
   gpa: >= 3.8
   experience: 3 years of experience
 }
-

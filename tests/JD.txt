@@ -1,0 +1,27 @@
+REQUIREMENTS {
+    position: ai engineer
+    level: senior
+    stack {
+        tools: jupyter
+        programming languages: python
+        framework libraries: tensorflow keras
+        databases cloud services: gcp
+    }
+    education {
+        major: data science
+        degree: phd
+        gpa: >= 3.7
+    }
+    experience: 5 years
+    language: english
+    activities: kaggle contributor
+    references: dr. smith
+}
+
+PREFERENCES {
+    tools: git
+    programming languages: rust
+    databases cloud services: mongodb
+    gpa: >= 3.5
+    experience: 3 years
+}
