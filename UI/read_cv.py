@@ -49,7 +49,7 @@ for proj in cv_data.get("Projects", []):
 if cv_data.get("Leadership"):
     st.subheader("🧭 Leadership")
     for lead in cv_data["Leadership"]:
-        st.write(f"- {lead}")
+        st.write(lead)
 
 if cv_data.get("References"):
     st.subheader("📜 References")

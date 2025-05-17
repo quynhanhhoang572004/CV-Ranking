@@ -19,14 +19,14 @@ This tool allows you to rank and filter CVs using a domain-specific language (DS
 
 ```bash
  pip install antlr4-python3-runtime
+ pip install streamlit
 ```
 
 3. Try Out The Features
    a. Generate CVs
 
 ```bash
- cd generator
- python CVGenerator.py
+ python generator/CVGenerator.py
 ```
 
 b. Compile and test the grammar:
@@ -34,9 +34,9 @@ Suppose the ANTLR jar is saved in YOUR_ANTLR_JAR_PATH in your local computer.
 
 ```bash
  cd grammars
- java -jar YOUR_ANTLR_JAR_PATH -Dlanguage=Python3 -o ../CompiledFiles JDMatcher.g4
+ java -jar YOUR_ANTLR_JAR_PATH -Dlanguage=Python3 -o ../CompiledFiles JD.g4
  cd ..
- python runMatcher.py test
+ python runJD.py test
 ```
 
 c. Generate the Visitor classes
@@ -45,10 +45,18 @@ c. Generate the Visitor classes
 java -jar YOUR_ANTLR_JAR_PATH -Dlanguage=Python3 -o ../parse  -visitor JD.g4
 ```
 
+(View current validator class in parse/JDValidator.py)
+
 d. Run the visitor
 
 ```bash
   python -m tests.test_validator
+```
+
+e. Run the UI
+
+```bash
+  streamlit run UI/read_cv.py
 ```
 
 ## List of available commands
