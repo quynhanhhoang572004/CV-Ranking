@@ -7,6 +7,7 @@ from antlr4 import *
 # Define your variables
 DIR = os.path.dirname(__file__)
 ANTLR_JAR = 'D:/Software/antlr4-4.9.2-complete.jar'
+
 CPL_Dest = 'parse'
 SRC = 'Sample.g4'
 TESTS = os.path.join(DIR, './tests')
@@ -29,6 +30,7 @@ def generateAntlr2Python():
 def runTest():
     print('Running testcases...')
     
+
     from parse.JDLexer import JDLexer
     from parse.JDParser import JDParser
     from antlr4.error.ErrorListener import ErrorListener

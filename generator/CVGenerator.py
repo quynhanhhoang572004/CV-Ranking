@@ -293,12 +293,12 @@ class CVGenerator:
                 "FrameworksLibraries": random.sample(self.frameworks_pool, k=random.randint(3, 5)),
                 "DatabasesCloudServices": random.sample(self.databases_pool, k=random.randint(2, 4)),
             },
-            "Languages": {
-                "English": random.choice(self.language_levels),
-                "German": random.choice(self.language_levels) if random.random() > 0.4 else "A1",
-                "Japanese": random.choice(self.language_levels) if random.random() > 0.4 else "A1"
+             "Languages": {
+                 "English": random.choice(self.language_levels),
+                 "German": random.choice(self.language_levels) if random.random() > 0.4 else "A1",
+                 "Japanese": random.choice(self.language_levels) if random.random() > 0.4 else "A1"
+              }
             },
-
             "Projects": selected_projects,
             "Leadership": [
                 {
