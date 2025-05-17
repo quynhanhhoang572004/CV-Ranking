@@ -4,7 +4,7 @@ REQUIREMENTS {
   stack: {
     tools: Git Docker
     programming languages: Python Java
-    framework libraries: Spring Boot
+    framework libraries: SpringBoot
     databases cloud services: PostgreSQL AWS
   }
   education: {
