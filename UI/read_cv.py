@@ -4,7 +4,7 @@ import os
 
 DATA_DIR = "data"
 
-st.title("View CV")
+st.title(":blossom: View CV")
 st.markdown("Select a CV to see it detail.")
 
 cv_files = [f for f in os.listdir(DATA_DIR) if f.endswith(".json")]
@@ -21,10 +21,10 @@ st.subheader("Contact")
 for key, value in cv_data.get("Contact", {}).items():
     st.write(f"**{key}:** {value}")
 
-st.subheader("🎓 Education")
+st.subheader("Education")
 edu = cv_data.get("Education", {})
 st.write(f"**{edu.get('Degree', '')}**, {edu.get('Institution', '')}")
-st.write(f"📅 {edu.get('Duration', '')} | GPA: {edu.get('GPA', '')}")
+st.write(f"{edu.get('Duration', '')} | GPA: {edu.get('GPA', '')}")
 
 
 st.subheader("Technical Skills")
@@ -46,12 +46,19 @@ for proj in cv_data.get("Projects", []):
         st.markdown(f"- {d}")
 
 
-if cv_data.get("Leadership"):
-    st.subheader("🧭 Leadership")
+if cv_data.get("Leadership",[]):
+    st.subheader("Leadership")
     for lead in cv_data["Leadership"]:
-        st.write(f"- {lead}")
+        st.markdown(f"**{lead["Organization"]}** ({lead["Duration"]})")
+        st.write(f"{lead['Role']} ")
+      
+        for a in lead["Activities"]:
+            st.markdown(f"- {a}")
+  
 
 if cv_data.get("References"):
-    st.subheader("📜 References")
+    st.subheader("References")
     for ref in cv_data["References"]:
-        st.write(ref)
+        st.markdown(f"**{ref["Name"]}**")
+        st.write(f" Insitution{ref["Institution"]}")
+        st.write(f" Email: {ref["Email"]}")
