@@ -24,55 +24,64 @@ class JDValidator(JDVisitor):
         )
     )
 
+    
+
     def visitRequirePosition(self, ctx):
-        return self._build_simple_kv("Position", ctx)
+        return self._build_simple_kv("position", ctx)
 
     def visitRequireLevel(self, ctx):
-        return self._build_simple_kv("Level", ctx)
+        return self._build_simple_kv("level", ctx)
 
     def visitRequireTechnicalSkills(self, ctx):
-        return self.visitChildren(ctx)
+        return (
+        "technical skills",
+        dict(
+            filter(
+                lambda pair: isinstance(pair, tuple),
+                map(lambda child: self.visit(child), ctx.children)
+            )
+        )
+        )
+    
 
     def visitRequireTools(self, ctx):
-        return self._build_list_kv("Tools", ctx)
+        return self._build_list_kv("tools", ctx)
 
     def visitRequireProLang(self, ctx):
-        return self._build_list_kv("ProgrammingLanguages", ctx)
+        return self._build_list_kv("programmingLanguages", ctx)
 
     def visitRequireFrameworks(self, ctx):
-        return self._build_list_kv("Frameworks", ctx)
+        return self._build_list_kv("frameworksLibraries", ctx)
 
     def visitRequireDB(self, ctx):
-        return self._build_list_kv("DatabasesAndCloud", ctx)
+        return self._build_list_kv("databasescloudServices", ctx)
 
     def visitRequireEducation(self, ctx):
-        return self.visitChildren(ctx)
+        return ("education", (dict(filter(lambda pair: isinstance(pair,tuple), map(lambda child: self.visit(child), ctx.children)))))
 
     def visitRequireMajor(self, ctx):
-        return self._build_simple_kv("Major", ctx)
+        return self._build_simple_kv("major", ctx)
 
     def visitRequireDegree(self, ctx):
-        return self._build_simple_kv("Degree", ctx)
+        return self._build_simple_kv("degree", ctx)
 
     def visitRequireGPA(self, ctx):
         tokens = [ctx.getChild(i).getText() for i in range(1, ctx.getChildCount())]
-        return ("GPA", " ".join(tokens))
+        return ("gpa", " ".join(tokens))
 
     def visitRequireExperience(self, ctx):
-        return self._build_simple_kv("Experience", ctx)
+        return self._build_simple_kv("experience", ctx)
 
     def visitRequireLanguage(self, ctx):
-        return self._build_simple_kv("Language", ctx)
+        return self._build_simple_kv("language", ctx)
 
     def visitRequireActivites(self, ctx):
-        return self._build_simple_kv("Activities", ctx)
+        return self._build_simple_kv("activities", ctx)
 
     def visitRequireReferences(self, ctx):
-        return self._build_simple_kv("References", ctx)
+        return self._build_simple_kv("references", ctx)
 
     # === Utility functions ===
-
-    
 
     def _build_simple_kv(self, key, ctx):
         """Skip first child rồi collects mấy tokens qua getText() cho nên in range(1, ...)"""

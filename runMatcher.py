@@ -6,15 +6,16 @@ from antlr4 import *
 
 # Define your variables
 DIR = os.path.dirname(__file__)
-ANTLR_JAR = 'D:/Software/antlr4-4.9.2-complete.jar'
-CPL_Dest = 'CompiledFiles'
-SRC = 'Sample.g4'
+ANTLR_JAR = 'YOUR_ANTLR_JAR_PATH'  # Replace with the path to your ANTLR jar file
+
+CPL_Dest = 'parse'
+SRC = 'JDMatcher.g4'
 TESTS = os.path.join(DIR, './tests')
 
 
 def printUsage():
-    print('python Hello.py gen')
-    print('python Hello.py test')
+    print('python run.py gen')
+    print('python run.py test')
 
 
 def printBreak():
@@ -29,8 +30,9 @@ def generateAntlr2Python():
 def runTest():
     print('Running testcases...')
     
-    from CompiledFiles.JSONMatcherLexer import JSONMatcherLexer
-    from CompiledFiles.JSONMatcherParser import JSONMatcherParser
+
+    from parse.JDMatcherLexer import JDMatcherLexer
+    from parse.JDMatcherParser import JDMatcherParser
     from antlr4.error.ErrorListener import ErrorListener
 
     class CustomErrorListener(ErrorListener):
@@ -38,11 +40,11 @@ def runTest():
             print(f"Input rejected: {msg}")
             exit(1)  # Exit the program with an error
 
-    filename = 'ExampleJSON.json'
+    filename = 'ShowConditional.txt'
     inputFile = os.path.join(DIR, './tests', filename)    
 
     print('List of token: ')
-    lexer = JSONMatcherLexer(FileStream(inputFile))        
+    lexer = JDMatcherLexer(FileStream(inputFile))        
     tokens = []
     token = lexer.nextToken()
     while token.type != Token.EOF:
@@ -53,9 +55,9 @@ def runTest():
 
     # test
     input_stream = FileStream(inputFile)
-    lexer = JSONMatcherLexer(input_stream)
+    lexer = JDMatcherLexer(input_stream)
     stream = CommonTokenStream(lexer)
-    parser = JSONMatcherParser(stream)
+    parser = JDMatcherParser(stream)
     tree = parser.program()  # Start parsing at the `program` rule
 
     # Print the parse tree (for debugging)
@@ -64,10 +66,10 @@ def runTest():
 
     
     # Reset the input stream for parsing and catch the error
-    lexer = JSONMatcherLexer(FileStream(inputFile))
+    lexer = JDMatcherLexer(FileStream(inputFile))
     token_stream = CommonTokenStream(lexer)
 
-    parser = JSONMatcherParser(token_stream)   
+    parser = JDMatcherParser(token_stream)   
     parser.removeErrorListeners()
     parser.addErrorListener(CustomErrorListener())    
     try:

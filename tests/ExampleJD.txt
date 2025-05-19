@@ -4,7 +4,7 @@ REQUIREMENTS {
   stack: {
     tools: Git Docker
     programming languages: Python Java
-    framework libraries: Spring Boot
+    framework libraries: SpringBoot
     databases cloud services: PostgreSQL AWS
   }
   education: {
@@ -19,9 +19,8 @@ REQUIREMENTS {
 }
 
 PREFERENCES {
-  programming languages: Go
+  programming languages: node.js
   degree: master
   gpa: >= 3.8
   experience: 3 years of experience
 }
-
