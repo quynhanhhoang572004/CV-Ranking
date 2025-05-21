@@ -97,9 +97,9 @@ class CandidateMatcher:
       
 
             matched_skills = sum(1 for skill in required_skills if skill.lower() in skills)
-            max_skills = len(required_skills)
-            skill_score = (matched_skills / max_skills) * 4 if max_skills > 0 else 0
-            score += skill_score
+            # max_skills = len(required_skills)
+            # skill_score = (matched_skills / max_skills) * 4 if max_skills > 0 else 0
+            score += matched_skills
 
 
             extra_required = [
