@@ -146,7 +146,6 @@ class CandidateMatcher:
         self.load_candidates()
         rankings = self.rank_candidates()
 
-        print("\n--- Candidate Rankings ---")
         for r in rankings:
             print(f"{r['name']}: {r['score']} / {r['total']} ({r['percentage']}%)")
 
