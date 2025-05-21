@@ -3,8 +3,8 @@ REQUIREMENTS {
     level: senior
     stack {
         tools: jupyter
-        programming languages: python
-        framework libraries: tensorflow keras
+        programming languages: python, golang
+        framework libraries: tensorflow ,keras
         databases cloud services: gcp
     }
     education {
