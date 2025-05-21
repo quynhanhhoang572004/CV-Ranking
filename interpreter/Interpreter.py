@@ -48,8 +48,9 @@ class CandidateMatcher:
                 candidate.get("TechnicalSkills", {}).get("DatabasesCloudServices", []) +
                 candidate.get("TechnicalSkills", {}).get("Tools", [])
             )
+          
 
-            degree = candidate.get("Education", {}).get("Degree", "")
+            degree = candidate.get("Education", {}).get("Degree", "").split("of")[0].strip().lower()
             major = candidate.get("Education", {}).get("Degree", "").split(" in ")[-1].strip().lower()
             gpa = float(candidate.get("Education", {}).get("GPA", 0))
 
@@ -71,7 +72,7 @@ class CandidateMatcher:
                 ])
 
             return {
-                "skills": set([s.lower() for s in skills + extra_values if isinstance(s, str)]),
+                "skills": set([s.lower() for s in skills if isinstance(s, str)]),
                 "education.degree": degree.lower(),
                 "education.major": major,
                 "education.gpa": gpa,
@@ -80,18 +81,21 @@ class CandidateMatcher:
 
         def score_CV(requirements, candidate):
             score = 0
-            total = 10  
             skills = candidate["skills"]
 
-            req_tech = requirements.get("technical skills", {})
-            required_skills = (
-                req_tech.get("tools", []) +
-                req_tech.get("programmingLanguages", []) +
-                req_tech.get("frameworksLibraries", []) +
-                req_tech.get("databasescloudServices", [])
-            )
 
-          
+            req_tech = requirements.get("technical skills", {})
+            required_skills = [
+                skill.lower() for skill in (
+                    req_tech.get("tools", []) +
+                    req_tech.get("programmingLanguages", []) +
+                    req_tech.get("frameworksLibraries", []) +
+                    req_tech.get("databasescloudServices", [])
+                ) if isinstance(skill, str)
+]
+
+      
+
             matched_skills = sum(1 for skill in required_skills if skill.lower() in skills)
             max_skills = len(required_skills)
             skill_score = (matched_skills / max_skills) * 4 if max_skills > 0 else 0
@@ -106,11 +110,12 @@ class CandidateMatcher:
             for item in extra_required:
                 if item and item.lower() not in skills:
                     score -=1
-
-          
+         
+       
             edu = requirements.get("education", {})
             if candidate.get("education.degree", "") == edu.get("degree", "").lower():
                 score += 2
+        
             if candidate.get("education.major", "") == edu.get("major", "").lower():
                 score += 2
 
