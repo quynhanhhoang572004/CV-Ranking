@@ -1,4 +1,4 @@
-# Generated from JD.g4 by ANTLR 4.9.2
+# Generated from grammars\JD.g4 by ANTLR 4.9.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -186,20 +186,6 @@ class JDParser ( Parser ):
         def getRuleIndex(self):
             return JDParser.RULE_program
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterProgram" ):
-                listener.enterProgram(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitProgram" ):
-                listener.exitProgram(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitProgram" ):
-                return visitor.visitProgram(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -272,20 +258,6 @@ class JDParser ( Parser ):
 
         def getRuleIndex(self):
             return JDParser.RULE_requirements
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequirements" ):
-                listener.enterRequirements(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequirements" ):
-                listener.exitRequirements(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequirements" ):
-                return visitor.visitRequirements(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -404,20 +376,6 @@ class JDParser ( Parser ):
 
         def getRuleIndex(self):
             return JDParser.RULE_preferences
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPreferences" ):
-                listener.enterPreferences(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPreferences" ):
-                listener.exitPreferences(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitPreferences" ):
-                return visitor.visitPreferences(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -540,20 +498,6 @@ class JDParser ( Parser ):
         def getRuleIndex(self):
             return JDParser.RULE_requirePosition
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequirePosition" ):
-                listener.enterRequirePosition(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequirePosition" ):
-                listener.exitRequirePosition(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequirePosition" ):
-                return visitor.visitRequirePosition(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -591,20 +535,6 @@ class JDParser ( Parser ):
 
         def getRuleIndex(self):
             return JDParser.RULE_requireLevel
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireLevel" ):
-                listener.enterRequireLevel(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireLevel" ):
-                listener.exitRequireLevel(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireLevel" ):
-                return visitor.visitRequireLevel(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -663,20 +593,6 @@ class JDParser ( Parser ):
         def getRuleIndex(self):
             return JDParser.RULE_requireTechnicalSkills
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireTechnicalSkills" ):
-                listener.enterRequireTechnicalSkills(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireTechnicalSkills" ):
-                listener.exitRequireTechnicalSkills(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireTechnicalSkills" ):
-                return visitor.visitRequireTechnicalSkills(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -727,20 +643,6 @@ class JDParser ( Parser ):
 
         def getRuleIndex(self):
             return JDParser.RULE_requireTools
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireTools" ):
-                listener.enterRequireTools(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireTools" ):
-                listener.exitRequireTools(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireTools" ):
-                return visitor.visitRequireTools(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -794,20 +696,6 @@ class JDParser ( Parser ):
         def getRuleIndex(self):
             return JDParser.RULE_requireProLang
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireProLang" ):
-                listener.enterRequireProLang(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireProLang" ):
-                listener.exitRequireProLang(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireProLang" ):
-                return visitor.visitRequireProLang(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -860,20 +748,6 @@ class JDParser ( Parser ):
         def getRuleIndex(self):
             return JDParser.RULE_requireFrameworks
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireFrameworks" ):
-                listener.enterRequireFrameworks(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireFrameworks" ):
-                listener.exitRequireFrameworks(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireFrameworks" ):
-                return visitor.visitRequireFrameworks(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -925,20 +799,6 @@ class JDParser ( Parser ):
 
         def getRuleIndex(self):
             return JDParser.RULE_requireDB
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireDB" ):
-                listener.enterRequireDB(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireDB" ):
-                listener.exitRequireDB(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireDB" ):
-                return visitor.visitRequireDB(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1004,20 +864,6 @@ class JDParser ( Parser ):
         def getRuleIndex(self):
             return JDParser.RULE_requireEducation
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireEducation" ):
-                listener.enterRequireEducation(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireEducation" ):
-                listener.exitRequireEducation(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireEducation" ):
-                return visitor.visitRequireEducation(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1077,20 +923,6 @@ class JDParser ( Parser ):
         def getRuleIndex(self):
             return JDParser.RULE_requireMajor
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireMajor" ):
-                listener.enterRequireMajor(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireMajor" ):
-                listener.exitRequireMajor(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireMajor" ):
-                return visitor.visitRequireMajor(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1128,20 +960,6 @@ class JDParser ( Parser ):
 
         def getRuleIndex(self):
             return JDParser.RULE_requireDegree
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireDegree" ):
-                listener.enterRequireDegree(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireDegree" ):
-                listener.exitRequireDegree(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireDegree" ):
-                return visitor.visitRequireDegree(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1184,20 +1002,6 @@ class JDParser ( Parser ):
         def getRuleIndex(self):
             return JDParser.RULE_requireGPA
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireGPA" ):
-                listener.enterRequireGPA(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireGPA" ):
-                listener.exitRequireGPA(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireGPA" ):
-                return visitor.visitRequireGPA(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1238,20 +1042,6 @@ class JDParser ( Parser ):
         def getRuleIndex(self):
             return JDParser.RULE_requireLanguage
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireLanguage" ):
-                listener.enterRequireLanguage(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireLanguage" ):
-                listener.exitRequireLanguage(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireLanguage" ):
-                return visitor.visitRequireLanguage(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1289,20 +1079,6 @@ class JDParser ( Parser ):
 
         def getRuleIndex(self):
             return JDParser.RULE_requireExperience
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireExperience" ):
-                listener.enterRequireExperience(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireExperience" ):
-                listener.exitRequireExperience(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireExperience" ):
-                return visitor.visitRequireExperience(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1346,20 +1122,6 @@ class JDParser ( Parser ):
 
         def getRuleIndex(self):
             return JDParser.RULE_requireActivites
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireActivites" ):
-                listener.enterRequireActivites(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireActivites" ):
-                listener.exitRequireActivites(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireActivites" ):
-                return visitor.visitRequireActivites(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1412,20 +1174,6 @@ class JDParser ( Parser ):
 
         def getRuleIndex(self):
             return JDParser.RULE_requireReferences
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireReferences" ):
-                listener.enterRequireReferences(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireReferences" ):
-                listener.exitRequireReferences(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireReferences" ):
-                return visitor.visitRequireReferences(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 

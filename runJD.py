@@ -6,10 +6,10 @@ from antlr4 import *
 
 # Define your variables
 DIR = os.path.dirname(__file__)
-ANTLR_JAR = 'D:/Software/antlr4-4.9.2-complete.jar'
+ANTLR_JAR = 'C:/antlr4-4.9.2-complete.jar'
 
 CPL_Dest = 'parse'
-SRC = 'Sample.g4'
+SRC = 'grammars\JD.g4'
 TESTS = os.path.join(DIR, './tests')
 
 
