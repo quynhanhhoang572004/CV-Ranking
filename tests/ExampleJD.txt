@@ -2,10 +2,10 @@ REQUIREMENTS {
   position: backend developer
   level: junior
   stack: {
-    tools: Git Docker
+    tools: Github Actions Docker
     programming languages: Python Java
     framework libraries: SpringBoot
-    databases cloud services: PostgreSQL AWS
+    databases cloud services: PostgreSQL AWS ElasticSearch
   }
   education: {
     major: computer science
