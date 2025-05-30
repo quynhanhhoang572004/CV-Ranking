@@ -23,7 +23,6 @@ preferences: PREFER_SECTION OPEN_CURLY requireTools? requireProLang? requireFram
 
 
 //Compulsory
-
 requirePosition: POSITION_LABEL POSITION;
 requireLevel: LEVEL_LABEL LEVEL;
 requireTechnicalSkills: STACK_SECTION OPEN_CURLY requireTools requireProLang requireFrameworks? requireDB? CLOSE_CURLY;

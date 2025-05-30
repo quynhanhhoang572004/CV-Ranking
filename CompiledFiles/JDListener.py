@@ -1,4 +1,4 @@
-# Generated from grammars/JD.g4 by ANTLR 4.9.2
+# Generated from JD.g4 by ANTLR 4.9.2
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .JDParser import JDParser
@@ -161,12 +161,84 @@ class JDListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by JDParser#requireReferences.
-    def enterRequireReferences(self, ctx:JDParser.RequireReferencesContext):
+    # Enter a parse tree produced by JDParser#position.
+    def enterPosition(self, ctx:JDParser.PositionContext):
         pass
 
-    # Exit a parse tree produced by JDParser#requireReferences.
-    def exitRequireReferences(self, ctx:JDParser.RequireReferencesContext):
+    # Exit a parse tree produced by JDParser#position.
+    def exitPosition(self, ctx:JDParser.PositionContext):
+        pass
+
+
+    # Enter a parse tree produced by JDParser#level.
+    def enterLevel(self, ctx:JDParser.LevelContext):
+        pass
+
+    # Exit a parse tree produced by JDParser#level.
+    def exitLevel(self, ctx:JDParser.LevelContext):
+        pass
+
+
+    # Enter a parse tree produced by JDParser#degree.
+    def enterDegree(self, ctx:JDParser.DegreeContext):
+        pass
+
+    # Exit a parse tree produced by JDParser#degree.
+    def exitDegree(self, ctx:JDParser.DegreeContext):
+        pass
+
+
+    # Enter a parse tree produced by JDParser#major.
+    def enterMajor(self, ctx:JDParser.MajorContext):
+        pass
+
+    # Exit a parse tree produced by JDParser#major.
+    def exitMajor(self, ctx:JDParser.MajorContext):
+        pass
+
+
+    # Enter a parse tree produced by JDParser#tool.
+    def enterTool(self, ctx:JDParser.ToolContext):
+        pass
+
+    # Exit a parse tree produced by JDParser#tool.
+    def exitTool(self, ctx:JDParser.ToolContext):
+        pass
+
+
+    # Enter a parse tree produced by JDParser#pro_lang.
+    def enterPro_lang(self, ctx:JDParser.Pro_langContext):
+        pass
+
+    # Exit a parse tree produced by JDParser#pro_lang.
+    def exitPro_lang(self, ctx:JDParser.Pro_langContext):
+        pass
+
+
+    # Enter a parse tree produced by JDParser#framework.
+    def enterFramework(self, ctx:JDParser.FrameworkContext):
+        pass
+
+    # Exit a parse tree produced by JDParser#framework.
+    def exitFramework(self, ctx:JDParser.FrameworkContext):
+        pass
+
+
+    # Enter a parse tree produced by JDParser#db.
+    def enterDb(self, ctx:JDParser.DbContext):
+        pass
+
+    # Exit a parse tree produced by JDParser#db.
+    def exitDb(self, ctx:JDParser.DbContext):
+        pass
+
+
+    # Enter a parse tree produced by JDParser#lang.
+    def enterLang(self, ctx:JDParser.LangContext):
+        pass
+
+    # Exit a parse tree produced by JDParser#lang.
+    def exitLang(self, ctx:JDParser.LangContext):
         pass
 
 
