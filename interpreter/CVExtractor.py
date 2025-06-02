@@ -16,7 +16,14 @@ class CVExtractor():
                     profile = json.load(f)
                     profile["__filename__"] = filename
                     self.candidates.append(profile)
-
+        return self.candidates
+    
+    def load_a_candidate(self, filename):
+        with open(os.path.join(self.candidate_dir, filename), "r") as f:
+            profile = json.load(f)
+            profile["__filename__"] = filename
+        return profile
+    
     def extract_all_CVs(self):
         for candidate in self.candidates:
             cv = self.extractCV(candidate)

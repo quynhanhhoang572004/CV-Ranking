@@ -1,12 +1,13 @@
 
+
 DEGREE_LEVELS = {"bachelor": 1, "master": 2, "PhD": 3}
 EXPERIENCE_LEVELS = {"intern": 0, "fresher": 1, "junior": 2, "senior": 3}
 
 class CVRanker:
-    def __init__(self, jd, candidates):
+    def __init__(self, jd, candidate):
         self.jd = jd
-        self.candidates = candidates
-
+        self.candidates = candidate
+    
 
     def scoreCV(self, candidate):
             score = 0
@@ -140,29 +141,3 @@ class CVRanker:
             score += min(len(references) * 1, max_score_references)
 
             return not fail, score / max_score 
-
-    def rank_candidates(self):
-        results = []
-        for candidate in self.candidates:
-            is_pass, percentage = self.scoreCV(
-                candidate
-            )
-            results.append(
-                {
-                    "name": candidate.get("PersonalInfo", {}).get(
-                        "Name", candidate.get("__filename__", "Unknown")
-                    ),
-                    "contact": candidate.get("Contact", {}),
-                    "pass": is_pass,
-                    "percentage": round(percentage * 100, 2),
-                }
-            )
-        return sorted(results, key=lambda x: (not x["pass"], -x["percentage"]))
-
-    def run(self):
-
-        rankings = self.rank_candidates()
-
-        for r in rankings:
-            # print(f"{r['name']}: {r['score']} / {r['total']} ({r['percentage']}%)")
-            print(f"{r['name']}: {r['percentage']}% Pass: {r['pass']}")

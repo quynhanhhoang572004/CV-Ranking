@@ -21,8 +21,6 @@ class HireProcessor(HireVisitor):
         return self.visitChildren(ctx)
 
 
-    
-
 
     def visitJd(self, ctx:HireParser.JdContext):
         return {

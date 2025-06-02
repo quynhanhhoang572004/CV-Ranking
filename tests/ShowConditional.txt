@@ -1,1 +1,1 @@
-show cv with tools: github actions, docker, terraform
+show cv with major: computer science
