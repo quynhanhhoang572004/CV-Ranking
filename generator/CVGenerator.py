@@ -8,6 +8,7 @@ fake = Faker()
 class CVGenerator:
     def __init__(self):
         self.levels = ["Intern", "Fresher", "Junior", "Senior"]
+        self.experience = ["1","2","3","4","5","6","7","8","9","10"]
         self.positions = ["AI Engineer", "Data Engineer", "Back-end Developer", "ML Engineer", "DevOps Engineer"]
         self.tools_pool = [
             "Docker", "Git", "Airflow", "Github Actions", "Kubernetes", "Jenkins",
@@ -296,6 +297,7 @@ class CVGenerator:
 
         cv_data = {
             "Level": level,
+            "Experience": random.choice(self.experience),
             "FullName": full_name,
             "Contact": {
                 "Phone": phone,
@@ -310,6 +312,8 @@ class CVGenerator:
                 "ProgrammingLanguages": random.sample(self.languages_pool, k=random.randint(1, 3)),
                 "FrameworksLibraries": random.sample(self.frameworks_pool, k=random.randint(3, 5)),
                 "DatabasesCloudServices": random.sample(self.databases_pool, k=random.randint(2, 4)),
+
+
 
             },
             "Languages": {
@@ -326,8 +330,9 @@ class CVGenerator:
                 "Portuguese": random.choice(self.language_levels) if random.random() > 0.6 else "A1",
                 "Italian": random.choice(self.language_levels) if random.random() > 0.6 else "A1"
             },
+
             "Projects": selected_projects,
-            "Leadership": [
+            "Activities": [
                 {
                     "Organization": random.choice(["GDSC", "IEEE", "ACM", "Toastmasters", "Code Club"]),
                     "Role": random.choice(["BackEnd Specialist", "AI Lead", "Technical Mentor", "Team Lead", "Chapter President"]),
@@ -340,18 +345,11 @@ class CVGenerator:
                     ])]
                 } if random.random() > 0.3 else None
             ],
-            "References": [
-                {
-                    "Name": fake.name(),
-                    "Institution": random.choice(self.institutions),
-                    "Email": fake.email()
-                } if random.random() > 0.5 else None
-            ]
+            
         }
         
         # Remove None values from lists
-        cv_data["Leadership"] = [item for item in cv_data["Leadership"] if item is not None]
-        cv_data["References"] = [item for item in cv_data["References"] if item is not None]
+        cv_data["Activities"] = [item for item in cv_data["Activities"] if item is not None]
         
         return cv_data
 

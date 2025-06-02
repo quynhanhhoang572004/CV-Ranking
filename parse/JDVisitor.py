@@ -1,4 +1,4 @@
-# Generated from grammars/JD.g4 by ANTLR 4.9.2
+# Generated from JD.g4 by ANTLR 4.9.2
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .JDParser import JDParser
