@@ -1,167 +1,105 @@
 from antlr4 import FileStream, CommonTokenStream
-from parse.JDLexer import JDLexer
-from parse.JDParser import JDParser
-from parse.JDValidator import JDValidator
-from pprint import pprint
-import os
-import json
+from parse.HireLexer import HireLexer
+from parse.HireParser import HireParser
+from parse.HireProcessor import HireProcessor
 
-class JDProcessor:
-    def __init__(self, jd_file_path):
-        self.jd_file_path = jd_file_path
-        self.requirements = {}
+from interpreter.JDProcessor import JDProcessor
+from interpreter.CVScorer import CVRanker
+from interpreter.CVExtractor import CVExtractor
 
-    def parse(self):
-        input_stream = FileStream(self.jd_file_path)
-        lexer = JDLexer(input_stream)
+class Interpreter:
+    def __init__(self, candidate_folder="data", inputFile="./tests/ShowTop.txt", jd_file="./tests/ExampleJD.txt"):
+        self.candidate_folder = candidate_folder
+
+        input_stream = FileStream(inputFile)
+        lexer = HireLexer(input_stream)
         tokens = CommonTokenStream(lexer)
-        parser = JDParser(tokens)
+        parser = HireParser(tokens)
         tree = parser.program()
 
-        validator = JDValidator()
-        jd_output = validator.visit(tree)
-
-        print("Validator result:")
-        pprint(jd_output, indent=2, width=100, sort_dicts=False)
-        self.requirements = jd_output.get("requirements", {})
-
-class CandidateMatcher:
-    def __init__(self, jd_processor: JDProcessor, candidate_dir: str):
-        self.requirements = jd_processor.requirements
-        self.candidate_dir = candidate_dir
-        self.candidates = []
-
-    def load_candidates(self):
-        for filename in os.listdir(self.candidate_dir):
-            if filename.endswith(".json"):
-                with open(os.path.join(self.candidate_dir, filename), "r") as f:
-                    profile = json.load(f)
-                    profile["__filename__"] = filename
-                    self.candidates.append(profile)
-
-    def CVScorce(self, candidate, requirements):
-
-        def extractCV(candidate):
-            skills = (
-                candidate.get("TechnicalSkills", {}).get("ProgrammingLanguages", []) +
-                candidate.get("TechnicalSkills", {}).get("FrameworksLibraries", []) +
-                candidate.get("TechnicalSkills", {}).get("DatabasesCloudServices", []) +
-                candidate.get("TechnicalSkills", {}).get("Tools", [])
-            )
-          
-
-            degree = candidate.get("Education", {}).get("Degree", "").split("of")[0].strip().lower()
-            major = candidate.get("Education", {}).get("Degree", "").split(" in ")[-1].strip().lower()
-            gpa = float(candidate.get("Education", {}).get("GPA", 0))
-
-            experience_years = candidate.get("Experience", {}).get("Years", 0)
-
+        self.result = HireProcessor().visit(tree)
         
-            extra_values = [
-                candidate.get("Language", ""),
-                candidate.get("Activities", "")
-            ]
+        # Parse JD
+        self.parsed_jd = JDProcessor(jd_file).getParsedJD()
+        self.rankings = {}
 
-           
-            references = candidate.get("References", [])
-            for ref in references:
-                extra_values.extend([
-                    ref.get("Name", ""),
-                    ref.get("Institution", ""),
-                    ref.get("Email", "")
-                ])
-
-            return {
-                "skills": set([s.lower() for s in skills if isinstance(s, str)]),
-                "education.degree": degree.lower(),
-                "education.major": major,
-                "education.gpa": gpa,
-                "experience.years": experience_years
-            }
-
-        def score_CV(requirements, candidate):
-            score = 0
-            skills = candidate["skills"]
-
-
-            req_tech = requirements.get("technical skills", {})
-            required_skills = [
-                skill.lower() for skill in (
-                    req_tech.get("tools", []) +
-                    req_tech.get("programmingLanguages", []) +
-                    req_tech.get("frameworksLibraries", []) +
-                    req_tech.get("databasescloudServices", [])
-                ) if isinstance(skill, str)
-]
-
-      
-
-            matched_skills = sum(1 for skill in required_skills if skill.lower() in skills)
-            # max_skills = len(required_skills)
-            # skill_score = (matched_skills / max_skills) * 4 if max_skills > 0 else 0
-            score += matched_skills
-
-
-            extra_required = [
-                requirements.get("language", ""),
-                requirements.get("activities", ""),
-                requirements.get("references", "")
-            ]
-            for item in extra_required:
-                if item and item.lower() not in skills:
-                    score -=1
-         
-       
-            edu = requirements.get("education", {})
-            if candidate.get("education.degree", "") == edu.get("degree", "").lower():
-                score += 2
-        
-            if candidate.get("education.major", "") == edu.get("major", "").lower():
-                score += 2
-
-            gpa_required = float(edu.get("gpa", "GPA >= 0").split()[-1])
-            if candidate.get("education.gpa", 0) >= gpa_required:
-                score += 2
-
-            required_experience = int(requirements.get("experience", "0 years").split()[0])
-            if candidate.get("experience.years", 0) >= required_experience:
-                score += 2
-
-            return score
-
-        candidate_structured = extractCV(candidate)
-        final_score = score_CV(requirements, candidate_structured)
-
-        return round(final_score,2), 10
-
+    #Tra ve all rows voi moi row la filename, parsed_cv, pass/fail, percentage, rank
     def rank_candidates(self):
-        results = []
-        for candidate in self.candidates:
-            score, total = self.CVScorce(candidate, self.requirements)
+        results = []  #
+        all_candidates = CVExtractor(self.candidate_folder).load_candidates()
+
+        for candidate in all_candidates:
+            extracted_cv = CVExtractor(self.candidate_folder).extractCV(candidate)
+            is_pass, percentage = CVRanker(self.parsed_jd, extracted_cv).scoreCV(extracted_cv)
             results.append({
-                "name": candidate.get("PersonalInfo", {}).get("Name", candidate.get("__filename__", "Unknown")),
-                "score": score,
-                "total": total,
-                "percentage": round((score / total) * 100, 2) if total > 0 and score >= 0 else 0
+                "filename": candidate["__filename__"],
+                "cv": candidate,
+                "pass": is_pass,
+                "percentage": round(percentage * 100, 2),
             })
-        return sorted(results, key=lambda x: x["score"], reverse=True)
 
-    def run(self):
-       
-        self.load_candidates()
-        rankings = self.rank_candidates()
+        sorted_results = sorted(results, key=lambda x: (not x["pass"], -x["percentage"]))
+        for i, result in enumerate(sorted_results, start=1):
+            result["rank"] = i
 
-        for r in rankings:
-            print(f"{r['name']}: {r['score']} / {r['total']} ({r['percentage']}%)")
+        self.rankings = {res["filename"]: res for res in sorted_results}
+        return sorted_results
+    
+        
+    #Tra ve candidate + rank theo ten file
+    def get_candidate_by_filename(self, filename):
+        return self.rankings.get(filename, None)
+
+    def show_top(self, n):
+        print(f"Showing top {n} candidates:")
+        ranked_candidates = self.rank_candidates() 
+        return sorted(ranked_candidates, key=lambda r: r["rank"])[:n]
 
 
+    # Example usage in show_cv_with condition <- CHUA HOAN THIEN
+    def show_cv_with(self, condition: tuple):
+        def lower_keys(d):
+            return {k.lower(): v for k, v in d.items()}
+        if not self.rankings:
+            self.rank_candidates()
+
+        key, val = condition
+        key = key.lower()
+        val = val.lower() if isinstance(val, str) else val
+
+        filtered = []
+        for res in self.rankings.values():
+            cv_lower = lower_keys(res["cv"])
+            cv_val = cv_lower.get(key)
+            if isinstance(cv_val, str):
+                cv_val = cv_val.lower()
+            if cv_val == val:
+                filtered.append(res)
+        return filtered
+
+    
+    def run(self, inputFile):
+        if self.result["command"] == "show_top":
+            print(self.result)
+            print(interpreter.show_top(self.result["number"]))
+        elif self.result["command"] == "jd":
+            print(interpreter.rank_candidates())
+        elif self.result["command"] == "show_cv_with":
+            print(interpreter.show_cv_with(self.result["condition"]))
+        
 if __name__ == "__main__":
-    jd_file = "./tests/ExampleJD.txt"
-    candidate_folder = "data"
+    interpreter = Interpreter()
+    
+    sorted_results = interpreter.rank_candidates()
+    print(sorted_results)
+    # Print the shortened results
+    # for res in sorted_results:
+    #     print(f"[Rank {res['rank']}] {res['cv'].get('FullName')}: {res['percentage']}% Pass: {res['pass']}")
 
-    print(f"Parsing JD from {jd_file}...")
-    jd_processor = JDProcessor(jd_file)
-    jd_processor.parse()
+    # Get ranking of 1 candidate by filename
+    print("Candidate ranking by filename:")
+    print(interpreter.get_candidate_by_filename("Carly_Barnes.json"))  
 
-    matcher = CandidateMatcher(jd_processor, candidate_folder)
-    matcher.run()
+    print("SHOW TOP")
+    print(interpreter.show_top(3))  
+

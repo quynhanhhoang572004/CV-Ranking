@@ -31,8 +31,8 @@ def runTest():
     print('Running testcases...')
     
 
-    from parse.JDLexer import JDLexer
-    from parse.JDParser import JDParser
+    from CompiledFiles.JDLexer import JDLexer
+    from CompiledFiles.JDParser import JDParser
     from antlr4.error.ErrorListener import ErrorListener
 
     class CustomErrorListener(ErrorListener):
@@ -40,7 +40,7 @@ def runTest():
             print(f"Input rejected: {msg}")
             exit(1)  # Exit the program with an error
 
-    filename = 'ExampleJD.txt'
+    filename = 'ShowConditional.txt'
     inputFile = os.path.join(DIR, './tests', filename)    
 
     print('List of token: ')
