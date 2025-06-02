@@ -1,6 +1,6 @@
 REQUIREMENTS {
-  position: ai engineer
-  level: senior
+  position: 
+  level: mid
   stack {
     tools: git, docker, github actions
     programming languages: python, c++
@@ -9,7 +9,7 @@ REQUIREMENTS {
   }
   education {
     major: artificial intelligence
-    degree: master
+    degree: bachelor
     gpa: >= 3.5
   }
   experience: 5 years

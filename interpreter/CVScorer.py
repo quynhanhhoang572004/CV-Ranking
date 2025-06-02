@@ -2,6 +2,7 @@
 
 DEGREE_LEVELS = {"bachelor": 1, "master": 2, "PhD": 3}
 EXPERIENCE_LEVELS = {"intern": 0, "fresher": 1, "junior": 2, "senior": 3}
+import re
 
 class CVRanker:
     def __init__(self, jd, candidate):
@@ -79,14 +80,14 @@ class CVRanker:
                 score += 2
                 # print("Pass Degree")
 
-            # Rule for experience
+            
             max_score += 2
             req_exp_years = int(requirements.get("experience", "0 years").split()[0])
-            if experience_years < req_exp_years:
+            if int(experience_years) < req_exp_years:
                 fail = True
             else:
                 score += 2
-                # print("Pass exp")
+               
 
             # Preferences
             pref_skills = [
@@ -124,10 +125,10 @@ class CVRanker:
             pref_exp_years = int(requirements.get("experience", "0").split()[0])
             if pref_exp_years:
                 max_score += 1
-                if experience_years >= req_exp_years:
+                if  int(experience_years) >= req_exp_years:
                     score += 1
 
-            # leaderships, projects, references
+            
             max_score_leaderships = 2
             max_score_projects = 2
             max_score_references = 2

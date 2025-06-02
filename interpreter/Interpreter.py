@@ -8,7 +8,7 @@ from interpreter.CVScorer import CVRanker
 from interpreter.CVExtractor import CVExtractor
 
 class Interpreter:
-    def __init__(self, candidate_folder="data", inputFile="./tests/ShowTop.txt", jd_file="./tests/ExampleJD.txt"):
+    def __init__(self, candidate_folder="data", inputFile="./tests/ShowTop.txt", jd_file="./tests/qanhtest.txt"):
         self.candidate_folder = candidate_folder
 
         input_stream = FileStream(inputFile)
@@ -93,8 +93,8 @@ if __name__ == "__main__":
     sorted_results = interpreter.rank_candidates()
     print(sorted_results)
     # Print the shortened results
-    # for res in sorted_results:
-    #     print(f"[Rank {res['rank']}] {res['cv'].get('FullName')}: {res['percentage']}% Pass: {res['pass']}")
+    for res in sorted_results:
+        print(f"[Rank {res['rank']}] {res['cv'].get('FullName')}: {res['percentage']}% Pass: {res['pass']}")
 
     # Get ranking of 1 candidate by filename
     print("Candidate ranking by filename:")
