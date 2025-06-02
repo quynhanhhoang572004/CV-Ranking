@@ -292,14 +292,15 @@ class CVGenerator:
                 "ProgrammingLanguages": random.sample(self.languages_pool, k=random.randint(1, 3)),
                 "FrameworksLibraries": random.sample(self.frameworks_pool, k=random.randint(3, 5)),
                 "DatabasesCloudServices": random.sample(self.databases_pool, k=random.randint(2, 4)),
-                "Languages": {
+               
+            },
+             "Languages": {
                     "English": random.choice(self.language_levels),
                     "German": random.choice(self.language_levels) if random.random() > 0.4 else "A1",
                     "Japanese": random.choice(self.language_levels) if random.random() > 0.4 else "A1"
-                }
-            },
+                },
             "Projects": selected_projects,
-            "Leadership": [
+            "Activities": [
                 {
                     "Organization": random.choice(["GDSC", "IEEE", "ACM", "Toastmasters", "Code Club"]),
                     "Role": random.choice(["BackEnd Specialist", "AI Lead", "Technical Mentor", "Team Lead", "Chapter President"]),
@@ -312,18 +313,11 @@ class CVGenerator:
                     ])]
                 } if random.random() > 0.3 else None
             ],
-            "References": [
-                {
-                    "Name": fake.name(),
-                    "Institution": random.choice(self.institutions),
-                    "Email": fake.email()
-                } if random.random() > 0.5 else None
-            ]
+            
         }
         
         # Remove None values from lists
-        cv_data["Leadership"] = [item for item in cv_data["Leadership"] if item is not None]
-        cv_data["References"] = [item for item in cv_data["References"] if item is not None]
+        cv_data["Activities"] = [item for item in cv_data["Activities"] if item is not None]
         
         return cv_data
 
