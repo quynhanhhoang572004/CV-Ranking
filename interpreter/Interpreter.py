@@ -8,18 +8,20 @@ from interpreter.CVScorer import CVRanker
 from interpreter.CVExtractor import CVExtractor
 
 class Interpreter:
-    def __init__(self, inputString):
+    def __init__(self, jd_file_path="./tests/ExampleJD.txt", candidate_folder="data"):
         # Parse JD
-        self.parsed_jd = JDProcessor(inputString).getParsedJD()
+        self.candidate_folder = candidate_folder
+        self.parsed_jd = JDProcessor(jd_file_path).getParsedJD()
+        self.extractor =  CVExtractor(self.candidate_folder)
         self.rankings = {}
 
     #Tra ve all rows voi moi row la filename, parsed_cv, pass/fail, percentage, rank
     def rank_candidates(self):
-        results = []  #
-        all_candidates = CVExtractor(self.candidate_folder).load_candidates()
-
+        results = []
+        all_candidates = self.extractor.load_candidates()
+        print(f"Found {len(all_candidates)} candidates in {self.candidate_folder}")
         for candidate in all_candidates:
-            extracted_cv = CVExtractor(self.candidate_folder).extractCV(candidate)
+            extracted_cv = self.extractor.extractCV(candidate)
             is_pass, percentage = CVRanker(self.parsed_jd, extracted_cv).scoreCV(extracted_cv)
             results.append({
                 "filename": candidate["__filename__"],
@@ -27,12 +29,14 @@ class Interpreter:
                 "pass": is_pass,
                 "percentage": round(percentage * 100, 2),
             })
-
+        
         sorted_results = sorted(results, key=lambda x: (not x["pass"], -x["percentage"]))
         for i, result in enumerate(sorted_results, start=1):
             result["rank"] = i
 
+
         self.rankings = {res["filename"]: res for res in sorted_results}
+
         return sorted_results
     
         
@@ -42,9 +46,7 @@ class Interpreter:
 
     def show_top(self, n):
         print(f"Showing top {n} candidates:")
-        ranked_candidates = self.rank_candidates() 
-        return sorted(ranked_candidates, key=lambda r: r["rank"])[:n]
-
+        return sorted(self.rankings.values(), key=lambda r: r["rank"])[:n]
 
     # Example usage in show_cv_with condition <- CHUA HOAN THIEN
     def show_cv_with(self, condition: tuple):
@@ -66,30 +68,20 @@ class Interpreter:
             if cv_val == val:
                 filtered.append(res)
         return filtered
-
-    
-    def run(self, inputFile):
-        if self.result["command"] == "show_top":
-            print(self.result)
-            print(interpreter.show_top(self.result["number"]))
-        elif self.result["command"] == "jd":
-            print(interpreter.rank_candidates())
-        elif self.result["command"] == "show_cv_with":
-            print(interpreter.show_cv_with(self.result["condition"]))
         
 if __name__ == "__main__":
     interpreter = Interpreter()
     
-    sorted_results = interpreter.rank_candidates()
-    print(sorted_results)
+    sorted_results = interpreter.rank_candidates() # must call this before any other method that depends on rankings
+    # print(sorted_results)
     # Print the shortened results
-    # for res in sorted_results:
-    #     print(f"[Rank {res['rank']}] {res['cv'].get('FullName')}: {res['percentage']}% Pass: {res['pass']}")
+    for res in sorted_results:
+        print(f"[Rank {res['rank']}] {res['cv'].get('FullName')}: {res['percentage']}% Pass: {res['pass']}")
 
-    # Get ranking of 1 candidate by filename
-    print("Candidate ranking by filename:")
-    print(interpreter.get_candidate_by_filename("Carly_Barnes.json"))  
+    # # Get ranking of 1 candidate by filename
+    # print("Candidate ranking by filename:")
+    # print(interpreter.get_candidate_by_filename("Carly_Barnes.json"))  
 
-    print("SHOW TOP")
-    print(interpreter.show_top(3))  
+    # print("SHOW TOP")
+    # print(interpreter.show_top(2))  
 

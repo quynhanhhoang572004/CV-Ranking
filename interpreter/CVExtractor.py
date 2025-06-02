@@ -7,7 +7,6 @@ class CVExtractor():
         self.candidate_dir = candidate_dir
         self.candidates = []
         self.extracted_CVs = []
-        self.load_candidates()
 
     def load_candidates(self):
         for filename in os.listdir(self.candidate_dir):
