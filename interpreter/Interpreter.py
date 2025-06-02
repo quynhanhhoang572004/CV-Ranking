@@ -19,7 +19,6 @@ class Interpreter:
     def rank_candidates(self):
         results = []
         all_candidates = self.extractor.load_candidates()
-        print(f"Found {len(all_candidates)} candidates in {self.candidate_folder}")
         for candidate in all_candidates:
             extracted_cv = self.extractor.extractCV(candidate)
             is_pass, percentage = CVRanker(self.parsed_jd, extracted_cv).scoreCV(extracted_cv)

@@ -31,8 +31,8 @@ def runTest():
     print('Running testcases...')
     
 
-    from CompiledFiles.JDLexer import JDLexer
-    from CompiledFiles.JDParser import JDParser
+    from parse.HireLexer import HireLexer
+    from parse.HireParser import HireParser
     from antlr4.error.ErrorListener import ErrorListener
 
     class CustomErrorListener(ErrorListener):
@@ -40,11 +40,11 @@ def runTest():
             print(f"Input rejected: {msg}")
             exit(1)  # Exit the program with an error
 
-    filename = 'ShowConditional.txt'
+    filename = 'ExampleJD.txt'
     inputFile = os.path.join(DIR, './tests', filename)    
 
     print('List of token: ')
-    lexer = JDLexer(FileStream(inputFile))        
+    lexer = HireLexer(FileStream(inputFile))        
     tokens = []
     token = lexer.nextToken()
     while token.type != Token.EOF:
@@ -55,9 +55,9 @@ def runTest():
 
     # test
     input_stream = FileStream(inputFile)
-    lexer = JDLexer(input_stream)
+    lexer = HireLexer(input_stream)
     stream = CommonTokenStream(lexer)
-    parser = JDParser(stream)
+    parser = HireParser(stream)
     tree = parser.program()  # Start parsing at the `program` rule
 
     # Print the parse tree (for debugging)
@@ -66,10 +66,10 @@ def runTest():
 
     
     # Reset the input stream for parsing and catch the error
-    lexer = JDLexer(FileStream(inputFile))
+    lexer = HireLexer(FileStream(inputFile))
     token_stream = CommonTokenStream(lexer)
 
-    parser = JDParser(token_stream)   
+    parser = HireParser(token_stream)
     parser.removeErrorListeners()
     parser.addErrorListener(CustomErrorListener())    
     try:
