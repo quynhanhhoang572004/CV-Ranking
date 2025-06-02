@@ -8,19 +8,9 @@ from interpreter.CVScorer import CVRanker
 from interpreter.CVExtractor import CVExtractor
 
 class Interpreter:
-    def __init__(self, candidate_folder="data", inputFile="./tests/ShowTop.txt", jd_file="./tests/ExampleJD.txt"):
-        self.candidate_folder = candidate_folder
-
-        input_stream = FileStream(inputFile)
-        lexer = HireLexer(input_stream)
-        tokens = CommonTokenStream(lexer)
-        parser = HireParser(tokens)
-        tree = parser.program()
-
-        self.result = HireProcessor().visit(tree)
-        
+    def __init__(self, inputString):
         # Parse JD
-        self.parsed_jd = JDProcessor(jd_file).getParsedJD()
+        self.parsed_jd = JDProcessor(inputString).getParsedJD()
         self.rankings = {}
 
     #Tra ve all rows voi moi row la filename, parsed_cv, pass/fail, percentage, rank
