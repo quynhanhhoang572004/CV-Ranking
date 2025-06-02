@@ -1,1 +1,0 @@
-show top 5 best CV for data scientist

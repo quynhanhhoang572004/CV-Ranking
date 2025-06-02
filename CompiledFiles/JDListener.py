@@ -17,6 +17,42 @@ class JDListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by JDParser#showTop.
+    def enterShowTop(self, ctx:JDParser.ShowTopContext):
+        pass
+
+    # Exit a parse tree produced by JDParser#showTop.
+    def exitShowTop(self, ctx:JDParser.ShowTopContext):
+        pass
+
+
+    # Enter a parse tree produced by JDParser#showConditional.
+    def enterShowConditional(self, ctx:JDParser.ShowConditionalContext):
+        pass
+
+    # Exit a parse tree produced by JDParser#showConditional.
+    def exitShowConditional(self, ctx:JDParser.ShowConditionalContext):
+        pass
+
+
+    # Enter a parse tree produced by JDParser#condition.
+    def enterCondition(self, ctx:JDParser.ConditionContext):
+        pass
+
+    # Exit a parse tree produced by JDParser#condition.
+    def exitCondition(self, ctx:JDParser.ConditionContext):
+        pass
+
+
+    # Enter a parse tree produced by JDParser#jd.
+    def enterJd(self, ctx:JDParser.JdContext):
+        pass
+
+    # Exit a parse tree produced by JDParser#jd.
+    def exitJd(self, ctx:JDParser.JdContext):
+        pass
+
+
     # Enter a parse tree produced by JDParser#requirements.
     def enterRequirements(self, ctx:JDParser.RequirementsContext):
         pass

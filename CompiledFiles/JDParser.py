@@ -11,88 +11,106 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\u00ab")
-        buf.write("\u00d2\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\u00af")
+        buf.write("\u00f3\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
-        buf.write("\t\31\4\32\t\32\4\33\t\33\3\2\3\2\5\29\n\2\3\3\3\3\3\3")
-        buf.write("\3\3\3\3\3\3\3\3\3\3\5\3C\n\3\3\3\3\3\3\4\3\4\3\4\5\4")
-        buf.write("J\n\4\3\4\5\4M\n\4\3\4\5\4P\n\4\3\4\5\4S\n\4\3\4\5\4V")
-        buf.write("\n\4\3\4\5\4Y\n\4\3\4\5\4\\\n\4\3\4\5\4_\n\4\3\4\5\4b")
-        buf.write("\n\4\3\4\3\4\3\5\3\5\3\5\3\6\3\6\3\6\3\7\3\7\3\7\3\7\3")
-        buf.write("\7\3\7\3\7\3\7\3\b\3\b\3\b\3\b\7\bx\n\b\f\b\16\b{\13\b")
-        buf.write("\3\t\3\t\3\t\3\t\7\t\u0081\n\t\f\t\16\t\u0084\13\t\3\n")
-        buf.write("\3\n\3\n\3\n\7\n\u008a\n\n\f\n\16\n\u008d\13\n\3\13\3")
-        buf.write("\13\3\13\3\13\7\13\u0093\n\13\f\13\16\13\u0096\13\13\3")
-        buf.write("\f\3\f\3\f\3\f\5\f\u009c\n\f\3\f\5\f\u009f\n\f\3\f\3\f")
-        buf.write("\3\r\3\r\3\r\3\16\3\16\3\16\3\17\3\17\3\17\3\17\3\20\3")
-        buf.write("\20\3\20\3\20\7\20\u00b1\n\20\f\20\16\20\u00b4\13\20\3")
-        buf.write("\21\3\21\3\21\3\21\3\22\3\22\6\22\u00bc\n\22\r\22\16\22")
-        buf.write("\u00bd\3\23\3\23\3\24\3\24\3\25\3\25\3\26\3\26\3\27\3")
-        buf.write("\27\3\30\3\30\3\31\3\31\3\32\3\32\3\33\3\33\3\33\2\2\34")
-        buf.write("\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60\62")
-        buf.write("\64\2\13\3\2\3\34\3\2\35#\3\2$\'\3\2(.\3\2/C\3\2DW\3\2")
-        buf.write("Xu\3\2v\u008a\3\2\u008b\u0091\2\u00ca\2\66\3\2\2\2\4:")
-        buf.write("\3\2\2\2\6F\3\2\2\2\be\3\2\2\2\nh\3\2\2\2\fk\3\2\2\2\16")
-        buf.write("s\3\2\2\2\20|\3\2\2\2\22\u0085\3\2\2\2\24\u008e\3\2\2")
-        buf.write("\2\26\u0097\3\2\2\2\30\u00a2\3\2\2\2\32\u00a5\3\2\2\2")
-        buf.write("\34\u00a8\3\2\2\2\36\u00ac\3\2\2\2 \u00b5\3\2\2\2\"\u00b9")
-        buf.write("\3\2\2\2$\u00bf\3\2\2\2&\u00c1\3\2\2\2(\u00c3\3\2\2\2")
-        buf.write("*\u00c5\3\2\2\2,\u00c7\3\2\2\2.\u00c9\3\2\2\2\60\u00cb")
-        buf.write("\3\2\2\2\62\u00cd\3\2\2\2\64\u00cf\3\2\2\2\668\5\4\3\2")
-        buf.write("\679\5\6\4\28\67\3\2\2\289\3\2\2\29\3\3\2\2\2:;\7\u0092")
-        buf.write("\2\2;<\7\u00a4\2\2<=\5\b\5\2=>\5\n\6\2>?\5\f\7\2?@\5\26")
-        buf.write("\f\2@B\5 \21\2AC\5\36\20\2BA\3\2\2\2BC\3\2\2\2CD\3\2\2")
-        buf.write("\2DE\7\u00a5\2\2E\5\3\2\2\2FG\7\u0093\2\2GI\7\u00a4\2")
-        buf.write("\2HJ\5\16\b\2IH\3\2\2\2IJ\3\2\2\2JL\3\2\2\2KM\5\20\t\2")
-        buf.write("LK\3\2\2\2LM\3\2\2\2MO\3\2\2\2NP\5\22\n\2ON\3\2\2\2OP")
-        buf.write("\3\2\2\2PR\3\2\2\2QS\5\24\13\2RQ\3\2\2\2RS\3\2\2\2SU\3")
-        buf.write("\2\2\2TV\5\32\16\2UT\3\2\2\2UV\3\2\2\2VX\3\2\2\2WY\5\34")
-        buf.write("\17\2XW\3\2\2\2XY\3\2\2\2Y[\3\2\2\2Z\\\5 \21\2[Z\3\2\2")
-        buf.write("\2[\\\3\2\2\2\\^\3\2\2\2]_\5\36\20\2^]\3\2\2\2^_\3\2\2")
-        buf.write("\2_a\3\2\2\2`b\5\"\22\2a`\3\2\2\2ab\3\2\2\2bc\3\2\2\2")
-        buf.write("cd\7\u00a5\2\2d\7\3\2\2\2ef\7\u0094\2\2fg\5$\23\2g\t\3")
-        buf.write("\2\2\2hi\7\u0095\2\2ij\5&\24\2j\13\3\2\2\2kl\7\u0096\2")
-        buf.write("\2lm\7\u00a4\2\2mn\5\16\b\2no\5\20\t\2op\5\22\n\2pq\5")
-        buf.write("\24\13\2qr\7\u00a5\2\2r\r\3\2\2\2st\7\u009c\2\2ty\5,\27")
-        buf.write("\2uv\7\u00a6\2\2vx\5,\27\2wu\3\2\2\2x{\3\2\2\2yw\3\2\2")
-        buf.write("\2yz\3\2\2\2z\17\3\2\2\2{y\3\2\2\2|}\7\u009d\2\2}\u0082")
-        buf.write("\5.\30\2~\177\7\u00a6\2\2\177\u0081\5.\30\2\u0080~\3\2")
-        buf.write("\2\2\u0081\u0084\3\2\2\2\u0082\u0080\3\2\2\2\u0082\u0083")
-        buf.write("\3\2\2\2\u0083\21\3\2\2\2\u0084\u0082\3\2\2\2\u0085\u0086")
-        buf.write("\7\u009e\2\2\u0086\u008b\5\60\31\2\u0087\u0088\7\u00a6")
-        buf.write("\2\2\u0088\u008a\5\60\31\2\u0089\u0087\3\2\2\2\u008a\u008d")
-        buf.write("\3\2\2\2\u008b\u0089\3\2\2\2\u008b\u008c\3\2\2\2\u008c")
-        buf.write("\23\3\2\2\2\u008d\u008b\3\2\2\2\u008e\u008f\7\u009f\2")
-        buf.write("\2\u008f\u0094\5\62\32\2\u0090\u0091\7\u00a6\2\2\u0091")
-        buf.write("\u0093\5\62\32\2\u0092\u0090\3\2\2\2\u0093\u0096\3\2\2")
-        buf.write("\2\u0094\u0092\3\2\2\2\u0094\u0095\3\2\2\2\u0095\25\3")
-        buf.write("\2\2\2\u0096\u0094\3\2\2\2\u0097\u0098\7\u0097\2\2\u0098")
-        buf.write("\u0099\7\u00a4\2\2\u0099\u009b\5\30\r\2\u009a\u009c\5")
-        buf.write("\32\16\2\u009b\u009a\3\2\2\2\u009b\u009c\3\2\2\2\u009c")
-        buf.write("\u009e\3\2\2\2\u009d\u009f\5\34\17\2\u009e\u009d\3\2\2")
-        buf.write("\2\u009e\u009f\3\2\2\2\u009f\u00a0\3\2\2\2\u00a0\u00a1")
-        buf.write("\7\u00a5\2\2\u00a1\27\3\2\2\2\u00a2\u00a3\7\u00a0\2\2")
-        buf.write("\u00a3\u00a4\5*\26\2\u00a4\31\3\2\2\2\u00a5\u00a6\7\u00a1")
-        buf.write("\2\2\u00a6\u00a7\5(\25\2\u00a7\33\3\2\2\2\u00a8\u00a9")
-        buf.write("\7\u00a2\2\2\u00a9\u00aa\7\u00a7\2\2\u00aa\u00ab\7\u00a9")
-        buf.write("\2\2\u00ab\35\3\2\2\2\u00ac\u00ad\7\u0098\2\2\u00ad\u00b2")
-        buf.write("\5\64\33\2\u00ae\u00af\7\u00a6\2\2\u00af\u00b1\5\64\33")
-        buf.write("\2\u00b0\u00ae\3\2\2\2\u00b1\u00b4\3\2\2\2\u00b2\u00b0")
-        buf.write("\3\2\2\2\u00b2\u00b3\3\2\2\2\u00b3\37\3\2\2\2\u00b4\u00b2")
-        buf.write("\3\2\2\2\u00b5\u00b6\7\u009a\2\2\u00b6\u00b7\7\u00a8\2")
-        buf.write("\2\u00b7\u00b8\7\u00a3\2\2\u00b8!\3\2\2\2\u00b9\u00bb")
-        buf.write("\7\u0099\2\2\u00ba\u00bc\7\u00aa\2\2\u00bb\u00ba\3\2\2")
-        buf.write("\2\u00bc\u00bd\3\2\2\2\u00bd\u00bb\3\2\2\2\u00bd\u00be")
-        buf.write("\3\2\2\2\u00be#\3\2\2\2\u00bf\u00c0\t\2\2\2\u00c0%\3\2")
-        buf.write("\2\2\u00c1\u00c2\t\3\2\2\u00c2\'\3\2\2\2\u00c3\u00c4\t")
-        buf.write("\4\2\2\u00c4)\3\2\2\2\u00c5\u00c6\t\5\2\2\u00c6+\3\2\2")
-        buf.write("\2\u00c7\u00c8\t\6\2\2\u00c8-\3\2\2\2\u00c9\u00ca\t\7")
-        buf.write("\2\2\u00ca/\3\2\2\2\u00cb\u00cc\t\b\2\2\u00cc\61\3\2\2")
-        buf.write("\2\u00cd\u00ce\t\t\2\2\u00ce\63\3\2\2\2\u00cf\u00d0\t")
-        buf.write("\n\2\2\u00d0\65\3\2\2\2\258BILORUX[^ay\u0082\u008b\u0094")
-        buf.write("\u009b\u009e\u00b2\u00bd")
+        buf.write("\t\31\4\32\t\32\4\33\t\33\4\34\t\34\4\35\t\35\4\36\t\36")
+        buf.write("\4\37\t\37\3\2\3\2\3\2\5\2B\n\2\3\3\3\3\3\3\3\3\3\3\3")
+        buf.write("\4\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\5\5")
+        buf.write("V\n\5\3\6\3\6\5\6Z\n\6\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7")
+        buf.write("\5\7d\n\7\3\7\3\7\3\b\3\b\3\b\5\bk\n\b\3\b\5\bn\n\b\3")
+        buf.write("\b\5\bq\n\b\3\b\5\bt\n\b\3\b\5\bw\n\b\3\b\5\bz\n\b\3\b")
+        buf.write("\5\b}\n\b\3\b\5\b\u0080\n\b\3\b\5\b\u0083\n\b\3\b\3\b")
+        buf.write("\3\t\3\t\3\t\3\n\3\n\3\n\3\13\3\13\3\13\3\13\3\13\3\13")
+        buf.write("\3\13\3\13\3\f\3\f\3\f\3\f\7\f\u0099\n\f\f\f\16\f\u009c")
+        buf.write("\13\f\3\r\3\r\3\r\3\r\7\r\u00a2\n\r\f\r\16\r\u00a5\13")
+        buf.write("\r\3\16\3\16\3\16\3\16\7\16\u00ab\n\16\f\16\16\16\u00ae")
+        buf.write("\13\16\3\17\3\17\3\17\3\17\7\17\u00b4\n\17\f\17\16\17")
+        buf.write("\u00b7\13\17\3\20\3\20\3\20\3\20\5\20\u00bd\n\20\3\20")
+        buf.write("\5\20\u00c0\n\20\3\20\3\20\3\21\3\21\3\21\3\22\3\22\3")
+        buf.write("\22\3\23\3\23\3\23\3\23\3\24\3\24\3\24\3\24\7\24\u00d2")
+        buf.write("\n\24\f\24\16\24\u00d5\13\24\3\25\3\25\3\25\3\25\3\26")
+        buf.write("\3\26\6\26\u00dd\n\26\r\26\16\26\u00de\3\27\3\27\3\30")
+        buf.write("\3\30\3\31\3\31\3\32\3\32\3\33\3\33\3\34\3\34\3\35\3\35")
+        buf.write("\3\36\3\36\3\37\3\37\3\37\2\2 \2\4\6\b\n\f\16\20\22\24")
+        buf.write("\26\30\32\34\36 \"$&(*,.\60\62\64\668:<\2\13\3\2\3\34")
+        buf.write("\3\2\35#\3\2$\'\3\2(.\3\2/C\3\2DW\3\2Xu\3\2v\u008a\3\2")
+        buf.write("\u008b\u0091\2\u00f2\2A\3\2\2\2\4C\3\2\2\2\6H\3\2\2\2")
+        buf.write("\bU\3\2\2\2\nW\3\2\2\2\f[\3\2\2\2\16g\3\2\2\2\20\u0086")
+        buf.write("\3\2\2\2\22\u0089\3\2\2\2\24\u008c\3\2\2\2\26\u0094\3")
+        buf.write("\2\2\2\30\u009d\3\2\2\2\32\u00a6\3\2\2\2\34\u00af\3\2")
+        buf.write("\2\2\36\u00b8\3\2\2\2 \u00c3\3\2\2\2\"\u00c6\3\2\2\2$")
+        buf.write("\u00c9\3\2\2\2&\u00cd\3\2\2\2(\u00d6\3\2\2\2*\u00da\3")
+        buf.write("\2\2\2,\u00e0\3\2\2\2.\u00e2\3\2\2\2\60\u00e4\3\2\2\2")
+        buf.write("\62\u00e6\3\2\2\2\64\u00e8\3\2\2\2\66\u00ea\3\2\2\28\u00ec")
+        buf.write("\3\2\2\2:\u00ee\3\2\2\2<\u00f0\3\2\2\2>B\5\n\6\2?B\5\4")
+        buf.write("\3\2@B\5\6\4\2A>\3\2\2\2A?\3\2\2\2A@\3\2\2\2B\3\3\2\2")
+        buf.write("\2CD\7\u00a4\2\2DE\7\u00a5\2\2EF\7\u00ac\2\2FG\7\u00a6")
+        buf.write("\2\2G\5\3\2\2\2HI\7\u00a7\2\2IJ\5\b\5\2J\7\3\2\2\2KV\5")
+        buf.write("\22\n\2LV\5\26\f\2MV\5\30\r\2NV\5\32\16\2OV\5\34\17\2")
+        buf.write("PV\5\"\22\2QV\5$\23\2RV\5(\25\2SV\5&\24\2TV\5*\26\2UK")
+        buf.write("\3\2\2\2UL\3\2\2\2UM\3\2\2\2UN\3\2\2\2UO\3\2\2\2UP\3\2")
+        buf.write("\2\2UQ\3\2\2\2UR\3\2\2\2US\3\2\2\2UT\3\2\2\2V\t\3\2\2")
+        buf.write("\2WY\5\f\7\2XZ\5\16\b\2YX\3\2\2\2YZ\3\2\2\2Z\13\3\2\2")
+        buf.write("\2[\\\7\u0092\2\2\\]\7\u00a8\2\2]^\5\20\t\2^_\5\22\n\2")
+        buf.write("_`\5\24\13\2`a\5\36\20\2ac\5(\25\2bd\5&\24\2cb\3\2\2\2")
+        buf.write("cd\3\2\2\2de\3\2\2\2ef\7\u00a9\2\2f\r\3\2\2\2gh\7\u0093")
+        buf.write("\2\2hj\7\u00a8\2\2ik\5\26\f\2ji\3\2\2\2jk\3\2\2\2km\3")
+        buf.write("\2\2\2ln\5\30\r\2ml\3\2\2\2mn\3\2\2\2np\3\2\2\2oq\5\32")
+        buf.write("\16\2po\3\2\2\2pq\3\2\2\2qs\3\2\2\2rt\5\34\17\2sr\3\2")
+        buf.write("\2\2st\3\2\2\2tv\3\2\2\2uw\5\"\22\2vu\3\2\2\2vw\3\2\2")
+        buf.write("\2wy\3\2\2\2xz\5$\23\2yx\3\2\2\2yz\3\2\2\2z|\3\2\2\2{")
+        buf.write("}\5(\25\2|{\3\2\2\2|}\3\2\2\2}\177\3\2\2\2~\u0080\5&\24")
+        buf.write("\2\177~\3\2\2\2\177\u0080\3\2\2\2\u0080\u0082\3\2\2\2")
+        buf.write("\u0081\u0083\5*\26\2\u0082\u0081\3\2\2\2\u0082\u0083\3")
+        buf.write("\2\2\2\u0083\u0084\3\2\2\2\u0084\u0085\7\u00a9\2\2\u0085")
+        buf.write("\17\3\2\2\2\u0086\u0087\7\u0094\2\2\u0087\u0088\5,\27")
+        buf.write("\2\u0088\21\3\2\2\2\u0089\u008a\7\u0095\2\2\u008a\u008b")
+        buf.write("\5.\30\2\u008b\23\3\2\2\2\u008c\u008d\7\u0096\2\2\u008d")
+        buf.write("\u008e\7\u00a8\2\2\u008e\u008f\5\26\f\2\u008f\u0090\5")
+        buf.write("\30\r\2\u0090\u0091\5\32\16\2\u0091\u0092\5\34\17\2\u0092")
+        buf.write("\u0093\7\u00a9\2\2\u0093\25\3\2\2\2\u0094\u0095\7\u009c")
+        buf.write("\2\2\u0095\u009a\5\64\33\2\u0096\u0097\7\u00aa\2\2\u0097")
+        buf.write("\u0099\5\64\33\2\u0098\u0096\3\2\2\2\u0099\u009c\3\2\2")
+        buf.write("\2\u009a\u0098\3\2\2\2\u009a\u009b\3\2\2\2\u009b\27\3")
+        buf.write("\2\2\2\u009c\u009a\3\2\2\2\u009d\u009e\7\u009d\2\2\u009e")
+        buf.write("\u00a3\5\66\34\2\u009f\u00a0\7\u00aa\2\2\u00a0\u00a2\5")
+        buf.write("\66\34\2\u00a1\u009f\3\2\2\2\u00a2\u00a5\3\2\2\2\u00a3")
+        buf.write("\u00a1\3\2\2\2\u00a3\u00a4\3\2\2\2\u00a4\31\3\2\2\2\u00a5")
+        buf.write("\u00a3\3\2\2\2\u00a6\u00a7\7\u009e\2\2\u00a7\u00ac\58")
+        buf.write("\35\2\u00a8\u00a9\7\u00aa\2\2\u00a9\u00ab\58\35\2\u00aa")
+        buf.write("\u00a8\3\2\2\2\u00ab\u00ae\3\2\2\2\u00ac\u00aa\3\2\2\2")
+        buf.write("\u00ac\u00ad\3\2\2\2\u00ad\33\3\2\2\2\u00ae\u00ac\3\2")
+        buf.write("\2\2\u00af\u00b0\7\u009f\2\2\u00b0\u00b5\5:\36\2\u00b1")
+        buf.write("\u00b2\7\u00aa\2\2\u00b2\u00b4\5:\36\2\u00b3\u00b1\3\2")
+        buf.write("\2\2\u00b4\u00b7\3\2\2\2\u00b5\u00b3\3\2\2\2\u00b5\u00b6")
+        buf.write("\3\2\2\2\u00b6\35\3\2\2\2\u00b7\u00b5\3\2\2\2\u00b8\u00b9")
+        buf.write("\7\u0097\2\2\u00b9\u00ba\7\u00a8\2\2\u00ba\u00bc\5 \21")
+        buf.write("\2\u00bb\u00bd\5\"\22\2\u00bc\u00bb\3\2\2\2\u00bc\u00bd")
+        buf.write("\3\2\2\2\u00bd\u00bf\3\2\2\2\u00be\u00c0\5$\23\2\u00bf")
+        buf.write("\u00be\3\2\2\2\u00bf\u00c0\3\2\2\2\u00c0\u00c1\3\2\2\2")
+        buf.write("\u00c1\u00c2\7\u00a9\2\2\u00c2\37\3\2\2\2\u00c3\u00c4")
+        buf.write("\7\u00a0\2\2\u00c4\u00c5\5\62\32\2\u00c5!\3\2\2\2\u00c6")
+        buf.write("\u00c7\7\u00a1\2\2\u00c7\u00c8\5\60\31\2\u00c8#\3\2\2")
+        buf.write("\2\u00c9\u00ca\7\u00a2\2\2\u00ca\u00cb\7\u00ab\2\2\u00cb")
+        buf.write("\u00cc\7\u00ad\2\2\u00cc%\3\2\2\2\u00cd\u00ce\7\u0098")
+        buf.write("\2\2\u00ce\u00d3\5<\37\2\u00cf\u00d0\7\u00aa\2\2\u00d0")
+        buf.write("\u00d2\5<\37\2\u00d1\u00cf\3\2\2\2\u00d2\u00d5\3\2\2\2")
+        buf.write("\u00d3\u00d1\3\2\2\2\u00d3\u00d4\3\2\2\2\u00d4\'\3\2\2")
+        buf.write("\2\u00d5\u00d3\3\2\2\2\u00d6\u00d7\7\u009a\2\2\u00d7\u00d8")
+        buf.write("\7\u00ac\2\2\u00d8\u00d9\7\u00a3\2\2\u00d9)\3\2\2\2\u00da")
+        buf.write("\u00dc\7\u0099\2\2\u00db\u00dd\7\u00ae\2\2\u00dc\u00db")
+        buf.write("\3\2\2\2\u00dd\u00de\3\2\2\2\u00de\u00dc\3\2\2\2\u00de")
+        buf.write("\u00df\3\2\2\2\u00df+\3\2\2\2\u00e0\u00e1\t\2\2\2\u00e1")
+        buf.write("-\3\2\2\2\u00e2\u00e3\t\3\2\2\u00e3/\3\2\2\2\u00e4\u00e5")
+        buf.write("\t\4\2\2\u00e5\61\3\2\2\2\u00e6\u00e7\t\5\2\2\u00e7\63")
+        buf.write("\3\2\2\2\u00e8\u00e9\t\6\2\2\u00e9\65\3\2\2\2\u00ea\u00eb")
+        buf.write("\t\7\2\2\u00eb\67\3\2\2\2\u00ec\u00ed\t\b\2\2\u00ed9\3")
+        buf.write("\2\2\2\u00ee\u00ef\t\t\2\2\u00ef;\3\2\2\2\u00f0\u00f1")
+        buf.write("\t\n\2\2\u00f1=\3\2\2\2\27AUYcjmpsvy|\177\u0082\u009a")
+        buf.write("\u00a3\u00ac\u00b5\u00bc\u00bf\u00d3\u00de")
         return buf.getvalue()
 
 
@@ -146,8 +164,8 @@ class JDParser ( Parser ):
                      "'stack'", "'education'", "'language:'", "'activities:'", 
                      "'experience:'", "'references:'", "'tools:'", "'programming languages:'", 
                      "'framework libraries:'", "'databases cloud services:'", 
-                     "'major:'", "'degree:'", "'gpa:'", "'years'", "'{'", 
-                     "'}'", "','" ]
+                     "'major:'", "'degree:'", "'gpa:'", "'years'", "'show'", 
+                     "'top'", "'CV'", "'show CV with'", "'{'", "'}'", "','" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
@@ -190,37 +208,43 @@ class JDParser ( Parser ):
                       "ACTIVITY_LABEL", "EXP_LABEL", "REF_LABEL", "TOOL_LABEL", 
                       "PROG_LANG_LABEL", "FRAMEWORK_LABEL", "DATA_LABEL", 
                       "MAJOR_LABEL", "DEGREE_LABEL", "GPA_LABEL", "YEARS", 
-                      "OPEN_CURLY", "CLOSE_CURLY", "COMMA", "COMPARATOR", 
-                      "INT", "FLOAT", "ID", "WS" ]
+                      "SHOW", "TOP", "CV", "SHOW_CV_WITH", "OPEN_CURLY", 
+                      "CLOSE_CURLY", "COMMA", "COMPARATOR", "INT", "FLOAT", 
+                      "ID", "WS" ]
 
     RULE_program = 0
-    RULE_requirements = 1
-    RULE_preferences = 2
-    RULE_requirePosition = 3
-    RULE_requireLevel = 4
-    RULE_requireTechnicalSkills = 5
-    RULE_requireTools = 6
-    RULE_requireProLang = 7
-    RULE_requireFrameworks = 8
-    RULE_requireDB = 9
-    RULE_requireEducation = 10
-    RULE_requireMajor = 11
-    RULE_requireDegree = 12
-    RULE_requireGPA = 13
-    RULE_requireLanguage = 14
-    RULE_requireExperience = 15
-    RULE_requireActivites = 16
-    RULE_position = 17
-    RULE_level = 18
-    RULE_degree = 19
-    RULE_major = 20
-    RULE_tool = 21
-    RULE_pro_lang = 22
-    RULE_framework = 23
-    RULE_db = 24
-    RULE_lang = 25
+    RULE_showTop = 1
+    RULE_showConditional = 2
+    RULE_condition = 3
+    RULE_jd = 4
+    RULE_requirements = 5
+    RULE_preferences = 6
+    RULE_requirePosition = 7
+    RULE_requireLevel = 8
+    RULE_requireTechnicalSkills = 9
+    RULE_requireTools = 10
+    RULE_requireProLang = 11
+    RULE_requireFrameworks = 12
+    RULE_requireDB = 13
+    RULE_requireEducation = 14
+    RULE_requireMajor = 15
+    RULE_requireDegree = 16
+    RULE_requireGPA = 17
+    RULE_requireLanguage = 18
+    RULE_requireExperience = 19
+    RULE_requireActivites = 20
+    RULE_position = 21
+    RULE_level = 22
+    RULE_degree = 23
+    RULE_major = 24
+    RULE_tool = 25
+    RULE_pro_lang = 26
+    RULE_framework = 27
+    RULE_db = 28
+    RULE_lang = 29
 
-    ruleNames =  [ "program", "requirements", "preferences", "requirePosition", 
+    ruleNames =  [ "program", "showTop", "showConditional", "condition", 
+                   "jd", "requirements", "preferences", "requirePosition", 
                    "requireLevel", "requireTechnicalSkills", "requireTools", 
                    "requireProLang", "requireFrameworks", "requireDB", "requireEducation", 
                    "requireMajor", "requireDegree", "requireGPA", "requireLanguage", 
@@ -390,14 +414,18 @@ class JDParser ( Parser ):
     DEGREE_LABEL=159
     GPA_LABEL=160
     YEARS=161
-    OPEN_CURLY=162
-    CLOSE_CURLY=163
-    COMMA=164
-    COMPARATOR=165
-    INT=166
-    FLOAT=167
-    ID=168
-    WS=169
+    SHOW=162
+    TOP=163
+    CV=164
+    SHOW_CV_WITH=165
+    OPEN_CURLY=166
+    CLOSE_CURLY=167
+    COMMA=168
+    COMPARATOR=169
+    INT=170
+    FLOAT=171
+    ID=172
+    WS=173
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -415,12 +443,16 @@ class JDParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def requirements(self):
-            return self.getTypedRuleContext(JDParser.RequirementsContext,0)
+        def jd(self):
+            return self.getTypedRuleContext(JDParser.JdContext,0)
 
 
-        def preferences(self):
-            return self.getTypedRuleContext(JDParser.PreferencesContext,0)
+        def showTop(self):
+            return self.getTypedRuleContext(JDParser.ShowTopContext,0)
+
+
+        def showConditional(self):
+            return self.getTypedRuleContext(JDParser.ShowConditionalContext,0)
 
 
         def getRuleIndex(self):
@@ -441,16 +473,314 @@ class JDParser ( Parser ):
 
         localctx = JDParser.ProgramContext(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_program)
+        try:
+            self.state = 63
+            self._errHandler.sync(self)
+            token = self._input.LA(1)
+            if token in [JDParser.REQUIRE_SECTION]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 60
+                self.jd()
+                pass
+            elif token in [JDParser.SHOW]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 61
+                self.showTop()
+                pass
+            elif token in [JDParser.SHOW_CV_WITH]:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 62
+                self.showConditional()
+                pass
+            else:
+                raise NoViableAltException(self)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ShowTopContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def SHOW(self):
+            return self.getToken(JDParser.SHOW, 0)
+
+        def TOP(self):
+            return self.getToken(JDParser.TOP, 0)
+
+        def INT(self):
+            return self.getToken(JDParser.INT, 0)
+
+        def CV(self):
+            return self.getToken(JDParser.CV, 0)
+
+        def getRuleIndex(self):
+            return JDParser.RULE_showTop
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterShowTop" ):
+                listener.enterShowTop(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitShowTop" ):
+                listener.exitShowTop(self)
+
+
+
+
+    def showTop(self):
+
+        localctx = JDParser.ShowTopContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 2, self.RULE_showTop)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 65
+            self.match(JDParser.SHOW)
+            self.state = 66
+            self.match(JDParser.TOP)
+            self.state = 67
+            self.match(JDParser.INT)
+            self.state = 68
+            self.match(JDParser.CV)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ShowConditionalContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def SHOW_CV_WITH(self):
+            return self.getToken(JDParser.SHOW_CV_WITH, 0)
+
+        def condition(self):
+            return self.getTypedRuleContext(JDParser.ConditionContext,0)
+
+
+        def getRuleIndex(self):
+            return JDParser.RULE_showConditional
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterShowConditional" ):
+                listener.enterShowConditional(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitShowConditional" ):
+                listener.exitShowConditional(self)
+
+
+
+
+    def showConditional(self):
+
+        localctx = JDParser.ShowConditionalContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 4, self.RULE_showConditional)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 70
+            self.match(JDParser.SHOW_CV_WITH)
+            self.state = 71
+            self.condition()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ConditionContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def requireLevel(self):
+            return self.getTypedRuleContext(JDParser.RequireLevelContext,0)
+
+
+        def requireTools(self):
+            return self.getTypedRuleContext(JDParser.RequireToolsContext,0)
+
+
+        def requireProLang(self):
+            return self.getTypedRuleContext(JDParser.RequireProLangContext,0)
+
+
+        def requireFrameworks(self):
+            return self.getTypedRuleContext(JDParser.RequireFrameworksContext,0)
+
+
+        def requireDB(self):
+            return self.getTypedRuleContext(JDParser.RequireDBContext,0)
+
+
+        def requireDegree(self):
+            return self.getTypedRuleContext(JDParser.RequireDegreeContext,0)
+
+
+        def requireGPA(self):
+            return self.getTypedRuleContext(JDParser.RequireGPAContext,0)
+
+
+        def requireExperience(self):
+            return self.getTypedRuleContext(JDParser.RequireExperienceContext,0)
+
+
+        def requireLanguage(self):
+            return self.getTypedRuleContext(JDParser.RequireLanguageContext,0)
+
+
+        def requireActivites(self):
+            return self.getTypedRuleContext(JDParser.RequireActivitesContext,0)
+
+
+        def getRuleIndex(self):
+            return JDParser.RULE_condition
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterCondition" ):
+                listener.enterCondition(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitCondition" ):
+                listener.exitCondition(self)
+
+
+
+
+    def condition(self):
+
+        localctx = JDParser.ConditionContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 6, self.RULE_condition)
+        try:
+            self.state = 83
+            self._errHandler.sync(self)
+            token = self._input.LA(1)
+            if token in [JDParser.LEVEL_LABEL]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 73
+                self.requireLevel()
+                pass
+            elif token in [JDParser.TOOL_LABEL]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 74
+                self.requireTools()
+                pass
+            elif token in [JDParser.PROG_LANG_LABEL]:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 75
+                self.requireProLang()
+                pass
+            elif token in [JDParser.FRAMEWORK_LABEL]:
+                self.enterOuterAlt(localctx, 4)
+                self.state = 76
+                self.requireFrameworks()
+                pass
+            elif token in [JDParser.DATA_LABEL]:
+                self.enterOuterAlt(localctx, 5)
+                self.state = 77
+                self.requireDB()
+                pass
+            elif token in [JDParser.DEGREE_LABEL]:
+                self.enterOuterAlt(localctx, 6)
+                self.state = 78
+                self.requireDegree()
+                pass
+            elif token in [JDParser.GPA_LABEL]:
+                self.enterOuterAlt(localctx, 7)
+                self.state = 79
+                self.requireGPA()
+                pass
+            elif token in [JDParser.EXP_LABEL]:
+                self.enterOuterAlt(localctx, 8)
+                self.state = 80
+                self.requireExperience()
+                pass
+            elif token in [JDParser.LANG_LABEL]:
+                self.enterOuterAlt(localctx, 9)
+                self.state = 81
+                self.requireLanguage()
+                pass
+            elif token in [JDParser.ACTIVITY_LABEL]:
+                self.enterOuterAlt(localctx, 10)
+                self.state = 82
+                self.requireActivites()
+                pass
+            else:
+                raise NoViableAltException(self)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class JdContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def requirements(self):
+            return self.getTypedRuleContext(JDParser.RequirementsContext,0)
+
+
+        def preferences(self):
+            return self.getTypedRuleContext(JDParser.PreferencesContext,0)
+
+
+        def getRuleIndex(self):
+            return JDParser.RULE_jd
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterJd" ):
+                listener.enterJd(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitJd" ):
+                listener.exitJd(self)
+
+
+
+
+    def jd(self):
+
+        localctx = JDParser.JdContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 8, self.RULE_jd)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 52
+            self.state = 85
             self.requirements()
-            self.state = 54
+            self.state = 87
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.PREFER_SECTION:
-                self.state = 53
+                self.state = 86
                 self.preferences()
 
 
@@ -520,33 +850,33 @@ class JDParser ( Parser ):
     def requirements(self):
 
         localctx = JDParser.RequirementsContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 2, self.RULE_requirements)
+        self.enterRule(localctx, 10, self.RULE_requirements)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 56
+            self.state = 89
             self.match(JDParser.REQUIRE_SECTION)
-            self.state = 57
+            self.state = 90
             self.match(JDParser.OPEN_CURLY)
-            self.state = 58
+            self.state = 91
             self.requirePosition()
-            self.state = 59
+            self.state = 92
             self.requireLevel()
-            self.state = 60
+            self.state = 93
             self.requireTechnicalSkills()
-            self.state = 61
+            self.state = 94
             self.requireEducation()
-            self.state = 62
+            self.state = 95
             self.requireExperience()
-            self.state = 64
+            self.state = 97
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.LANG_LABEL:
-                self.state = 63
+                self.state = 96
                 self.requireLanguage()
 
 
-            self.state = 66
+            self.state = 99
             self.match(JDParser.CLOSE_CURLY)
         except RecognitionException as re:
             localctx.exception = re
@@ -626,87 +956,87 @@ class JDParser ( Parser ):
     def preferences(self):
 
         localctx = JDParser.PreferencesContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 4, self.RULE_preferences)
+        self.enterRule(localctx, 12, self.RULE_preferences)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 68
+            self.state = 101
             self.match(JDParser.PREFER_SECTION)
-            self.state = 69
+            self.state = 102
             self.match(JDParser.OPEN_CURLY)
-            self.state = 71
+            self.state = 104
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.TOOL_LABEL:
-                self.state = 70
+                self.state = 103
                 self.requireTools()
 
 
-            self.state = 74
+            self.state = 107
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.PROG_LANG_LABEL:
-                self.state = 73
+                self.state = 106
                 self.requireProLang()
 
 
-            self.state = 77
+            self.state = 110
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.FRAMEWORK_LABEL:
-                self.state = 76
+                self.state = 109
                 self.requireFrameworks()
 
 
-            self.state = 80
+            self.state = 113
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.DATA_LABEL:
-                self.state = 79
+                self.state = 112
                 self.requireDB()
 
 
-            self.state = 83
+            self.state = 116
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.DEGREE_LABEL:
-                self.state = 82
+                self.state = 115
                 self.requireDegree()
 
 
-            self.state = 86
+            self.state = 119
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.GPA_LABEL:
-                self.state = 85
+                self.state = 118
                 self.requireGPA()
 
 
-            self.state = 89
+            self.state = 122
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.EXP_LABEL:
-                self.state = 88
+                self.state = 121
                 self.requireExperience()
 
 
-            self.state = 92
+            self.state = 125
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.LANG_LABEL:
-                self.state = 91
+                self.state = 124
                 self.requireLanguage()
 
 
-            self.state = 95
+            self.state = 128
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.ACTIVITY_LABEL:
-                self.state = 94
+                self.state = 127
                 self.requireActivites()
 
 
-            self.state = 97
+            self.state = 130
             self.match(JDParser.CLOSE_CURLY)
         except RecognitionException as re:
             localctx.exception = re
@@ -748,12 +1078,12 @@ class JDParser ( Parser ):
     def requirePosition(self):
 
         localctx = JDParser.RequirePositionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 6, self.RULE_requirePosition)
+        self.enterRule(localctx, 14, self.RULE_requirePosition)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 99
+            self.state = 132
             self.match(JDParser.POSITION_LABEL)
-            self.state = 100
+            self.state = 133
             self.position()
         except RecognitionException as re:
             localctx.exception = re
@@ -795,12 +1125,12 @@ class JDParser ( Parser ):
     def requireLevel(self):
 
         localctx = JDParser.RequireLevelContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 8, self.RULE_requireLevel)
+        self.enterRule(localctx, 16, self.RULE_requireLevel)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 102
+            self.state = 135
             self.match(JDParser.LEVEL_LABEL)
-            self.state = 103
+            self.state = 136
             self.level()
         except RecognitionException as re:
             localctx.exception = re
@@ -860,22 +1190,22 @@ class JDParser ( Parser ):
     def requireTechnicalSkills(self):
 
         localctx = JDParser.RequireTechnicalSkillsContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 10, self.RULE_requireTechnicalSkills)
+        self.enterRule(localctx, 18, self.RULE_requireTechnicalSkills)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 105
+            self.state = 138
             self.match(JDParser.STACK_SECTION)
-            self.state = 106
+            self.state = 139
             self.match(JDParser.OPEN_CURLY)
-            self.state = 107
+            self.state = 140
             self.requireTools()
-            self.state = 108
+            self.state = 141
             self.requireProLang()
-            self.state = 109
+            self.state = 142
             self.requireFrameworks()
-            self.state = 110
+            self.state = 143
             self.requireDB()
-            self.state = 111
+            self.state = 144
             self.match(JDParser.CLOSE_CURLY)
         except RecognitionException as re:
             localctx.exception = re
@@ -926,23 +1256,23 @@ class JDParser ( Parser ):
     def requireTools(self):
 
         localctx = JDParser.RequireToolsContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 12, self.RULE_requireTools)
+        self.enterRule(localctx, 20, self.RULE_requireTools)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 113
+            self.state = 146
             self.match(JDParser.TOOL_LABEL)
-            self.state = 114
+            self.state = 147
             self.tool()
-            self.state = 119
+            self.state = 152
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==JDParser.COMMA:
-                self.state = 115
+                self.state = 148
                 self.match(JDParser.COMMA)
-                self.state = 116
+                self.state = 149
                 self.tool()
-                self.state = 121
+                self.state = 154
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -995,23 +1325,23 @@ class JDParser ( Parser ):
     def requireProLang(self):
 
         localctx = JDParser.RequireProLangContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 14, self.RULE_requireProLang)
+        self.enterRule(localctx, 22, self.RULE_requireProLang)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 122
+            self.state = 155
             self.match(JDParser.PROG_LANG_LABEL)
-            self.state = 123
+            self.state = 156
             self.pro_lang()
-            self.state = 128
+            self.state = 161
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==JDParser.COMMA:
-                self.state = 124
+                self.state = 157
                 self.match(JDParser.COMMA)
-                self.state = 125
+                self.state = 158
                 self.pro_lang()
-                self.state = 130
+                self.state = 163
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1064,23 +1394,23 @@ class JDParser ( Parser ):
     def requireFrameworks(self):
 
         localctx = JDParser.RequireFrameworksContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 16, self.RULE_requireFrameworks)
+        self.enterRule(localctx, 24, self.RULE_requireFrameworks)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 131
+            self.state = 164
             self.match(JDParser.FRAMEWORK_LABEL)
-            self.state = 132
+            self.state = 165
             self.framework()
-            self.state = 137
+            self.state = 170
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==JDParser.COMMA:
-                self.state = 133
+                self.state = 166
                 self.match(JDParser.COMMA)
-                self.state = 134
+                self.state = 167
                 self.framework()
-                self.state = 139
+                self.state = 172
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1133,23 +1463,23 @@ class JDParser ( Parser ):
     def requireDB(self):
 
         localctx = JDParser.RequireDBContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 18, self.RULE_requireDB)
+        self.enterRule(localctx, 26, self.RULE_requireDB)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 140
+            self.state = 173
             self.match(JDParser.DATA_LABEL)
-            self.state = 141
+            self.state = 174
             self.db()
-            self.state = 146
+            self.state = 179
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==JDParser.COMMA:
-                self.state = 142
+                self.state = 175
                 self.match(JDParser.COMMA)
-                self.state = 143
+                self.state = 176
                 self.db()
-                self.state = 148
+                self.state = 181
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1207,33 +1537,33 @@ class JDParser ( Parser ):
     def requireEducation(self):
 
         localctx = JDParser.RequireEducationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 20, self.RULE_requireEducation)
+        self.enterRule(localctx, 28, self.RULE_requireEducation)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 149
+            self.state = 182
             self.match(JDParser.EDU_SECTION)
-            self.state = 150
+            self.state = 183
             self.match(JDParser.OPEN_CURLY)
-            self.state = 151
+            self.state = 184
             self.requireMajor()
-            self.state = 153
+            self.state = 186
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.DEGREE_LABEL:
-                self.state = 152
+                self.state = 185
                 self.requireDegree()
 
 
-            self.state = 156
+            self.state = 189
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==JDParser.GPA_LABEL:
-                self.state = 155
+                self.state = 188
                 self.requireGPA()
 
 
-            self.state = 158
+            self.state = 191
             self.match(JDParser.CLOSE_CURLY)
         except RecognitionException as re:
             localctx.exception = re
@@ -1275,12 +1605,12 @@ class JDParser ( Parser ):
     def requireMajor(self):
 
         localctx = JDParser.RequireMajorContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 22, self.RULE_requireMajor)
+        self.enterRule(localctx, 30, self.RULE_requireMajor)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 160
+            self.state = 193
             self.match(JDParser.MAJOR_LABEL)
-            self.state = 161
+            self.state = 194
             self.major()
         except RecognitionException as re:
             localctx.exception = re
@@ -1322,12 +1652,12 @@ class JDParser ( Parser ):
     def requireDegree(self):
 
         localctx = JDParser.RequireDegreeContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 24, self.RULE_requireDegree)
+        self.enterRule(localctx, 32, self.RULE_requireDegree)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 163
+            self.state = 196
             self.match(JDParser.DEGREE_LABEL)
-            self.state = 164
+            self.state = 197
             self.degree()
         except RecognitionException as re:
             localctx.exception = re
@@ -1371,14 +1701,14 @@ class JDParser ( Parser ):
     def requireGPA(self):
 
         localctx = JDParser.RequireGPAContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 26, self.RULE_requireGPA)
+        self.enterRule(localctx, 34, self.RULE_requireGPA)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 166
+            self.state = 199
             self.match(JDParser.GPA_LABEL)
-            self.state = 167
+            self.state = 200
             self.match(JDParser.COMPARATOR)
-            self.state = 168
+            self.state = 201
             self.match(JDParser.FLOAT)
         except RecognitionException as re:
             localctx.exception = re
@@ -1429,23 +1759,23 @@ class JDParser ( Parser ):
     def requireLanguage(self):
 
         localctx = JDParser.RequireLanguageContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 28, self.RULE_requireLanguage)
+        self.enterRule(localctx, 36, self.RULE_requireLanguage)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 170
+            self.state = 203
             self.match(JDParser.LANG_LABEL)
-            self.state = 171
+            self.state = 204
             self.lang()
-            self.state = 176
+            self.state = 209
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==JDParser.COMMA:
-                self.state = 172
+                self.state = 205
                 self.match(JDParser.COMMA)
-                self.state = 173
+                self.state = 206
                 self.lang()
-                self.state = 178
+                self.state = 211
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1491,14 +1821,14 @@ class JDParser ( Parser ):
     def requireExperience(self):
 
         localctx = JDParser.RequireExperienceContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 30, self.RULE_requireExperience)
+        self.enterRule(localctx, 38, self.RULE_requireExperience)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 179
+            self.state = 212
             self.match(JDParser.EXP_LABEL)
-            self.state = 180
+            self.state = 213
             self.match(JDParser.INT)
-            self.state = 181
+            self.state = 214
             self.match(JDParser.YEARS)
         except RecognitionException as re:
             localctx.exception = re
@@ -1542,19 +1872,19 @@ class JDParser ( Parser ):
     def requireActivites(self):
 
         localctx = JDParser.RequireActivitesContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 32, self.RULE_requireActivites)
+        self.enterRule(localctx, 40, self.RULE_requireActivites)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 183
+            self.state = 216
             self.match(JDParser.ACTIVITY_LABEL)
-            self.state = 185 
+            self.state = 218 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 184
+                self.state = 217
                 self.match(JDParser.ID)
-                self.state = 187 
+                self.state = 220 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if not (_la==JDParser.ID):
@@ -1594,11 +1924,11 @@ class JDParser ( Parser ):
     def position(self):
 
         localctx = JDParser.PositionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 34, self.RULE_position)
+        self.enterRule(localctx, 42, self.RULE_position)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 189
+            self.state = 222
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << JDParser.T__0) | (1 << JDParser.T__1) | (1 << JDParser.T__2) | (1 << JDParser.T__3) | (1 << JDParser.T__4) | (1 << JDParser.T__5) | (1 << JDParser.T__6) | (1 << JDParser.T__7) | (1 << JDParser.T__8) | (1 << JDParser.T__9) | (1 << JDParser.T__10) | (1 << JDParser.T__11) | (1 << JDParser.T__12) | (1 << JDParser.T__13) | (1 << JDParser.T__14) | (1 << JDParser.T__15) | (1 << JDParser.T__16) | (1 << JDParser.T__17) | (1 << JDParser.T__18) | (1 << JDParser.T__19) | (1 << JDParser.T__20) | (1 << JDParser.T__21) | (1 << JDParser.T__22) | (1 << JDParser.T__23) | (1 << JDParser.T__24) | (1 << JDParser.T__25))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1639,11 +1969,11 @@ class JDParser ( Parser ):
     def level(self):
 
         localctx = JDParser.LevelContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 36, self.RULE_level)
+        self.enterRule(localctx, 44, self.RULE_level)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 191
+            self.state = 224
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << JDParser.T__26) | (1 << JDParser.T__27) | (1 << JDParser.T__28) | (1 << JDParser.T__29) | (1 << JDParser.T__30) | (1 << JDParser.T__31) | (1 << JDParser.T__32))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1684,11 +2014,11 @@ class JDParser ( Parser ):
     def degree(self):
 
         localctx = JDParser.DegreeContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 38, self.RULE_degree)
+        self.enterRule(localctx, 46, self.RULE_degree)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 193
+            self.state = 226
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << JDParser.T__33) | (1 << JDParser.T__34) | (1 << JDParser.T__35) | (1 << JDParser.T__36))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1729,11 +2059,11 @@ class JDParser ( Parser ):
     def major(self):
 
         localctx = JDParser.MajorContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 40, self.RULE_major)
+        self.enterRule(localctx, 48, self.RULE_major)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 195
+            self.state = 228
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << JDParser.T__37) | (1 << JDParser.T__38) | (1 << JDParser.T__39) | (1 << JDParser.T__40) | (1 << JDParser.T__41) | (1 << JDParser.T__42) | (1 << JDParser.T__43))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1774,11 +2104,11 @@ class JDParser ( Parser ):
     def tool(self):
 
         localctx = JDParser.ToolContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 42, self.RULE_tool)
+        self.enterRule(localctx, 50, self.RULE_tool)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 197
+            self.state = 230
             _la = self._input.LA(1)
             if not(((((_la - 45)) & ~0x3f) == 0 and ((1 << (_la - 45)) & ((1 << (JDParser.T__44 - 45)) | (1 << (JDParser.T__45 - 45)) | (1 << (JDParser.T__46 - 45)) | (1 << (JDParser.T__47 - 45)) | (1 << (JDParser.T__48 - 45)) | (1 << (JDParser.T__49 - 45)) | (1 << (JDParser.T__50 - 45)) | (1 << (JDParser.T__51 - 45)) | (1 << (JDParser.T__52 - 45)) | (1 << (JDParser.T__53 - 45)) | (1 << (JDParser.T__54 - 45)) | (1 << (JDParser.T__55 - 45)) | (1 << (JDParser.T__56 - 45)) | (1 << (JDParser.T__57 - 45)) | (1 << (JDParser.T__58 - 45)) | (1 << (JDParser.T__59 - 45)) | (1 << (JDParser.T__60 - 45)) | (1 << (JDParser.T__61 - 45)) | (1 << (JDParser.T__62 - 45)) | (1 << (JDParser.T__63 - 45)) | (1 << (JDParser.T__64 - 45)))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1819,11 +2149,11 @@ class JDParser ( Parser ):
     def pro_lang(self):
 
         localctx = JDParser.Pro_langContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 44, self.RULE_pro_lang)
+        self.enterRule(localctx, 52, self.RULE_pro_lang)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 199
+            self.state = 232
             _la = self._input.LA(1)
             if not(((((_la - 66)) & ~0x3f) == 0 and ((1 << (_la - 66)) & ((1 << (JDParser.T__65 - 66)) | (1 << (JDParser.T__66 - 66)) | (1 << (JDParser.T__67 - 66)) | (1 << (JDParser.T__68 - 66)) | (1 << (JDParser.T__69 - 66)) | (1 << (JDParser.T__70 - 66)) | (1 << (JDParser.T__71 - 66)) | (1 << (JDParser.T__72 - 66)) | (1 << (JDParser.T__73 - 66)) | (1 << (JDParser.T__74 - 66)) | (1 << (JDParser.T__75 - 66)) | (1 << (JDParser.T__76 - 66)) | (1 << (JDParser.T__77 - 66)) | (1 << (JDParser.T__78 - 66)) | (1 << (JDParser.T__79 - 66)) | (1 << (JDParser.T__80 - 66)) | (1 << (JDParser.T__81 - 66)) | (1 << (JDParser.T__82 - 66)) | (1 << (JDParser.T__83 - 66)) | (1 << (JDParser.T__84 - 66)))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1864,11 +2194,11 @@ class JDParser ( Parser ):
     def framework(self):
 
         localctx = JDParser.FrameworkContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 46, self.RULE_framework)
+        self.enterRule(localctx, 54, self.RULE_framework)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 201
+            self.state = 234
             _la = self._input.LA(1)
             if not(((((_la - 86)) & ~0x3f) == 0 and ((1 << (_la - 86)) & ((1 << (JDParser.T__85 - 86)) | (1 << (JDParser.T__86 - 86)) | (1 << (JDParser.T__87 - 86)) | (1 << (JDParser.T__88 - 86)) | (1 << (JDParser.T__89 - 86)) | (1 << (JDParser.T__90 - 86)) | (1 << (JDParser.T__91 - 86)) | (1 << (JDParser.T__92 - 86)) | (1 << (JDParser.T__93 - 86)) | (1 << (JDParser.T__94 - 86)) | (1 << (JDParser.T__95 - 86)) | (1 << (JDParser.T__96 - 86)) | (1 << (JDParser.T__97 - 86)) | (1 << (JDParser.T__98 - 86)) | (1 << (JDParser.T__99 - 86)) | (1 << (JDParser.T__100 - 86)) | (1 << (JDParser.T__101 - 86)) | (1 << (JDParser.T__102 - 86)) | (1 << (JDParser.T__103 - 86)) | (1 << (JDParser.T__104 - 86)) | (1 << (JDParser.T__105 - 86)) | (1 << (JDParser.T__106 - 86)) | (1 << (JDParser.T__107 - 86)) | (1 << (JDParser.T__108 - 86)) | (1 << (JDParser.T__109 - 86)) | (1 << (JDParser.T__110 - 86)) | (1 << (JDParser.T__111 - 86)) | (1 << (JDParser.T__112 - 86)) | (1 << (JDParser.T__113 - 86)) | (1 << (JDParser.T__114 - 86)))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1909,11 +2239,11 @@ class JDParser ( Parser ):
     def db(self):
 
         localctx = JDParser.DbContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 48, self.RULE_db)
+        self.enterRule(localctx, 56, self.RULE_db)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 203
+            self.state = 236
             _la = self._input.LA(1)
             if not(((((_la - 116)) & ~0x3f) == 0 and ((1 << (_la - 116)) & ((1 << (JDParser.T__115 - 116)) | (1 << (JDParser.T__116 - 116)) | (1 << (JDParser.T__117 - 116)) | (1 << (JDParser.T__118 - 116)) | (1 << (JDParser.T__119 - 116)) | (1 << (JDParser.T__120 - 116)) | (1 << (JDParser.T__121 - 116)) | (1 << (JDParser.T__122 - 116)) | (1 << (JDParser.T__123 - 116)) | (1 << (JDParser.T__124 - 116)) | (1 << (JDParser.T__125 - 116)) | (1 << (JDParser.T__126 - 116)) | (1 << (JDParser.T__127 - 116)) | (1 << (JDParser.T__128 - 116)) | (1 << (JDParser.T__129 - 116)) | (1 << (JDParser.T__130 - 116)) | (1 << (JDParser.T__131 - 116)) | (1 << (JDParser.T__132 - 116)) | (1 << (JDParser.T__133 - 116)) | (1 << (JDParser.T__134 - 116)) | (1 << (JDParser.T__135 - 116)))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1954,11 +2284,11 @@ class JDParser ( Parser ):
     def lang(self):
 
         localctx = JDParser.LangContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 50, self.RULE_lang)
+        self.enterRule(localctx, 58, self.RULE_lang)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 205
+            self.state = 238
             _la = self._input.LA(1)
             if not(((((_la - 137)) & ~0x3f) == 0 and ((1 << (_la - 137)) & ((1 << (JDParser.T__136 - 137)) | (1 << (JDParser.T__137 - 137)) | (1 << (JDParser.T__138 - 137)) | (1 << (JDParser.T__139 - 137)) | (1 << (JDParser.T__140 - 137)) | (1 << (JDParser.T__141 - 137)) | (1 << (JDParser.T__142 - 137)))) != 0)):
                 self._errHandler.recoverInline(self)

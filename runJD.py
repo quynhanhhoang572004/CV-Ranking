@@ -40,7 +40,7 @@ def runTest():
             print(f"Input rejected: {msg}")
             exit(1)  # Exit the program with an error
 
-    filename = 'JD.txt'
+    filename = 'ShowConditional.txt'
     inputFile = os.path.join(DIR, './tests', filename)    
 
     print('List of token: ')

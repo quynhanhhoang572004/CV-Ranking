@@ -1,1 +1,1 @@
-show CV with position: backend developer and programming languages: python javascript
+show CV with tools: github actions, docker, terraform

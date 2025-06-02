@@ -1,6 +1,14 @@
 grammar JD;
 
-program: requirements preferences?;
+program: jd | showTop | showConditional;
+showTop: SHOW TOP INT CV;
+
+showConditional: SHOW_CV_WITH condition;
+
+condition: requireLevel | requireTools | requireProLang | requireFrameworks | requireDB
+             | requireDegree | requireGPA | requireExperience | requireLanguage| requireActivites;
+
+jd: requirements preferences?;
 
 requirements: REQUIRE_SECTION OPEN_CURLY 
                 requirePosition requireLevel requireTechnicalSkills 
@@ -52,6 +60,10 @@ MAJOR_LABEL: 'major:';
 DEGREE_LABEL: 'degree:';
 GPA_LABEL: 'gpa:';
 YEARS: 'years';
+SHOW: 'show';
+TOP: 'top';
+CV: 'CV' | 'cv';
+SHOW_CV_WITH: 'show CV with';
 OPEN_CURLY: '{';
 CLOSE_CURLY: '}';
 COMMA: ',';
