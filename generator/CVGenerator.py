@@ -8,6 +8,7 @@ fake = Faker()
 class CVGenerator:
     def __init__(self):
         self.levels = ["Intern", "Fresher", "Junior", "Senior"]
+        self.experience = ["1","2","3","4","5","6","7","8","9","10"]
         self.positions = ["AI Engineer", "Data Engineer", "Back-end Developer", "ML Engineer", "DevOps Engineer"]
         self.tools_pool = ["Docker", "Git", "Airflow", "Github Actions", "Kubernetes", "Jenkins"]
         self.languages_pool = ["Python", "Typescript", "Go", "Java", "Rust"]
@@ -278,6 +279,7 @@ class CVGenerator:
 
         cv_data = {
             "Level": level,
+            "Experience": random.choice(self.experience),
             "FullName": full_name,
             "Contact": {
                 "Phone": phone,
