@@ -1,4 +1,4 @@
-# Generated from JD.g4 by ANTLR 4.9.2
+# Generated from Hire.g4 by ANTLR 4.9.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -115,9 +115,9 @@ def serializedATN():
         return buf.getvalue()
 
 
-class JDParser ( Parser ):
+class HireParser ( Parser ):
 
-    grammarFileName = "JD.g4"
+    grammarFileName = "Hire.g4"
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -444,19 +444,19 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def jd(self):
-            return self.getTypedRuleContext(JDParser.JdContext,0)
+            return self.getTypedRuleContext(HireParser.JdContext,0)
 
 
         def showTop(self):
-            return self.getTypedRuleContext(JDParser.ShowTopContext,0)
+            return self.getTypedRuleContext(HireParser.ShowTopContext,0)
 
 
         def showConditional(self):
-            return self.getTypedRuleContext(JDParser.ShowConditionalContext,0)
+            return self.getTypedRuleContext(HireParser.ShowConditionalContext,0)
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_program
+            return HireParser.RULE_program
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterProgram" ):
@@ -466,12 +466,18 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitProgram" ):
                 listener.exitProgram(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitProgram" ):
+                return visitor.visitProgram(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def program(self):
 
-        localctx = JDParser.ProgramContext(self, self._ctx, self.state)
+        localctx = HireParser.ProgramContext(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_program)
         try:
             self.state = 63
@@ -513,19 +519,19 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def SHOW(self):
-            return self.getToken(JDParser.SHOW, 0)
+            return self.getToken(HireParser.SHOW, 0)
 
         def TOP(self):
-            return self.getToken(JDParser.TOP, 0)
+            return self.getToken(HireParser.TOP, 0)
 
         def INT(self):
-            return self.getToken(JDParser.INT, 0)
+            return self.getToken(HireParser.INT, 0)
 
         def CV(self):
-            return self.getToken(JDParser.CV, 0)
+            return self.getToken(HireParser.CV, 0)
 
         def getRuleIndex(self):
-            return JDParser.RULE_showTop
+            return HireParser.RULE_showTop
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterShowTop" ):
@@ -535,23 +541,29 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitShowTop" ):
                 listener.exitShowTop(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitShowTop" ):
+                return visitor.visitShowTop(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def showTop(self):
 
-        localctx = JDParser.ShowTopContext(self, self._ctx, self.state)
+        localctx = HireParser.ShowTopContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_showTop)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 65
-            self.match(JDParser.SHOW)
+            self.match(HireParser.SHOW)
             self.state = 66
-            self.match(JDParser.TOP)
+            self.match(HireParser.TOP)
             self.state = 67
-            self.match(JDParser.INT)
+            self.match(HireParser.INT)
             self.state = 68
-            self.match(JDParser.CV)
+            self.match(HireParser.CV)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -569,20 +581,20 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def SHOW(self):
-            return self.getToken(JDParser.SHOW, 0)
+            return self.getToken(HireParser.SHOW, 0)
 
         def CV(self):
-            return self.getToken(JDParser.CV, 0)
+            return self.getToken(HireParser.CV, 0)
 
         def WITH(self):
-            return self.getToken(JDParser.WITH, 0)
+            return self.getToken(HireParser.WITH, 0)
 
         def condition(self):
-            return self.getTypedRuleContext(JDParser.ConditionContext,0)
+            return self.getTypedRuleContext(HireParser.ConditionContext,0)
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_showConditional
+            return HireParser.RULE_showConditional
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterShowConditional" ):
@@ -592,21 +604,27 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitShowConditional" ):
                 listener.exitShowConditional(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitShowConditional" ):
+                return visitor.visitShowConditional(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def showConditional(self):
 
-        localctx = JDParser.ShowConditionalContext(self, self._ctx, self.state)
+        localctx = HireParser.ShowConditionalContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_showConditional)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 70
-            self.match(JDParser.SHOW)
+            self.match(HireParser.SHOW)
             self.state = 71
-            self.match(JDParser.CV)
+            self.match(HireParser.CV)
             self.state = 72
-            self.match(JDParser.WITH)
+            self.match(HireParser.WITH)
             self.state = 73
             self.condition()
         except RecognitionException as re:
@@ -626,47 +644,47 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def requireLevel(self):
-            return self.getTypedRuleContext(JDParser.RequireLevelContext,0)
+            return self.getTypedRuleContext(HireParser.RequireLevelContext,0)
 
 
         def requireTools(self):
-            return self.getTypedRuleContext(JDParser.RequireToolsContext,0)
+            return self.getTypedRuleContext(HireParser.RequireToolsContext,0)
 
 
         def requireProLang(self):
-            return self.getTypedRuleContext(JDParser.RequireProLangContext,0)
+            return self.getTypedRuleContext(HireParser.RequireProLangContext,0)
 
 
         def requireFrameworks(self):
-            return self.getTypedRuleContext(JDParser.RequireFrameworksContext,0)
+            return self.getTypedRuleContext(HireParser.RequireFrameworksContext,0)
 
 
         def requireDB(self):
-            return self.getTypedRuleContext(JDParser.RequireDBContext,0)
+            return self.getTypedRuleContext(HireParser.RequireDBContext,0)
 
 
         def requireDegree(self):
-            return self.getTypedRuleContext(JDParser.RequireDegreeContext,0)
+            return self.getTypedRuleContext(HireParser.RequireDegreeContext,0)
 
 
         def requireGPA(self):
-            return self.getTypedRuleContext(JDParser.RequireGPAContext,0)
+            return self.getTypedRuleContext(HireParser.RequireGPAContext,0)
 
 
         def requireExperience(self):
-            return self.getTypedRuleContext(JDParser.RequireExperienceContext,0)
+            return self.getTypedRuleContext(HireParser.RequireExperienceContext,0)
 
 
         def requireLanguage(self):
-            return self.getTypedRuleContext(JDParser.RequireLanguageContext,0)
+            return self.getTypedRuleContext(HireParser.RequireLanguageContext,0)
 
 
         def requireActivites(self):
-            return self.getTypedRuleContext(JDParser.RequireActivitesContext,0)
+            return self.getTypedRuleContext(HireParser.RequireActivitesContext,0)
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_condition
+            return HireParser.RULE_condition
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterCondition" ):
@@ -676,63 +694,69 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitCondition" ):
                 listener.exitCondition(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitCondition" ):
+                return visitor.visitCondition(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def condition(self):
 
-        localctx = JDParser.ConditionContext(self, self._ctx, self.state)
+        localctx = HireParser.ConditionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_condition)
         try:
             self.state = 85
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [JDParser.LEVEL_LABEL]:
+            if token in [HireParser.LEVEL_LABEL]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 75
                 self.requireLevel()
                 pass
-            elif token in [JDParser.TOOL_LABEL]:
+            elif token in [HireParser.TOOL_LABEL]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 76
                 self.requireTools()
                 pass
-            elif token in [JDParser.PROG_LANG_LABEL]:
+            elif token in [HireParser.PROG_LANG_LABEL]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 77
                 self.requireProLang()
                 pass
-            elif token in [JDParser.FRAMEWORK_LABEL]:
+            elif token in [HireParser.FRAMEWORK_LABEL]:
                 self.enterOuterAlt(localctx, 4)
                 self.state = 78
                 self.requireFrameworks()
                 pass
-            elif token in [JDParser.DATA_LABEL]:
+            elif token in [HireParser.DATA_LABEL]:
                 self.enterOuterAlt(localctx, 5)
                 self.state = 79
                 self.requireDB()
                 pass
-            elif token in [JDParser.DEGREE_LABEL]:
+            elif token in [HireParser.DEGREE_LABEL]:
                 self.enterOuterAlt(localctx, 6)
                 self.state = 80
                 self.requireDegree()
                 pass
-            elif token in [JDParser.GPA_LABEL]:
+            elif token in [HireParser.GPA_LABEL]:
                 self.enterOuterAlt(localctx, 7)
                 self.state = 81
                 self.requireGPA()
                 pass
-            elif token in [JDParser.EXP_LABEL]:
+            elif token in [HireParser.EXP_LABEL]:
                 self.enterOuterAlt(localctx, 8)
                 self.state = 82
                 self.requireExperience()
                 pass
-            elif token in [JDParser.LANG_LABEL]:
+            elif token in [HireParser.LANG_LABEL]:
                 self.enterOuterAlt(localctx, 9)
                 self.state = 83
                 self.requireLanguage()
                 pass
-            elif token in [JDParser.ACTIVITY_LABEL]:
+            elif token in [HireParser.ACTIVITY_LABEL]:
                 self.enterOuterAlt(localctx, 10)
                 self.state = 84
                 self.requireActivites()
@@ -757,15 +781,15 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def requirements(self):
-            return self.getTypedRuleContext(JDParser.RequirementsContext,0)
+            return self.getTypedRuleContext(HireParser.RequirementsContext,0)
 
 
         def preferences(self):
-            return self.getTypedRuleContext(JDParser.PreferencesContext,0)
+            return self.getTypedRuleContext(HireParser.PreferencesContext,0)
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_jd
+            return HireParser.RULE_jd
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterJd" ):
@@ -775,12 +799,18 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitJd" ):
                 listener.exitJd(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitJd" ):
+                return visitor.visitJd(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def jd(self):
 
-        localctx = JDParser.JdContext(self, self._ctx, self.state)
+        localctx = HireParser.JdContext(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_jd)
         self._la = 0 # Token type
         try:
@@ -790,7 +820,7 @@ class JDParser ( Parser ):
             self.state = 89
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.PREFER_SECTION:
+            if _la==HireParser.PREFER_SECTION:
                 self.state = 88
                 self.preferences()
 
@@ -812,40 +842,40 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def REQUIRE_SECTION(self):
-            return self.getToken(JDParser.REQUIRE_SECTION, 0)
+            return self.getToken(HireParser.REQUIRE_SECTION, 0)
 
         def OPEN_CURLY(self):
-            return self.getToken(JDParser.OPEN_CURLY, 0)
+            return self.getToken(HireParser.OPEN_CURLY, 0)
 
         def requirePosition(self):
-            return self.getTypedRuleContext(JDParser.RequirePositionContext,0)
+            return self.getTypedRuleContext(HireParser.RequirePositionContext,0)
 
 
         def requireLevel(self):
-            return self.getTypedRuleContext(JDParser.RequireLevelContext,0)
+            return self.getTypedRuleContext(HireParser.RequireLevelContext,0)
 
 
         def requireTechnicalSkills(self):
-            return self.getTypedRuleContext(JDParser.RequireTechnicalSkillsContext,0)
+            return self.getTypedRuleContext(HireParser.RequireTechnicalSkillsContext,0)
 
 
         def requireEducation(self):
-            return self.getTypedRuleContext(JDParser.RequireEducationContext,0)
+            return self.getTypedRuleContext(HireParser.RequireEducationContext,0)
 
 
         def requireExperience(self):
-            return self.getTypedRuleContext(JDParser.RequireExperienceContext,0)
+            return self.getTypedRuleContext(HireParser.RequireExperienceContext,0)
 
 
         def CLOSE_CURLY(self):
-            return self.getToken(JDParser.CLOSE_CURLY, 0)
+            return self.getToken(HireParser.CLOSE_CURLY, 0)
 
         def requireLanguage(self):
-            return self.getTypedRuleContext(JDParser.RequireLanguageContext,0)
+            return self.getTypedRuleContext(HireParser.RequireLanguageContext,0)
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_requirements
+            return HireParser.RULE_requirements
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequirements" ):
@@ -855,20 +885,26 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequirements" ):
                 listener.exitRequirements(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequirements" ):
+                return visitor.visitRequirements(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requirements(self):
 
-        localctx = JDParser.RequirementsContext(self, self._ctx, self.state)
+        localctx = HireParser.RequirementsContext(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_requirements)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 91
-            self.match(JDParser.REQUIRE_SECTION)
+            self.match(HireParser.REQUIRE_SECTION)
             self.state = 92
-            self.match(JDParser.OPEN_CURLY)
+            self.match(HireParser.OPEN_CURLY)
             self.state = 93
             self.requirePosition()
             self.state = 94
@@ -882,13 +918,13 @@ class JDParser ( Parser ):
             self.state = 99
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.LANG_LABEL:
+            if _la==HireParser.LANG_LABEL:
                 self.state = 98
                 self.requireLanguage()
 
 
             self.state = 101
-            self.match(JDParser.CLOSE_CURLY)
+            self.match(HireParser.CLOSE_CURLY)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -906,52 +942,52 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def PREFER_SECTION(self):
-            return self.getToken(JDParser.PREFER_SECTION, 0)
+            return self.getToken(HireParser.PREFER_SECTION, 0)
 
         def OPEN_CURLY(self):
-            return self.getToken(JDParser.OPEN_CURLY, 0)
+            return self.getToken(HireParser.OPEN_CURLY, 0)
 
         def CLOSE_CURLY(self):
-            return self.getToken(JDParser.CLOSE_CURLY, 0)
+            return self.getToken(HireParser.CLOSE_CURLY, 0)
 
         def requireTools(self):
-            return self.getTypedRuleContext(JDParser.RequireToolsContext,0)
+            return self.getTypedRuleContext(HireParser.RequireToolsContext,0)
 
 
         def requireProLang(self):
-            return self.getTypedRuleContext(JDParser.RequireProLangContext,0)
+            return self.getTypedRuleContext(HireParser.RequireProLangContext,0)
 
 
         def requireFrameworks(self):
-            return self.getTypedRuleContext(JDParser.RequireFrameworksContext,0)
+            return self.getTypedRuleContext(HireParser.RequireFrameworksContext,0)
 
 
         def requireDB(self):
-            return self.getTypedRuleContext(JDParser.RequireDBContext,0)
+            return self.getTypedRuleContext(HireParser.RequireDBContext,0)
 
 
         def requireDegree(self):
-            return self.getTypedRuleContext(JDParser.RequireDegreeContext,0)
+            return self.getTypedRuleContext(HireParser.RequireDegreeContext,0)
 
 
         def requireGPA(self):
-            return self.getTypedRuleContext(JDParser.RequireGPAContext,0)
+            return self.getTypedRuleContext(HireParser.RequireGPAContext,0)
 
 
         def requireExperience(self):
-            return self.getTypedRuleContext(JDParser.RequireExperienceContext,0)
+            return self.getTypedRuleContext(HireParser.RequireExperienceContext,0)
 
 
         def requireLanguage(self):
-            return self.getTypedRuleContext(JDParser.RequireLanguageContext,0)
+            return self.getTypedRuleContext(HireParser.RequireLanguageContext,0)
 
 
         def requireActivites(self):
-            return self.getTypedRuleContext(JDParser.RequireActivitesContext,0)
+            return self.getTypedRuleContext(HireParser.RequireActivitesContext,0)
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_preferences
+            return HireParser.RULE_preferences
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterPreferences" ):
@@ -961,24 +997,30 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitPreferences" ):
                 listener.exitPreferences(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPreferences" ):
+                return visitor.visitPreferences(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def preferences(self):
 
-        localctx = JDParser.PreferencesContext(self, self._ctx, self.state)
+        localctx = HireParser.PreferencesContext(self, self._ctx, self.state)
         self.enterRule(localctx, 12, self.RULE_preferences)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 103
-            self.match(JDParser.PREFER_SECTION)
+            self.match(HireParser.PREFER_SECTION)
             self.state = 104
-            self.match(JDParser.OPEN_CURLY)
+            self.match(HireParser.OPEN_CURLY)
             self.state = 106
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.TOOL_LABEL:
+            if _la==HireParser.TOOL_LABEL:
                 self.state = 105
                 self.requireTools()
 
@@ -986,7 +1028,7 @@ class JDParser ( Parser ):
             self.state = 109
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.PROG_LANG_LABEL:
+            if _la==HireParser.PROG_LANG_LABEL:
                 self.state = 108
                 self.requireProLang()
 
@@ -994,7 +1036,7 @@ class JDParser ( Parser ):
             self.state = 112
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.FRAMEWORK_LABEL:
+            if _la==HireParser.FRAMEWORK_LABEL:
                 self.state = 111
                 self.requireFrameworks()
 
@@ -1002,7 +1044,7 @@ class JDParser ( Parser ):
             self.state = 115
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.DATA_LABEL:
+            if _la==HireParser.DATA_LABEL:
                 self.state = 114
                 self.requireDB()
 
@@ -1010,7 +1052,7 @@ class JDParser ( Parser ):
             self.state = 118
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.DEGREE_LABEL:
+            if _la==HireParser.DEGREE_LABEL:
                 self.state = 117
                 self.requireDegree()
 
@@ -1018,7 +1060,7 @@ class JDParser ( Parser ):
             self.state = 121
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.GPA_LABEL:
+            if _la==HireParser.GPA_LABEL:
                 self.state = 120
                 self.requireGPA()
 
@@ -1026,7 +1068,7 @@ class JDParser ( Parser ):
             self.state = 124
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.EXP_LABEL:
+            if _la==HireParser.EXP_LABEL:
                 self.state = 123
                 self.requireExperience()
 
@@ -1034,7 +1076,7 @@ class JDParser ( Parser ):
             self.state = 127
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.LANG_LABEL:
+            if _la==HireParser.LANG_LABEL:
                 self.state = 126
                 self.requireLanguage()
 
@@ -1042,13 +1084,13 @@ class JDParser ( Parser ):
             self.state = 130
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.ACTIVITY_LABEL:
+            if _la==HireParser.ACTIVITY_LABEL:
                 self.state = 129
                 self.requireActivites()
 
 
             self.state = 132
-            self.match(JDParser.CLOSE_CURLY)
+            self.match(HireParser.CLOSE_CURLY)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1066,14 +1108,14 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def POSITION_LABEL(self):
-            return self.getToken(JDParser.POSITION_LABEL, 0)
+            return self.getToken(HireParser.POSITION_LABEL, 0)
 
         def position(self):
-            return self.getTypedRuleContext(JDParser.PositionContext,0)
+            return self.getTypedRuleContext(HireParser.PositionContext,0)
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_requirePosition
+            return HireParser.RULE_requirePosition
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequirePosition" ):
@@ -1083,17 +1125,23 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequirePosition" ):
                 listener.exitRequirePosition(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequirePosition" ):
+                return visitor.visitRequirePosition(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requirePosition(self):
 
-        localctx = JDParser.RequirePositionContext(self, self._ctx, self.state)
+        localctx = HireParser.RequirePositionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_requirePosition)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 134
-            self.match(JDParser.POSITION_LABEL)
+            self.match(HireParser.POSITION_LABEL)
             self.state = 135
             self.position()
         except RecognitionException as re:
@@ -1113,14 +1161,14 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def LEVEL_LABEL(self):
-            return self.getToken(JDParser.LEVEL_LABEL, 0)
+            return self.getToken(HireParser.LEVEL_LABEL, 0)
 
         def level(self):
-            return self.getTypedRuleContext(JDParser.LevelContext,0)
+            return self.getTypedRuleContext(HireParser.LevelContext,0)
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireLevel
+            return HireParser.RULE_requireLevel
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireLevel" ):
@@ -1130,17 +1178,23 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireLevel" ):
                 listener.exitRequireLevel(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireLevel" ):
+                return visitor.visitRequireLevel(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireLevel(self):
 
-        localctx = JDParser.RequireLevelContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireLevelContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_requireLevel)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 137
-            self.match(JDParser.LEVEL_LABEL)
+            self.match(HireParser.LEVEL_LABEL)
             self.state = 138
             self.level()
         except RecognitionException as re:
@@ -1160,32 +1214,32 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def STACK_SECTION(self):
-            return self.getToken(JDParser.STACK_SECTION, 0)
+            return self.getToken(HireParser.STACK_SECTION, 0)
 
         def OPEN_CURLY(self):
-            return self.getToken(JDParser.OPEN_CURLY, 0)
+            return self.getToken(HireParser.OPEN_CURLY, 0)
 
         def requireTools(self):
-            return self.getTypedRuleContext(JDParser.RequireToolsContext,0)
+            return self.getTypedRuleContext(HireParser.RequireToolsContext,0)
 
 
         def requireProLang(self):
-            return self.getTypedRuleContext(JDParser.RequireProLangContext,0)
+            return self.getTypedRuleContext(HireParser.RequireProLangContext,0)
 
 
         def requireFrameworks(self):
-            return self.getTypedRuleContext(JDParser.RequireFrameworksContext,0)
+            return self.getTypedRuleContext(HireParser.RequireFrameworksContext,0)
 
 
         def requireDB(self):
-            return self.getTypedRuleContext(JDParser.RequireDBContext,0)
+            return self.getTypedRuleContext(HireParser.RequireDBContext,0)
 
 
         def CLOSE_CURLY(self):
-            return self.getToken(JDParser.CLOSE_CURLY, 0)
+            return self.getToken(HireParser.CLOSE_CURLY, 0)
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireTechnicalSkills
+            return HireParser.RULE_requireTechnicalSkills
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireTechnicalSkills" ):
@@ -1195,19 +1249,25 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireTechnicalSkills" ):
                 listener.exitRequireTechnicalSkills(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireTechnicalSkills" ):
+                return visitor.visitRequireTechnicalSkills(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireTechnicalSkills(self):
 
-        localctx = JDParser.RequireTechnicalSkillsContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireTechnicalSkillsContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_requireTechnicalSkills)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 140
-            self.match(JDParser.STACK_SECTION)
+            self.match(HireParser.STACK_SECTION)
             self.state = 141
-            self.match(JDParser.OPEN_CURLY)
+            self.match(HireParser.OPEN_CURLY)
             self.state = 142
             self.requireTools()
             self.state = 143
@@ -1217,7 +1277,7 @@ class JDParser ( Parser ):
             self.state = 145
             self.requireDB()
             self.state = 146
-            self.match(JDParser.CLOSE_CURLY)
+            self.match(HireParser.CLOSE_CURLY)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1235,23 +1295,23 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def TOOL_LABEL(self):
-            return self.getToken(JDParser.TOOL_LABEL, 0)
+            return self.getToken(HireParser.TOOL_LABEL, 0)
 
         def tool(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(JDParser.ToolContext)
+                return self.getTypedRuleContexts(HireParser.ToolContext)
             else:
-                return self.getTypedRuleContext(JDParser.ToolContext,i)
+                return self.getTypedRuleContext(HireParser.ToolContext,i)
 
 
         def COMMA(self, i:int=None):
             if i is None:
-                return self.getTokens(JDParser.COMMA)
+                return self.getTokens(HireParser.COMMA)
             else:
-                return self.getToken(JDParser.COMMA, i)
+                return self.getToken(HireParser.COMMA, i)
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireTools
+            return HireParser.RULE_requireTools
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireTools" ):
@@ -1261,26 +1321,32 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireTools" ):
                 listener.exitRequireTools(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireTools" ):
+                return visitor.visitRequireTools(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireTools(self):
 
-        localctx = JDParser.RequireToolsContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireToolsContext(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_requireTools)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 148
-            self.match(JDParser.TOOL_LABEL)
+            self.match(HireParser.TOOL_LABEL)
             self.state = 149
             self.tool()
             self.state = 154
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==JDParser.COMMA:
+            while _la==HireParser.COMMA:
                 self.state = 150
-                self.match(JDParser.COMMA)
+                self.match(HireParser.COMMA)
                 self.state = 151
                 self.tool()
                 self.state = 156
@@ -1304,23 +1370,23 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def PROG_LANG_LABEL(self):
-            return self.getToken(JDParser.PROG_LANG_LABEL, 0)
+            return self.getToken(HireParser.PROG_LANG_LABEL, 0)
 
         def pro_lang(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(JDParser.Pro_langContext)
+                return self.getTypedRuleContexts(HireParser.Pro_langContext)
             else:
-                return self.getTypedRuleContext(JDParser.Pro_langContext,i)
+                return self.getTypedRuleContext(HireParser.Pro_langContext,i)
 
 
         def COMMA(self, i:int=None):
             if i is None:
-                return self.getTokens(JDParser.COMMA)
+                return self.getTokens(HireParser.COMMA)
             else:
-                return self.getToken(JDParser.COMMA, i)
+                return self.getToken(HireParser.COMMA, i)
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireProLang
+            return HireParser.RULE_requireProLang
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireProLang" ):
@@ -1330,26 +1396,32 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireProLang" ):
                 listener.exitRequireProLang(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireProLang" ):
+                return visitor.visitRequireProLang(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireProLang(self):
 
-        localctx = JDParser.RequireProLangContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireProLangContext(self, self._ctx, self.state)
         self.enterRule(localctx, 22, self.RULE_requireProLang)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 157
-            self.match(JDParser.PROG_LANG_LABEL)
+            self.match(HireParser.PROG_LANG_LABEL)
             self.state = 158
             self.pro_lang()
             self.state = 163
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==JDParser.COMMA:
+            while _la==HireParser.COMMA:
                 self.state = 159
-                self.match(JDParser.COMMA)
+                self.match(HireParser.COMMA)
                 self.state = 160
                 self.pro_lang()
                 self.state = 165
@@ -1373,23 +1445,23 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def FRAMEWORK_LABEL(self):
-            return self.getToken(JDParser.FRAMEWORK_LABEL, 0)
+            return self.getToken(HireParser.FRAMEWORK_LABEL, 0)
 
         def framework(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(JDParser.FrameworkContext)
+                return self.getTypedRuleContexts(HireParser.FrameworkContext)
             else:
-                return self.getTypedRuleContext(JDParser.FrameworkContext,i)
+                return self.getTypedRuleContext(HireParser.FrameworkContext,i)
 
 
         def COMMA(self, i:int=None):
             if i is None:
-                return self.getTokens(JDParser.COMMA)
+                return self.getTokens(HireParser.COMMA)
             else:
-                return self.getToken(JDParser.COMMA, i)
+                return self.getToken(HireParser.COMMA, i)
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireFrameworks
+            return HireParser.RULE_requireFrameworks
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireFrameworks" ):
@@ -1399,26 +1471,32 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireFrameworks" ):
                 listener.exitRequireFrameworks(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireFrameworks" ):
+                return visitor.visitRequireFrameworks(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireFrameworks(self):
 
-        localctx = JDParser.RequireFrameworksContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireFrameworksContext(self, self._ctx, self.state)
         self.enterRule(localctx, 24, self.RULE_requireFrameworks)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 166
-            self.match(JDParser.FRAMEWORK_LABEL)
+            self.match(HireParser.FRAMEWORK_LABEL)
             self.state = 167
             self.framework()
             self.state = 172
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==JDParser.COMMA:
+            while _la==HireParser.COMMA:
                 self.state = 168
-                self.match(JDParser.COMMA)
+                self.match(HireParser.COMMA)
                 self.state = 169
                 self.framework()
                 self.state = 174
@@ -1442,23 +1520,23 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def DATA_LABEL(self):
-            return self.getToken(JDParser.DATA_LABEL, 0)
+            return self.getToken(HireParser.DATA_LABEL, 0)
 
         def db(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(JDParser.DbContext)
+                return self.getTypedRuleContexts(HireParser.DbContext)
             else:
-                return self.getTypedRuleContext(JDParser.DbContext,i)
+                return self.getTypedRuleContext(HireParser.DbContext,i)
 
 
         def COMMA(self, i:int=None):
             if i is None:
-                return self.getTokens(JDParser.COMMA)
+                return self.getTokens(HireParser.COMMA)
             else:
-                return self.getToken(JDParser.COMMA, i)
+                return self.getToken(HireParser.COMMA, i)
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireDB
+            return HireParser.RULE_requireDB
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireDB" ):
@@ -1468,26 +1546,32 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireDB" ):
                 listener.exitRequireDB(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireDB" ):
+                return visitor.visitRequireDB(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireDB(self):
 
-        localctx = JDParser.RequireDBContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireDBContext(self, self._ctx, self.state)
         self.enterRule(localctx, 26, self.RULE_requireDB)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 175
-            self.match(JDParser.DATA_LABEL)
+            self.match(HireParser.DATA_LABEL)
             self.state = 176
             self.db()
             self.state = 181
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==JDParser.COMMA:
+            while _la==HireParser.COMMA:
                 self.state = 177
-                self.match(JDParser.COMMA)
+                self.match(HireParser.COMMA)
                 self.state = 178
                 self.db()
                 self.state = 183
@@ -1511,28 +1595,28 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def EDU_SECTION(self):
-            return self.getToken(JDParser.EDU_SECTION, 0)
+            return self.getToken(HireParser.EDU_SECTION, 0)
 
         def OPEN_CURLY(self):
-            return self.getToken(JDParser.OPEN_CURLY, 0)
+            return self.getToken(HireParser.OPEN_CURLY, 0)
 
         def requireMajor(self):
-            return self.getTypedRuleContext(JDParser.RequireMajorContext,0)
+            return self.getTypedRuleContext(HireParser.RequireMajorContext,0)
 
 
         def CLOSE_CURLY(self):
-            return self.getToken(JDParser.CLOSE_CURLY, 0)
+            return self.getToken(HireParser.CLOSE_CURLY, 0)
 
         def requireDegree(self):
-            return self.getTypedRuleContext(JDParser.RequireDegreeContext,0)
+            return self.getTypedRuleContext(HireParser.RequireDegreeContext,0)
 
 
         def requireGPA(self):
-            return self.getTypedRuleContext(JDParser.RequireGPAContext,0)
+            return self.getTypedRuleContext(HireParser.RequireGPAContext,0)
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireEducation
+            return HireParser.RULE_requireEducation
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireEducation" ):
@@ -1542,26 +1626,32 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireEducation" ):
                 listener.exitRequireEducation(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireEducation" ):
+                return visitor.visitRequireEducation(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireEducation(self):
 
-        localctx = JDParser.RequireEducationContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireEducationContext(self, self._ctx, self.state)
         self.enterRule(localctx, 28, self.RULE_requireEducation)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 184
-            self.match(JDParser.EDU_SECTION)
+            self.match(HireParser.EDU_SECTION)
             self.state = 185
-            self.match(JDParser.OPEN_CURLY)
+            self.match(HireParser.OPEN_CURLY)
             self.state = 186
             self.requireMajor()
             self.state = 188
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.DEGREE_LABEL:
+            if _la==HireParser.DEGREE_LABEL:
                 self.state = 187
                 self.requireDegree()
 
@@ -1569,13 +1659,13 @@ class JDParser ( Parser ):
             self.state = 191
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==JDParser.GPA_LABEL:
+            if _la==HireParser.GPA_LABEL:
                 self.state = 190
                 self.requireGPA()
 
 
             self.state = 193
-            self.match(JDParser.CLOSE_CURLY)
+            self.match(HireParser.CLOSE_CURLY)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1593,14 +1683,14 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def MAJOR_LABEL(self):
-            return self.getToken(JDParser.MAJOR_LABEL, 0)
+            return self.getToken(HireParser.MAJOR_LABEL, 0)
 
         def major(self):
-            return self.getTypedRuleContext(JDParser.MajorContext,0)
+            return self.getTypedRuleContext(HireParser.MajorContext,0)
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireMajor
+            return HireParser.RULE_requireMajor
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireMajor" ):
@@ -1610,17 +1700,23 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireMajor" ):
                 listener.exitRequireMajor(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireMajor" ):
+                return visitor.visitRequireMajor(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireMajor(self):
 
-        localctx = JDParser.RequireMajorContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireMajorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 30, self.RULE_requireMajor)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 195
-            self.match(JDParser.MAJOR_LABEL)
+            self.match(HireParser.MAJOR_LABEL)
             self.state = 196
             self.major()
         except RecognitionException as re:
@@ -1640,14 +1736,14 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def DEGREE_LABEL(self):
-            return self.getToken(JDParser.DEGREE_LABEL, 0)
+            return self.getToken(HireParser.DEGREE_LABEL, 0)
 
         def degree(self):
-            return self.getTypedRuleContext(JDParser.DegreeContext,0)
+            return self.getTypedRuleContext(HireParser.DegreeContext,0)
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireDegree
+            return HireParser.RULE_requireDegree
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireDegree" ):
@@ -1657,17 +1753,23 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireDegree" ):
                 listener.exitRequireDegree(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireDegree" ):
+                return visitor.visitRequireDegree(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireDegree(self):
 
-        localctx = JDParser.RequireDegreeContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireDegreeContext(self, self._ctx, self.state)
         self.enterRule(localctx, 32, self.RULE_requireDegree)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 198
-            self.match(JDParser.DEGREE_LABEL)
+            self.match(HireParser.DEGREE_LABEL)
             self.state = 199
             self.degree()
         except RecognitionException as re:
@@ -1687,16 +1789,16 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def GPA_LABEL(self):
-            return self.getToken(JDParser.GPA_LABEL, 0)
+            return self.getToken(HireParser.GPA_LABEL, 0)
 
         def COMPARATOR(self):
-            return self.getToken(JDParser.COMPARATOR, 0)
+            return self.getToken(HireParser.COMPARATOR, 0)
 
         def FLOAT(self):
-            return self.getToken(JDParser.FLOAT, 0)
+            return self.getToken(HireParser.FLOAT, 0)
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireGPA
+            return HireParser.RULE_requireGPA
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireGPA" ):
@@ -1706,21 +1808,27 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireGPA" ):
                 listener.exitRequireGPA(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireGPA" ):
+                return visitor.visitRequireGPA(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireGPA(self):
 
-        localctx = JDParser.RequireGPAContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireGPAContext(self, self._ctx, self.state)
         self.enterRule(localctx, 34, self.RULE_requireGPA)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 201
-            self.match(JDParser.GPA_LABEL)
+            self.match(HireParser.GPA_LABEL)
             self.state = 202
-            self.match(JDParser.COMPARATOR)
+            self.match(HireParser.COMPARATOR)
             self.state = 203
-            self.match(JDParser.FLOAT)
+            self.match(HireParser.FLOAT)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1738,23 +1846,23 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def LANG_LABEL(self):
-            return self.getToken(JDParser.LANG_LABEL, 0)
+            return self.getToken(HireParser.LANG_LABEL, 0)
 
         def lang(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(JDParser.LangContext)
+                return self.getTypedRuleContexts(HireParser.LangContext)
             else:
-                return self.getTypedRuleContext(JDParser.LangContext,i)
+                return self.getTypedRuleContext(HireParser.LangContext,i)
 
 
         def COMMA(self, i:int=None):
             if i is None:
-                return self.getTokens(JDParser.COMMA)
+                return self.getTokens(HireParser.COMMA)
             else:
-                return self.getToken(JDParser.COMMA, i)
+                return self.getToken(HireParser.COMMA, i)
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireLanguage
+            return HireParser.RULE_requireLanguage
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireLanguage" ):
@@ -1764,26 +1872,32 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireLanguage" ):
                 listener.exitRequireLanguage(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireLanguage" ):
+                return visitor.visitRequireLanguage(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireLanguage(self):
 
-        localctx = JDParser.RequireLanguageContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireLanguageContext(self, self._ctx, self.state)
         self.enterRule(localctx, 36, self.RULE_requireLanguage)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 205
-            self.match(JDParser.LANG_LABEL)
+            self.match(HireParser.LANG_LABEL)
             self.state = 206
             self.lang()
             self.state = 211
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==JDParser.COMMA:
+            while _la==HireParser.COMMA:
                 self.state = 207
-                self.match(JDParser.COMMA)
+                self.match(HireParser.COMMA)
                 self.state = 208
                 self.lang()
                 self.state = 213
@@ -1807,16 +1921,16 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def EXP_LABEL(self):
-            return self.getToken(JDParser.EXP_LABEL, 0)
+            return self.getToken(HireParser.EXP_LABEL, 0)
 
         def INT(self):
-            return self.getToken(JDParser.INT, 0)
+            return self.getToken(HireParser.INT, 0)
 
         def YEARS(self):
-            return self.getToken(JDParser.YEARS, 0)
+            return self.getToken(HireParser.YEARS, 0)
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireExperience
+            return HireParser.RULE_requireExperience
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireExperience" ):
@@ -1826,21 +1940,27 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireExperience" ):
                 listener.exitRequireExperience(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireExperience" ):
+                return visitor.visitRequireExperience(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireExperience(self):
 
-        localctx = JDParser.RequireExperienceContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireExperienceContext(self, self._ctx, self.state)
         self.enterRule(localctx, 38, self.RULE_requireExperience)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 214
-            self.match(JDParser.EXP_LABEL)
+            self.match(HireParser.EXP_LABEL)
             self.state = 215
-            self.match(JDParser.INT)
+            self.match(HireParser.INT)
             self.state = 216
-            self.match(JDParser.YEARS)
+            self.match(HireParser.YEARS)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1858,16 +1978,16 @@ class JDParser ( Parser ):
             self.parser = parser
 
         def ACTIVITY_LABEL(self):
-            return self.getToken(JDParser.ACTIVITY_LABEL, 0)
+            return self.getToken(HireParser.ACTIVITY_LABEL, 0)
 
         def ID(self, i:int=None):
             if i is None:
-                return self.getTokens(JDParser.ID)
+                return self.getTokens(HireParser.ID)
             else:
-                return self.getToken(JDParser.ID, i)
+                return self.getToken(HireParser.ID, i)
 
         def getRuleIndex(self):
-            return JDParser.RULE_requireActivites
+            return HireParser.RULE_requireActivites
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRequireActivites" ):
@@ -1877,28 +1997,34 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitRequireActivites" ):
                 listener.exitRequireActivites(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequireActivites" ):
+                return visitor.visitRequireActivites(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def requireActivites(self):
 
-        localctx = JDParser.RequireActivitesContext(self, self._ctx, self.state)
+        localctx = HireParser.RequireActivitesContext(self, self._ctx, self.state)
         self.enterRule(localctx, 40, self.RULE_requireActivites)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 218
-            self.match(JDParser.ACTIVITY_LABEL)
+            self.match(HireParser.ACTIVITY_LABEL)
             self.state = 220 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
                 self.state = 219
-                self.match(JDParser.ID)
+                self.match(HireParser.ID)
                 self.state = 222 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not (_la==JDParser.ID):
+                if not (_la==HireParser.ID):
                     break
 
         except RecognitionException as re:
@@ -1919,7 +2045,7 @@ class JDParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_position
+            return HireParser.RULE_position
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterPosition" ):
@@ -1929,19 +2055,25 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitPosition" ):
                 listener.exitPosition(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPosition" ):
+                return visitor.visitPosition(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def position(self):
 
-        localctx = JDParser.PositionContext(self, self._ctx, self.state)
+        localctx = HireParser.PositionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 42, self.RULE_position)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 224
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << JDParser.T__0) | (1 << JDParser.T__1) | (1 << JDParser.T__2) | (1 << JDParser.T__3) | (1 << JDParser.T__4) | (1 << JDParser.T__5) | (1 << JDParser.T__6) | (1 << JDParser.T__7) | (1 << JDParser.T__8) | (1 << JDParser.T__9) | (1 << JDParser.T__10) | (1 << JDParser.T__11) | (1 << JDParser.T__12) | (1 << JDParser.T__13) | (1 << JDParser.T__14) | (1 << JDParser.T__15) | (1 << JDParser.T__16) | (1 << JDParser.T__17) | (1 << JDParser.T__18) | (1 << JDParser.T__19) | (1 << JDParser.T__20) | (1 << JDParser.T__21) | (1 << JDParser.T__22) | (1 << JDParser.T__23) | (1 << JDParser.T__24) | (1 << JDParser.T__25))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << HireParser.T__0) | (1 << HireParser.T__1) | (1 << HireParser.T__2) | (1 << HireParser.T__3) | (1 << HireParser.T__4) | (1 << HireParser.T__5) | (1 << HireParser.T__6) | (1 << HireParser.T__7) | (1 << HireParser.T__8) | (1 << HireParser.T__9) | (1 << HireParser.T__10) | (1 << HireParser.T__11) | (1 << HireParser.T__12) | (1 << HireParser.T__13) | (1 << HireParser.T__14) | (1 << HireParser.T__15) | (1 << HireParser.T__16) | (1 << HireParser.T__17) | (1 << HireParser.T__18) | (1 << HireParser.T__19) | (1 << HireParser.T__20) | (1 << HireParser.T__21) | (1 << HireParser.T__22) | (1 << HireParser.T__23) | (1 << HireParser.T__24) | (1 << HireParser.T__25))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1964,7 +2096,7 @@ class JDParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_level
+            return HireParser.RULE_level
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterLevel" ):
@@ -1974,19 +2106,25 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitLevel" ):
                 listener.exitLevel(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitLevel" ):
+                return visitor.visitLevel(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def level(self):
 
-        localctx = JDParser.LevelContext(self, self._ctx, self.state)
+        localctx = HireParser.LevelContext(self, self._ctx, self.state)
         self.enterRule(localctx, 44, self.RULE_level)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 226
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << JDParser.T__26) | (1 << JDParser.T__27) | (1 << JDParser.T__28) | (1 << JDParser.T__29) | (1 << JDParser.T__30) | (1 << JDParser.T__31) | (1 << JDParser.T__32))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << HireParser.T__26) | (1 << HireParser.T__27) | (1 << HireParser.T__28) | (1 << HireParser.T__29) | (1 << HireParser.T__30) | (1 << HireParser.T__31) | (1 << HireParser.T__32))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2009,7 +2147,7 @@ class JDParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_degree
+            return HireParser.RULE_degree
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterDegree" ):
@@ -2019,19 +2157,25 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitDegree" ):
                 listener.exitDegree(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDegree" ):
+                return visitor.visitDegree(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def degree(self):
 
-        localctx = JDParser.DegreeContext(self, self._ctx, self.state)
+        localctx = HireParser.DegreeContext(self, self._ctx, self.state)
         self.enterRule(localctx, 46, self.RULE_degree)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 228
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << JDParser.T__33) | (1 << JDParser.T__34) | (1 << JDParser.T__35) | (1 << JDParser.T__36))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << HireParser.T__33) | (1 << HireParser.T__34) | (1 << HireParser.T__35) | (1 << HireParser.T__36))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2054,7 +2198,7 @@ class JDParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_major
+            return HireParser.RULE_major
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterMajor" ):
@@ -2064,19 +2208,25 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitMajor" ):
                 listener.exitMajor(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMajor" ):
+                return visitor.visitMajor(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def major(self):
 
-        localctx = JDParser.MajorContext(self, self._ctx, self.state)
+        localctx = HireParser.MajorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 48, self.RULE_major)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 230
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << JDParser.T__37) | (1 << JDParser.T__38) | (1 << JDParser.T__39) | (1 << JDParser.T__40) | (1 << JDParser.T__41) | (1 << JDParser.T__42) | (1 << JDParser.T__43))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << HireParser.T__37) | (1 << HireParser.T__38) | (1 << HireParser.T__39) | (1 << HireParser.T__40) | (1 << HireParser.T__41) | (1 << HireParser.T__42) | (1 << HireParser.T__43))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2099,7 +2249,7 @@ class JDParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_tool
+            return HireParser.RULE_tool
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterTool" ):
@@ -2109,19 +2259,25 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitTool" ):
                 listener.exitTool(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitTool" ):
+                return visitor.visitTool(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def tool(self):
 
-        localctx = JDParser.ToolContext(self, self._ctx, self.state)
+        localctx = HireParser.ToolContext(self, self._ctx, self.state)
         self.enterRule(localctx, 50, self.RULE_tool)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 232
             _la = self._input.LA(1)
-            if not(((((_la - 45)) & ~0x3f) == 0 and ((1 << (_la - 45)) & ((1 << (JDParser.T__44 - 45)) | (1 << (JDParser.T__45 - 45)) | (1 << (JDParser.T__46 - 45)) | (1 << (JDParser.T__47 - 45)) | (1 << (JDParser.T__48 - 45)) | (1 << (JDParser.T__49 - 45)) | (1 << (JDParser.T__50 - 45)) | (1 << (JDParser.T__51 - 45)) | (1 << (JDParser.T__52 - 45)) | (1 << (JDParser.T__53 - 45)) | (1 << (JDParser.T__54 - 45)) | (1 << (JDParser.T__55 - 45)) | (1 << (JDParser.T__56 - 45)) | (1 << (JDParser.T__57 - 45)) | (1 << (JDParser.T__58 - 45)) | (1 << (JDParser.T__59 - 45)) | (1 << (JDParser.T__60 - 45)) | (1 << (JDParser.T__61 - 45)) | (1 << (JDParser.T__62 - 45)) | (1 << (JDParser.T__63 - 45)) | (1 << (JDParser.T__64 - 45)))) != 0)):
+            if not(((((_la - 45)) & ~0x3f) == 0 and ((1 << (_la - 45)) & ((1 << (HireParser.T__44 - 45)) | (1 << (HireParser.T__45 - 45)) | (1 << (HireParser.T__46 - 45)) | (1 << (HireParser.T__47 - 45)) | (1 << (HireParser.T__48 - 45)) | (1 << (HireParser.T__49 - 45)) | (1 << (HireParser.T__50 - 45)) | (1 << (HireParser.T__51 - 45)) | (1 << (HireParser.T__52 - 45)) | (1 << (HireParser.T__53 - 45)) | (1 << (HireParser.T__54 - 45)) | (1 << (HireParser.T__55 - 45)) | (1 << (HireParser.T__56 - 45)) | (1 << (HireParser.T__57 - 45)) | (1 << (HireParser.T__58 - 45)) | (1 << (HireParser.T__59 - 45)) | (1 << (HireParser.T__60 - 45)) | (1 << (HireParser.T__61 - 45)) | (1 << (HireParser.T__62 - 45)) | (1 << (HireParser.T__63 - 45)) | (1 << (HireParser.T__64 - 45)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2144,7 +2300,7 @@ class JDParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_pro_lang
+            return HireParser.RULE_pro_lang
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterPro_lang" ):
@@ -2154,19 +2310,25 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitPro_lang" ):
                 listener.exitPro_lang(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPro_lang" ):
+                return visitor.visitPro_lang(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def pro_lang(self):
 
-        localctx = JDParser.Pro_langContext(self, self._ctx, self.state)
+        localctx = HireParser.Pro_langContext(self, self._ctx, self.state)
         self.enterRule(localctx, 52, self.RULE_pro_lang)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 234
             _la = self._input.LA(1)
-            if not(((((_la - 66)) & ~0x3f) == 0 and ((1 << (_la - 66)) & ((1 << (JDParser.T__65 - 66)) | (1 << (JDParser.T__66 - 66)) | (1 << (JDParser.T__67 - 66)) | (1 << (JDParser.T__68 - 66)) | (1 << (JDParser.T__69 - 66)) | (1 << (JDParser.T__70 - 66)) | (1 << (JDParser.T__71 - 66)) | (1 << (JDParser.T__72 - 66)) | (1 << (JDParser.T__73 - 66)) | (1 << (JDParser.T__74 - 66)) | (1 << (JDParser.T__75 - 66)) | (1 << (JDParser.T__76 - 66)) | (1 << (JDParser.T__77 - 66)) | (1 << (JDParser.T__78 - 66)) | (1 << (JDParser.T__79 - 66)) | (1 << (JDParser.T__80 - 66)) | (1 << (JDParser.T__81 - 66)) | (1 << (JDParser.T__82 - 66)) | (1 << (JDParser.T__83 - 66)) | (1 << (JDParser.T__84 - 66)))) != 0)):
+            if not(((((_la - 66)) & ~0x3f) == 0 and ((1 << (_la - 66)) & ((1 << (HireParser.T__65 - 66)) | (1 << (HireParser.T__66 - 66)) | (1 << (HireParser.T__67 - 66)) | (1 << (HireParser.T__68 - 66)) | (1 << (HireParser.T__69 - 66)) | (1 << (HireParser.T__70 - 66)) | (1 << (HireParser.T__71 - 66)) | (1 << (HireParser.T__72 - 66)) | (1 << (HireParser.T__73 - 66)) | (1 << (HireParser.T__74 - 66)) | (1 << (HireParser.T__75 - 66)) | (1 << (HireParser.T__76 - 66)) | (1 << (HireParser.T__77 - 66)) | (1 << (HireParser.T__78 - 66)) | (1 << (HireParser.T__79 - 66)) | (1 << (HireParser.T__80 - 66)) | (1 << (HireParser.T__81 - 66)) | (1 << (HireParser.T__82 - 66)) | (1 << (HireParser.T__83 - 66)) | (1 << (HireParser.T__84 - 66)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2189,7 +2351,7 @@ class JDParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_framework
+            return HireParser.RULE_framework
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterFramework" ):
@@ -2199,19 +2361,25 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitFramework" ):
                 listener.exitFramework(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFramework" ):
+                return visitor.visitFramework(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def framework(self):
 
-        localctx = JDParser.FrameworkContext(self, self._ctx, self.state)
+        localctx = HireParser.FrameworkContext(self, self._ctx, self.state)
         self.enterRule(localctx, 54, self.RULE_framework)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 236
             _la = self._input.LA(1)
-            if not(((((_la - 86)) & ~0x3f) == 0 and ((1 << (_la - 86)) & ((1 << (JDParser.T__85 - 86)) | (1 << (JDParser.T__86 - 86)) | (1 << (JDParser.T__87 - 86)) | (1 << (JDParser.T__88 - 86)) | (1 << (JDParser.T__89 - 86)) | (1 << (JDParser.T__90 - 86)) | (1 << (JDParser.T__91 - 86)) | (1 << (JDParser.T__92 - 86)) | (1 << (JDParser.T__93 - 86)) | (1 << (JDParser.T__94 - 86)) | (1 << (JDParser.T__95 - 86)) | (1 << (JDParser.T__96 - 86)) | (1 << (JDParser.T__97 - 86)) | (1 << (JDParser.T__98 - 86)) | (1 << (JDParser.T__99 - 86)) | (1 << (JDParser.T__100 - 86)) | (1 << (JDParser.T__101 - 86)) | (1 << (JDParser.T__102 - 86)) | (1 << (JDParser.T__103 - 86)) | (1 << (JDParser.T__104 - 86)) | (1 << (JDParser.T__105 - 86)) | (1 << (JDParser.T__106 - 86)) | (1 << (JDParser.T__107 - 86)) | (1 << (JDParser.T__108 - 86)) | (1 << (JDParser.T__109 - 86)) | (1 << (JDParser.T__110 - 86)) | (1 << (JDParser.T__111 - 86)) | (1 << (JDParser.T__112 - 86)) | (1 << (JDParser.T__113 - 86)) | (1 << (JDParser.T__114 - 86)))) != 0)):
+            if not(((((_la - 86)) & ~0x3f) == 0 and ((1 << (_la - 86)) & ((1 << (HireParser.T__85 - 86)) | (1 << (HireParser.T__86 - 86)) | (1 << (HireParser.T__87 - 86)) | (1 << (HireParser.T__88 - 86)) | (1 << (HireParser.T__89 - 86)) | (1 << (HireParser.T__90 - 86)) | (1 << (HireParser.T__91 - 86)) | (1 << (HireParser.T__92 - 86)) | (1 << (HireParser.T__93 - 86)) | (1 << (HireParser.T__94 - 86)) | (1 << (HireParser.T__95 - 86)) | (1 << (HireParser.T__96 - 86)) | (1 << (HireParser.T__97 - 86)) | (1 << (HireParser.T__98 - 86)) | (1 << (HireParser.T__99 - 86)) | (1 << (HireParser.T__100 - 86)) | (1 << (HireParser.T__101 - 86)) | (1 << (HireParser.T__102 - 86)) | (1 << (HireParser.T__103 - 86)) | (1 << (HireParser.T__104 - 86)) | (1 << (HireParser.T__105 - 86)) | (1 << (HireParser.T__106 - 86)) | (1 << (HireParser.T__107 - 86)) | (1 << (HireParser.T__108 - 86)) | (1 << (HireParser.T__109 - 86)) | (1 << (HireParser.T__110 - 86)) | (1 << (HireParser.T__111 - 86)) | (1 << (HireParser.T__112 - 86)) | (1 << (HireParser.T__113 - 86)) | (1 << (HireParser.T__114 - 86)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2234,7 +2402,7 @@ class JDParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_db
+            return HireParser.RULE_db
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterDb" ):
@@ -2244,19 +2412,25 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitDb" ):
                 listener.exitDb(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDb" ):
+                return visitor.visitDb(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def db(self):
 
-        localctx = JDParser.DbContext(self, self._ctx, self.state)
+        localctx = HireParser.DbContext(self, self._ctx, self.state)
         self.enterRule(localctx, 56, self.RULE_db)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 238
             _la = self._input.LA(1)
-            if not(((((_la - 116)) & ~0x3f) == 0 and ((1 << (_la - 116)) & ((1 << (JDParser.T__115 - 116)) | (1 << (JDParser.T__116 - 116)) | (1 << (JDParser.T__117 - 116)) | (1 << (JDParser.T__118 - 116)) | (1 << (JDParser.T__119 - 116)) | (1 << (JDParser.T__120 - 116)) | (1 << (JDParser.T__121 - 116)) | (1 << (JDParser.T__122 - 116)) | (1 << (JDParser.T__123 - 116)) | (1 << (JDParser.T__124 - 116)) | (1 << (JDParser.T__125 - 116)) | (1 << (JDParser.T__126 - 116)) | (1 << (JDParser.T__127 - 116)) | (1 << (JDParser.T__128 - 116)) | (1 << (JDParser.T__129 - 116)) | (1 << (JDParser.T__130 - 116)) | (1 << (JDParser.T__131 - 116)) | (1 << (JDParser.T__132 - 116)) | (1 << (JDParser.T__133 - 116)) | (1 << (JDParser.T__134 - 116)) | (1 << (JDParser.T__135 - 116)))) != 0)):
+            if not(((((_la - 116)) & ~0x3f) == 0 and ((1 << (_la - 116)) & ((1 << (HireParser.T__115 - 116)) | (1 << (HireParser.T__116 - 116)) | (1 << (HireParser.T__117 - 116)) | (1 << (HireParser.T__118 - 116)) | (1 << (HireParser.T__119 - 116)) | (1 << (HireParser.T__120 - 116)) | (1 << (HireParser.T__121 - 116)) | (1 << (HireParser.T__122 - 116)) | (1 << (HireParser.T__123 - 116)) | (1 << (HireParser.T__124 - 116)) | (1 << (HireParser.T__125 - 116)) | (1 << (HireParser.T__126 - 116)) | (1 << (HireParser.T__127 - 116)) | (1 << (HireParser.T__128 - 116)) | (1 << (HireParser.T__129 - 116)) | (1 << (HireParser.T__130 - 116)) | (1 << (HireParser.T__131 - 116)) | (1 << (HireParser.T__132 - 116)) | (1 << (HireParser.T__133 - 116)) | (1 << (HireParser.T__134 - 116)) | (1 << (HireParser.T__135 - 116)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2279,7 +2453,7 @@ class JDParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return JDParser.RULE_lang
+            return HireParser.RULE_lang
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterLang" ):
@@ -2289,19 +2463,25 @@ class JDParser ( Parser ):
             if hasattr( listener, "exitLang" ):
                 listener.exitLang(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitLang" ):
+                return visitor.visitLang(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def lang(self):
 
-        localctx = JDParser.LangContext(self, self._ctx, self.state)
+        localctx = HireParser.LangContext(self, self._ctx, self.state)
         self.enterRule(localctx, 58, self.RULE_lang)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 240
             _la = self._input.LA(1)
-            if not(((((_la - 137)) & ~0x3f) == 0 and ((1 << (_la - 137)) & ((1 << (JDParser.T__136 - 137)) | (1 << (JDParser.T__137 - 137)) | (1 << (JDParser.T__138 - 137)) | (1 << (JDParser.T__139 - 137)) | (1 << (JDParser.T__140 - 137)) | (1 << (JDParser.T__141 - 137)) | (1 << (JDParser.T__142 - 137)))) != 0)):
+            if not(((((_la - 137)) & ~0x3f) == 0 and ((1 << (_la - 137)) & ((1 << (HireParser.T__136 - 137)) | (1 << (HireParser.T__137 - 137)) | (1 << (HireParser.T__138 - 137)) | (1 << (HireParser.T__139 - 137)) | (1 << (HireParser.T__140 - 137)) | (1 << (HireParser.T__141 - 137)) | (1 << (HireParser.T__142 - 137)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)

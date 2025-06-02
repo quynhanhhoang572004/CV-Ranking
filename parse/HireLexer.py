@@ -1,4 +1,4 @@
-# Generated from JD.g4 by ANTLR 4.9.2
+# Generated from Hire.g4 by ANTLR 4.9.2
 from antlr4 import *
 from io import StringIO
 import sys
@@ -875,7 +875,7 @@ def serializedATN():
         return buf.getvalue()
 
 
-class JDLexer(Lexer):
+class HireLexer(Lexer):
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -1137,7 +1137,7 @@ class JDLexer(Lexer):
                   "TOP", "CV", "WITH", "OPEN_CURLY", "CLOSE_CURLY", "COMMA", 
                   "COMPARATOR", "INT", "FLOAT", "ID", "WS" ]
 
-    grammarFileName = "JD.g4"
+    grammarFileName = "Hire.g4"
 
     def __init__(self, input=None, output:TextIO = sys.stdout):
         super().__init__(input, output)

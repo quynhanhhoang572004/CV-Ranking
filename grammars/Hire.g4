@@ -1,9 +1,9 @@
-grammar JD;
+grammar Hire;
 
 program: jd | showTop | showConditional;
 showTop: SHOW TOP INT CV;
 
-showConditional: SHOW_CV_WITH condition;
+showConditional: SHOW CV WITH condition;
 
 condition: requireLevel | requireTools | requireProLang | requireFrameworks | requireDB
              | requireDegree | requireGPA | requireExperience | requireLanguage| requireActivites;
@@ -38,7 +38,7 @@ requireExperience: EXP_LABEL INT YEARS;
 
 requireActivites: ACTIVITY_LABEL ID+;
 
-//requireReferences: REF_LABEL ID+; 
+
 
 //Constants:
 REQUIRE_SECTION: 'REQUIREMENTS'; 
@@ -63,7 +63,7 @@ YEARS: 'years';
 SHOW: 'show';
 TOP: 'top';
 CV: 'CV' | 'cv';
-SHOW_CV_WITH: 'show CV with';
+WITH: 'with';
 OPEN_CURLY: '{';
 CLOSE_CURLY: '}';
 COMMA: ',';
@@ -103,5 +103,4 @@ COMPARATOR: '>' | '>=';
 INT: [0-9]+;
 FLOAT: [0-9]+'.'[0-9]+;
 ID: [a-zA-Z_\-.]+;
-//ID: ~[ \t\r\n{}]+; 
 WS: [ \t\r\n]+ -> skip ;
