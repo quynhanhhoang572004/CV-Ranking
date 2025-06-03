@@ -91,7 +91,7 @@ framework: 'pytorch' | 'tensorflow' | 'keras' | 'scikit-learn' | 'xgboost' | 'li
 'opencv' | 'flask' | 'django' | 'spring' | 'express' | 'fastapi' |
 'next.js' | 'nuxt.js' | 'react' | 'vue' | 'angular' | 'bootstrap' |
 'laravel' | '.net' | 'asp.net' | 'electron' | 'flutter' | 'react native' |
-'node.js' | 'nestjs' | 'redux' | 'mui' | 'tailwindcss' | 'springboot';
+'node.js' | 'nestjs' | 'redux' | 'mui' | 'tailwindcss' | 'springboot'| 'pandas'| 'numpy';
 db: 'mysql' | 'postgresql' | 'sqlite' | 'mongodb' | 'redis' | 'mariadb' |
 'oracle' | 'sql server' | 'dynamodb' | 'cassandra' | 'elasticsearch' |
 'aws' | 'azure' | 'gcp' | 'google cloud' | 'amazon web services' |

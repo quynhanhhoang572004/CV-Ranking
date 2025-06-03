@@ -5,21 +5,21 @@ def jd_input():
 
     st.markdown("###  REQUIREMENTS")
 
-    # Role & Level
+    
     col1, col2 = st.columns(2)
     with col1:
         role = st.text_input(label="position:", placeholder="e.g. ai engineer", label_visibility="visible")
     with col2:
         level = st.selectbox("level:", ["intern","junior", "medium", "senior","fresher", "lead","manager","director"], index=2)
 
-    # Experience & Languages Required
+ 
     col1, col2 = st.columns(2)
     with col1:
         experience = st.text_input("experience:", "5 years")
     with col2:
         languages_required = st.text_input("language:", "english, japanese")
 
-    # Tech Stack
+
     st.markdown("**stack { ... }**")
     col1, col2 = st.columns(2)
     with col1:
@@ -29,7 +29,6 @@ def jd_input():
         languages = st.text_input("programming languages:", "python, c++")
         cloud = st.text_input("databases cloud services:", "postgresql, aws")
 
-    # Education
     st.markdown("**education { ... }**")
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -39,7 +38,7 @@ def jd_input():
     with col3:
         gpa = st.text_input("gpa:", ">= 3.5")
 
-    # PREFERENCES
+   
     st.markdown("---")
     st.markdown("### PREFERENCES")
 
