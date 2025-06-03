@@ -45,7 +45,7 @@ def show_output(results):
             for key, items in tech.items():
                 st.markdown(f"- **{key}:** {', '.join(items)}")
 
-            st.markdown("####  anguages")
+            st.markdown("####Languages")
             langs = cv.get("Languages", {})
             for lang, level in langs.items():
                 st.markdown(f"- {lang}: {level}")
