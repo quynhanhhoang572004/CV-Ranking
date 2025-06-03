@@ -10,7 +10,7 @@ def jd_input():
     with col1:
         role = st.text_input(label="position:", placeholder="e.g. ai engineer", label_visibility="visible")
     with col2:
-        level = st.selectbox("level:", ["intern","junior", "mid", "senior", "lead"], index=2)
+        level = st.selectbox("level:", ["intern","junior", "medium", "senior","fresher", "lead","manager","director"], index=2)
 
     # Experience & Languages Required
     col1, col2 = st.columns(2)

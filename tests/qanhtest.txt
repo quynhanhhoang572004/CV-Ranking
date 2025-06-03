@@ -1,24 +1,24 @@
 REQUIREMENTS {
-  position: 
-  level: mid
+  position: ml engineer
+  level: senior
   stack {
     tools: git, docker, github actions
-    programming languages: python, c++
-    framework libraries: pytorch, tensorflow
-    databases cloud services: postgresql, aws
+    programming languages: rust, go
+    framework libraries: pytorch, tensorflow, numpy,nextjs
+    databases cloud services: postgresql, aws,gcp
   }
   education {
-    major: artificial intelligence
-    degree: bachelor
-    gpa: >= 3.5
+    major: Computer Science
+    degree: master
+    gpa: >= 3.7
   }
-  experience: 5 years
-  language: english, japanese
+  experience: 3 years
+  language: english, japanese,german
 }
 
 PREFERENCES {
   tools: vscode, slack
-  programming languages: java
+  programming languages: rust, go
   framework libraries: flask
   databases cloud services: mongodb
   degree: phd
