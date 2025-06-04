@@ -1,57 +1,92 @@
 import streamlit as st
 
 def jd_input():
-    st.subheader("✍️ JD Prompt Input")
+    st.subheader(" JD Prompt Input")
 
-    col1, col2, col3, col4 = st.columns([1.5, 2, 1.2, 2])
-    with col1:
-        st.markdown("**We are hiring a/an**", unsafe_allow_html=True)
-    with col2:
-        role = st.text_input("Role", placeholder="e.g. AI engineer", label_visibility="collapsed")
-    with col3:
-        st.markdown("**with level**", unsafe_allow_html=True)
-    with col4:
-        level = st.selectbox("Level", ["junior", "mid", "senior", "lead"], index=2, label_visibility="collapsed")
+    st.markdown("###  REQUIREMENTS")
 
-    st.markdown("**Whose stack is:**")
+    
     col1, col2 = st.columns(2)
     with col1:
-        tools = st.text_input("🧰 Tools", "docker, git")
-        frameworks = st.text_input("📚 Framework Libraries", "react, django")
+        role = st.text_input(label="position:", placeholder="e.g. ai engineer", label_visibility="visible")
     with col2:
-        languages = st.text_input("💻 Programming Languages", "python, react")
-        cloud = st.text_input("☁️ Database & Cloud Services", "mysql, aws")
+        level = st.selectbox("level:", ["intern","junior", "medium", "senior","fresher", "lead","manager","director"], index=2)
 
-    st.markdown("**Education Level:**")
-    col1, col2, col3 = st.columns([1.5, 1.5, 1])
+ 
+    col1, col2 = st.columns(2)
     with col1:
-        field = st.text_input("Field of Study", "computer science")
+        experience = st.text_input("experience:", "5 years")
     with col2:
-        degree = st.text_input("Degree", "bachelor")
-    with col3:
-        gpa = st.text_input("GPA", ">= 3.2")
+        languages_required = st.text_input("language:", "english, japanese")
 
-    st.markdown("**Language & Activities:**")
-    col1, col2, col3 = st.columns([2, 1.2, 2])
+
+    st.markdown("**stack { ... }**")
+    col1, col2 = st.columns(2)
     with col1:
-        languages_required = st.text_input("Language(s) Required", "english")
+        tools = st.text_input("tools:", "git, docker, github actions")
+        frameworks = st.text_input("framework libraries:", "pytorch, tensorflow")
     with col2:
-        experience = st.number_input("Years of Experience", min_value=0, value=2)
+        languages = st.text_input("programming languages:", "python, c++")
+        cloud = st.text_input("databases cloud services:", "postgresql, aws")
+
+    st.markdown("**education { ... }**")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        field = st.text_input("major:", "artificial intelligence")
+    with col2:
+        degree = st.text_input("degree:", "master")
     with col3:
-        activities = st.text_input("Desired Activities", "open-source, hackathon")
+        gpa = st.text_input("gpa:", ">= 3.5")
+
+   
+    st.markdown("---")
+    st.markdown("### PREFERENCES")
+
+    col1, col2 = st.columns(2)
+    with col1:
+        pref_tools = st.text_input("tools:", "vscode, slack")
+        pref_frameworks = st.text_input("framework libraries:", "flask")
+    with col2:
+        pref_languages = st.text_input("programming languages:", "java")
+        pref_cloud = st.text_input("databases cloud services:", "mongodb")
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        pref_degree = st.text_input("degree:", "phd")
+    with col2:
+        pref_gpa = st.text_input("gpa:", "> 3.8")
+    with col3:
+        pref_experience = st.text_input("experience:", "2 years")
+
+    col1, col2 = st.columns(2)
+    with col1:
+        pref_languages_required = st.text_input("language:", "korean")
+    with col2:
+        pref_activities = st.text_input("activities:", "kaggle winner")
 
     return {
-        "role": role.strip(),
-        "level": level,
-        "tools": tools,
-        "languages": languages,
-        "frameworks": frameworks,
-        "cloud": cloud,
-        "field": field,
-        "degree": degree,
-        "gpa": gpa,
-        "languages_required": languages_required,
-        "experience": experience,
-        "activities": activities,
-        "references": "dr. smith"
+        "REQUIREMENTS": {
+            "position": role.strip(),
+            "level": level.strip(),
+            "tools": tools.strip(),
+            "languages": languages.strip(),
+            "frameworks": frameworks.strip(),
+            "cloud": cloud.strip(),
+            "field": field.strip(),
+            "degree": degree.strip(),
+            "gpa": gpa.strip(),
+            "experience": experience.strip(),
+            "languages_required": languages_required.strip()
+        },
+        "PREFERENCES": {
+            "tools": pref_tools.strip(),
+            "languages": pref_languages.strip(),
+            "frameworks": pref_frameworks.strip(),
+            "cloud": pref_cloud.strip(),
+            "degree": pref_degree.strip(),
+            "gpa": pref_gpa.strip(),
+            "experience": pref_experience.strip(),
+            "languages_required": pref_languages_required.strip(),
+            "activities": pref_activities.strip()
+        }
     }

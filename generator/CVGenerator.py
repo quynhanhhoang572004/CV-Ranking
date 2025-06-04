@@ -356,7 +356,7 @@ class CVGenerator:
 
 if __name__ == "__main__":
     generator = CVGenerator()
-    num_cvs = 10
+    num_cvs = 50
 
     for _ in range(num_cvs):
         cv_data = generator.generate_cv()
