@@ -1,3 +1,4 @@
+from typing import List, Optional
 from antlr4 import FileStream, CommonTokenStream
 from parse.HireLexer import HireLexer
 from parse.HireParser import HireParser
@@ -8,17 +9,11 @@ from interpreter.CVScorer import CVRanker
 from interpreter.CVExtractor import CVExtractor
 
 class Interpreter:
-    def __init__(self, candidate_folder="data", inputFile="./tests/ShowTop.txt", jd_file="./tests/qanhtest.txt"):
+    def __init__(self, candidate_folder:str="data", inputFile:str="./tests/ShowTop.txt", jd_file:str="./tests/qanhtest.txt"):
         self.candidate_folder = candidate_folder
-
-        input_stream = FileStream(inputFile)
-        lexer = HireLexer(input_stream)
-        tokens = CommonTokenStream(lexer)
-        parser = HireParser(tokens)
-        tree = parser.program()
-
-        self.result = HireProcessor().visit(tree)
-        
+          
+        # Parse input file
+        self.inputFile = JDProcessor(inputFile).getParsedJD()
         # Parse JD
         self.parsed_jd = JDProcessor(jd_file).getParsedJD()
         self.rankings = {}

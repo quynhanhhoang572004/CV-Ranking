@@ -1,16 +1,16 @@
 REQUIREMENTS {
-  position: ml engineer
+  position: ai engineer
   level: intern
   stack {
     tools: git, docker, github actions
-    programming languages: rust, go
-    framework libraries: pytorch, tensorflow
+    programming languages: python, c++
+    framework libraries: pytorch, tensorflow, pandas, numpy
     databases cloud services: postgresql, aws
   }
   education {
-    major: computer science
-    degree: bachelor
-    gpa: >= 3.5
+    major: artificial intelligence
+    degree: master
+    gpa: >= 3.0
   }
   experience: 5 years
   language: english, japanese
