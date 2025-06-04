@@ -5,15 +5,13 @@ showTop: SHOW TOP INT CV;
 
 showConditional: SHOW CV WITH condition;
 
-condition: requireLevel | requireTools | requireProLang | requireFrameworks | requireDB
-             | requireDegree | requireGPA | requireExperience | requireLanguage| requireActivites;
-
+field: 
 jd: requirements preferences?;
 
 requirements: REQUIRE_SECTION OPEN_CURLY 
                 requirePosition requireLevel requireTechnicalSkills 
                 requireEducation requireExperience requireLanguage? CLOSE_CURLY;
-preferences: PREFER_SECTION OPEN_CURLY requireTools? requireProLang? requireFrameworks? requireDB?
+preferences: PREFER_SECTION OPEN_CURLY requireTools? requireProLang? requireFrameworks? requireDB? 
              requireDegree? requireGPA?
              requireExperience? requireLanguage? 
              requireActivites? CLOSE_CURLY;
