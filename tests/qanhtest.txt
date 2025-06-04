@@ -2,28 +2,28 @@ REQUIREMENTS {
   position: ai engineer
   level: intern
   stack {
-    tools: git, docker, github actions
+    tools: git
     programming languages: rust, go
-    framework libraries: pytorch, tensorflow
-    databases cloud services: postgresql, aws
+    framework libraries: react
+    databases cloud services: aws
   }
   education {
     major: computer science
-    degree: bachelor
-    gpa: >= 3.5
+    degree: mater
+    gpa: >=3.5
   }
-  experience: 3 years
-  language: english, japanese
+  experience: 4 years
+  language: english
 }
 
 PREFERENCES {
-  tools: vscode, slack
-  programming languages: java
-  framework libraries: flask, fastai
-  databases cloud services: mongodb
-  degree: phd
-  gpa: > 3.8
-  experience: 2 years
-  language: korean
-  activities: kaggle winner
+  tools: 
+  programming languages: 
+  framework libraries: 
+  databases cloud services: 
+  degree: 
+  gpa: 
+  experience: 
+  language: 
+  activities: 
 }

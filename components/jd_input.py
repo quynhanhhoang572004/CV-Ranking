@@ -1,68 +1,64 @@
 import streamlit as st
 
 def jd_input():
-    st.subheader(" JD Prompt Input")
+    st.subheader("💼 JD Prompt Input")
 
-    st.markdown("###  REQUIREMENTS")
+    st.markdown("## 📌 REQUIREMENTS")
 
-    
     col1, col2 = st.columns(2)
     with col1:
-        role = st.text_input(label="position:", placeholder="e.g. ai engineer", label_visibility="visible")
+        role = st.text_input(" Position", placeholder="e.g. AI Engineer")
     with col2:
-        level = st.selectbox("level:", ["intern","junior", "medium", "senior","fresher", "lead","manager","director"], index=2)
+        level = st.selectbox(" Level", ["intern", "junior", "medium", "senior", "fresher", "lead", "manager", "director"], index=0)
 
- 
     col1, col2 = st.columns(2)
     with col1:
-        experience = st.text_input("experience:", "5 years")
+        experience = st.text_input(" Experience", placeholder="e.g. 5 years")
     with col2:
-        languages_required = st.text_input("language:", "english, japanese")
+        languages_required = st.text_input(" Required Language(s)", placeholder="e.g. English, Japanese")
 
-
-    st.markdown("**stack { ... }**")
+    st.markdown("### 🧰 Stack")
     col1, col2 = st.columns(2)
     with col1:
-        tools = st.text_input("tools:", "git, docker, github actions")
-        frameworks = st.text_input("framework libraries:", "pytorch, tensorflow")
+        tools = st.text_input(" Tools", placeholder="e.g. Git, Docker, GitHub Actions")
+        frameworks = st.text_input(" Framework Libraries", placeholder="e.g. PyTorch, TensorFlow")
     with col2:
-        languages = st.text_input("programming languages:", "python, c++")
-        cloud = st.text_input("databases cloud services:", "postgresql, aws")
+        languages = st.text_input(" Programming Languages", placeholder="e.g. Python, C++")
+        cloud = st.text_input(" Databases / Cloud Services", placeholder="e.g. PostgreSQL, AWS")
 
-    st.markdown("**education { ... }**")
+    st.markdown("###  Education")
     col1, col2, col3 = st.columns(3)
     with col1:
-        field = st.text_input("major:", "artificial intelligence")
+        field = st.text_input("🧪 Major", placeholder="e.g. Artificial Intelligence")
     with col2:
-        degree = st.text_input("degree:", "master")
+        degree = st.text_input(" Degree", placeholder="e.g. Master")
     with col3:
-        gpa = st.text_input("gpa:", ">= 3.5")
+        gpa = st.text_input(" GPA", placeholder="e.g. >= 3.5")
 
-   
     st.markdown("---")
-    st.markdown("### PREFERENCES")
+    st.markdown("## 🌟 PREFERENCES")
 
     col1, col2 = st.columns(2)
     with col1:
-        pref_tools = st.text_input("tools:", "vscode, slack")
-        pref_frameworks = st.text_input("framework libraries:", "flask")
+        pref_tools = st.text_input(" Tools (Preferred)", placeholder="e.g. VSCode, Slack")
+        pref_frameworks = st.text_input(" Frameworks (Preferred)", placeholder="e.g. Flask")
     with col2:
-        pref_languages = st.text_input("programming languages:", "java")
-        pref_cloud = st.text_input("databases cloud services:", "mongodb")
+        pref_languages = st.text_input(" Programming Languages (Preferred)", placeholder="e.g. Java")
+        pref_cloud = st.text_input(" Cloud/Database (Preferred)", placeholder="e.g. MongoDB")
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        pref_degree = st.text_input("degree:", "phd")
+        pref_degree = st.text_input(" Degree (Preferred)", placeholder="e.g. PhD")
     with col2:
-        pref_gpa = st.text_input("gpa:", "> 3.8")
+        pref_gpa = st.text_input(" GPA (Preferred)", placeholder="e.g. > 3.8")
     with col3:
-        pref_experience = st.text_input("experience:", "2 years")
+        pref_experience = st.text_input(" Experience (Preferred)", placeholder="e.g. 2 years")
 
     col1, col2 = st.columns(2)
     with col1:
-        pref_languages_required = st.text_input("language:", "korean")
+        pref_languages_required = st.text_input(" Language(s) (Preferred)", placeholder="e.g. Korean")
     with col2:
-        pref_activities = st.text_input("activities:", "kaggle winner")
+        pref_activities = st.text_input(" Activities", placeholder="e.g. Kaggle Winner")
 
     return {
         "REQUIREMENTS": {

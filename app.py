@@ -5,7 +5,79 @@ from components.output import show_output
 from interpreter.Interpreter import Interpreter
 
 st.set_page_config(layout="wide")
-st.title("🧩 JD Prompt Builder + CV Matcher")
+st.markdown(
+    """
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <h1 style='
+        text-align: center;
+        font-size: 3em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 20px;
+    '>
+        ☁️ JD Prompt Builder + CV Matcher
+    </h1>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+    * {
+        font-family: 'Poppins', sans-serif !important;
+    }
+
+    
+    .stApp {
+        background: linear-gradient(135deg, #bbdefb, #1565c0) !important;
+        background-attachment: fixed !important;
+        min-height: 100vh !important;
+        color: white !important;
+    }
+
+    header[data-testid="stHeader"] {
+        background: linear-gradient(135deg, #bbdefb, #1565c0) !important;
+        background-attachment: fixed !important;
+    }
+
+    header[data-testid="stHeader"]::before {
+        box-shadow: none !important;
+    }
+
+    .block-container {
+        background-color: transparent !important;
+    }
+
+    .main .block-container {
+        box-shadow: none !important;
+    }
+
+  
+    label, .stTextInput label, .stSelectbox label, .stNumberInput label,
+    .stTextArea label, .stMultiselect label, .stRadio label, .stCheckbox label {
+        color: white !important;
+    }
+
+
+    .st-emotion-cache-10trblm.e1nzilvr1 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
 
 def format_jd_data(data):
     req = data["REQUIREMENTS"]
@@ -46,25 +118,37 @@ def main():
 
     with col_left:
         jd_data = jd_input()
-        st.info("Please enter a role to generate the JD.")
 
-    if jd_data:
-        formatted_jd = format_jd_data(jd_data)
+        required_fields = jd_data.get("REQUIREMENTS", {})
+        missing_fields = [
+            key for key, value in required_fields.items()
+            if isinstance(value, str) and not value.strip()
+        ]
 
-        with open("tests/qanhtest.txt", "w", encoding="utf-8") as f:
-            f.write(formatted_jd)
+    with col_right:
+        config_output(jd_data)
 
-        interpreter = Interpreter(jd_file="tests/qanhtest.txt")
-        results = interpreter.rank_candidates()
+    if missing_fields:
+        st.warning(
+            "Please complete all required fields to generate the JD: "
+            + ", ".join(missing_fields)
+        )
+        return
 
-        with col_right:
-            config_output(jd_data)
+    formatted_jd = format_jd_data(jd_data)
 
-        with st.expander("📄 Formatted JD Text Output"):
-            st.code(formatted_jd, language="text")
+    with open("tests/qanhtest.txt", "w", encoding="utf-8") as f:
+        f.write(formatted_jd)
 
-       
-        show_output(results)
+    interpreter = Interpreter(jd_file="tests/qanhtest.txt")
+    results = interpreter.rank_candidates()
+
+    with st.expander("📄 Formatted JD Text Output"):
+        st.code(formatted_jd, language="text")
+
+    show_output(results)
+
+
 
 if __name__ == "__main__":
     main()
