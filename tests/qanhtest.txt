@@ -3,23 +3,23 @@ REQUIREMENTS {
   level: intern
   stack {
     tools: git, docker, github actions
-    programming languages: python, c++
-    framework libraries: pytorch, tensorflow, pandas, numpy
+    programming languages: rust, go
+    framework libraries: pytorch, tensorflow
     databases cloud services: postgresql, aws
   }
   education {
-    major: artificial intelligence
-    degree: master
-    gpa: >= 3.0
+    major: computer science
+    degree: bachelor
+    gpa: >= 3.5
   }
-  experience: 5 years
+  experience: 3 years
   language: english, japanese
 }
 
 PREFERENCES {
   tools: vscode, slack
   programming languages: java
-  framework libraries: flask
+  framework libraries: flask, fastai
   databases cloud services: mongodb
   degree: phd
   gpa: > 3.8
