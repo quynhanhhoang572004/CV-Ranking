@@ -69,11 +69,7 @@ def runTest():
     lexer = HireLexer(FileStream(inputFile))
     token_stream = CommonTokenStream(lexer)
 
-<<<<<<< HEAD:tests/runJD.py
     parser = HireParser(token_stream)   
-=======
-    parser = HireParser(token_stream)
->>>>>>> 87c567f62372deea8f99ccea0a616120727943e7:runJD.py
     parser.removeErrorListeners()
     parser.addErrorListener(CustomErrorListener())    
     try:
