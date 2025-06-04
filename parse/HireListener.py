@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Generated from Hire.g4 by ANTLR 4.9.2
+=======
+# Generated from grammars/Hire.g4 by ANTLR 4.9.2
+>>>>>>> 78a7718f4ced4b8944551c05325e1c75ce3ca506
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .HireParser import HireParser

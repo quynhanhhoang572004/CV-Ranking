@@ -10,85 +10,106 @@ class CVRanker:
     
 
     def scoreCV(self, candidate):
-            score = 0
-            max_score = 0
-            fail = False
-            # Extract candidate info
-            skills = candidate["skills"]
-            education = candidate["education"]
-            experience_years = candidate["experience_years"]
-            leaderships = candidate["leaderships"]
-            projects = candidate["projects"]
-            references = candidate["references"]
+        score = 0
+        
+        
+        skills = [skill.lower() for skill in candidate.get("skills", [])]
+        education = candidate.get("education", {})
+        experience_years = candidate.get("experience_years", 0)
+        leaderships = candidate.get("leaderships", [])
+        projects = candidate.get("projects", [])
+        references = candidate.get("references", [])
 
-            # Extract JD info
-            requirements = self.jd.get('requirements', {})
-            preferences = self.jd.get("preferences", {})
+        requirements = self.jd.get('requirements', {})
+        preferences = self.jd.get("preferences", {})
 
-            req_tech = requirements.get("technical skills", {})
-            req_edu = requirements.get("education", {})
-            req_gpa = float(req_edu.get("gpa", "GPA >= 0").split()[-1])
-            req_lan = requirements.get("language", "")
-            required_skills = [
-                skill.lower()
-                for skill in (
-                    req_tech.get("tools", [])
-                    + req_tech.get("programmingLanguages", [])
-                    + req_tech.get("frameworksLibraries", [])
-                    + req_tech.get("databasescloudServices", [])
-                )
-                if isinstance(skill, str)
-            ]
+        req_tech = requirements.get("technical skills", {})
+        req_edu = requirements.get("education", {})
+        req_gpa = float(req_edu.get("gpa", "GPA >= 0").split()[-1]) if req_edu.get("gpa") else 0
+        req_lan = requirements.get("language", "")
+        
+        required_skills = [
+            skill.lower()
+            for skill in (
+                req_tech.get("tools", [])
+                + req_tech.get("programmingLanguages", [])
+                + req_tech.get("frameworksLibraries", [])
+                + req_tech.get("databasescloudServices", [])
+            )
+            if isinstance(skill, str)
+        ]
 
-            #SCORING RULES
-            #Rule for Technical Skills
-            for req_skill in required_skills:
-                max_score += 2
-                if req_skill not in skills:
-                    fail = True
-                else:
-                    score += 2
-                   
+        
+        
+        
+        if required_skills:
+            matched_skills = sum(2 for req_skill in required_skills if req_skill in skills)
+            skill_percentage = matched_skills / len(required_skills)
+            score += skill_percentage * 40
+        else:
+            score += 40  
 
-            #Rule for education
-            max_score += 2
-            if (
-                req_edu.get("major", "").lower() != ""
-                and req_edu.get("major", "").lower() != education["major"]
-            ):
-                fail = True
+   
+        if req_edu.get("major", "").lower():
+            if req_edu.get("major", "").lower() == education.get("major", "").lower():
+                score += 10
+            elif education.get("major", ""):  
+                score += 5
+        else:
+            score += 8  
+
+     
+        candidate_gpa = education.get("gpa", 0)
+        if req_gpa > 0 and candidate_gpa > 0:
+            if candidate_gpa >= req_gpa:
+                score += 8 
             else:
-                score += 2
-                # print("Pass education")
+                
+                gpa_ratio = candidate_gpa / req_gpa
+                score += max(gpa_ratio * 10, 2)
+        else:
+            score += 6 
 
-            #Rule for GPA
-            max_score += 2
-            if education["gpa"] < req_gpa:
-                fail = True
+    
+        req_degree = req_edu.get("degree", "").lower()
+        candidate_degree = education.get("degree", "").lower()
+        
+        if req_degree and hasattr(self, 'DEGREE_LEVELS'):
+            req_level = self.DEGREE_LEVELS.get(req_degree, 0)
+            candidate_level = self.DEGREE_LEVELS.get(candidate_degree, 0)
+            
+            if candidate_level >= req_level:
+                score += 10 
+            elif candidate_level > 0:
+                
+                score += max(candidate_level * 2, 3)
             else:
-                score += 2
-                # print("Pass GPA")
+                score += 1  
+        else:
+            score += 10  
 
-            #Rule for Degree
-            max_score += 2
-            if DEGREE_LEVELS.get(education["degree"], 0) < DEGREE_LEVELS.get(
-                req_edu["degree"].lower(), 0
-            ):
-                fail = True
+ 
+        req_exp_years = 0
+        exp_requirement = requirements.get("experience", "0 years")
+        if exp_requirement and isinstance(exp_requirement, str):
+            try:
+                req_exp_years = int(exp_requirement.split()[0])
+            except:
+                req_exp_years = 0
+        
+        if req_exp_years > 0:
+            if int(experience_years) >= req_exp_years:
+                score += 15 
             else:
-                score += 2
-                # print("Pass Degree")
+            
+                exp_ratio = int(experience_years) / req_exp_years
+                score += max(exp_ratio * 15, 3)
+        else:
+            score += 15
 
-            # Rule for experience
-            max_score += 2
-            req_exp_years = int(requirements.get("experience", "0 years").split()[0])
-            if experience_years < req_exp_years:
-                fail = True
-            else:
-                score += 2
-                # print("Pass exp")
-
-            # Preferences
+     
+        pref_skills = []
+        if preferences:
             pref_skills = [
                 skill.lower()
                 for skill in (
@@ -96,48 +117,36 @@ class CVRanker:
                     + preferences.get("tools", [])
                     + preferences.get("frameworksLibraries", [])
                     + preferences.get("databasescloudServices", [])
-                    + preferences.get("language", "")
-                    if preferences.get("langugage", "")
-                    else []
                 )
                 if isinstance(skill, str)
             ]
-            for pref_skill in pref_skills:
-                max_score += 1
-                if pref_skill in skills:
-                    score += 1
+            
+            pref_language = preferences.get("language", "")
+            if pref_language and isinstance(pref_language, str):
+                pref_skills.append(pref_language.lower())
 
-            pref_gpa = float(req_edu.get("gpa", "").split()[-1])
-            if pref_gpa:
-                max_score += 1
-                if education["gpa"] >= pref_gpa:
-                    score += 1
+        if pref_skills:
+            matched_prefs = sum(1 for pref_skill in pref_skills if pref_skill in skills)
+            pref_percentage = matched_prefs / len(pref_skills)
+            score += pref_percentage * 10
+        else:
+            score += 10  
 
-            pref_degree = preferences.get("degree", "").lower()
-            if pref_degree:
-                max_score += 1
-                if DEGREE_LEVELS.get(education["degree"], 0) >= DEGREE_LEVELS.get(
-                    pref_degree, 0
-                ):
-                    score += 1
+        
+     
+        score += min(len(leaderships), 5)
+        
+      
+        score += min(len(projects), 5)
+        
+    
+        score += min(len(references), 5)
 
-            pref_exp_years = int(requirements.get("experience", "0").split()[0])
-            if pref_exp_years:
-                max_score += 1
-                if experience_years >= req_exp_years:
-                    score += 1
+        percentage = score / 100
+        
+       
+        percentage = min(percentage, 1.0)
 
-            # leaderships, projects, references
-            max_score_leaderships = 2
-            max_score_projects = 2
-            max_score_references = 2
-
-            max_score += (
-                max_score_leaderships + max_score_projects + max_score_references
-            )
-
-            score += min(len(leaderships) * 1, max_score_leaderships)
-            score += min(len(projects) * 1, max_score_projects)
-            score += min(len(references) * 1, max_score_references)
-
-            return not fail, score / max_score 
+        passed = percentage >= 0.5
+        
+        return passed, percentage

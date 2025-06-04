@@ -1,0 +1,29 @@
+REQUIREMENTS {
+  position: ml engineer
+  level: intern
+  stack {
+    tools: git, docker, github actions
+    programming languages: rust, go
+    framework libraries: pytorch, tensorflow
+    databases cloud services: postgresql, aws
+  }
+  education {
+    major: computer science
+    degree: bachelor
+    gpa: >= 3.5
+  }
+  experience: 5 years
+  language: english, japanese
+}
+
+PREFERENCES {
+  tools: vscode, slack
+  programming languages: java
+  framework libraries: flask
+  databases cloud services: mongodb
+  degree: phd
+  gpa: > 3.8
+  experience: 2 years
+  language: korean
+  activities: kaggle winner
+}

@@ -5,7 +5,10 @@ showTop: SHOW TOP INT CV;
 
 showConditional: SHOW CV WITH condition;
 
-field: 
+
+condition: requireTools | requireProLang | requireFrameworks | requireDB
+             | requireDegree | requireGPA | requireExperience | requireLanguage| requireActivites | requireMajor;
+
 jd: requirements preferences?;
 
 requirements: REQUIRE_SECTION OPEN_CURLY 
@@ -35,6 +38,7 @@ requireLanguage: LANG_LABEL lang (COMMA lang)*;
 requireExperience: EXP_LABEL INT YEARS;
 
 requireActivites: ACTIVITY_LABEL ID+;
+
 
 
 
@@ -82,14 +86,14 @@ major: 'computer science' | 'computer engineering' | 'network engineering' | 'da
 tool: 'git' | 'docker' | 'kubernetes' | 'jenkins' | 'jira' | 'postman' | 'webpack' | 'npm' |
 'yarn' | 'vscode' | 'intellij' | 'eclipse' | 'figma' | 'trello' | 'slack' | 'notion' |
  'aws cli' | 'gcp sdk' | 'azure cli' | 'terraform' | 'github actions';
-pro_lang: 'python' | 'java' | 'c' | 'c++' | 'c#' | 'go' | 'rust' | 'javascript' | 'typescript' |
+proLang: 'python' | 'java' | 'c' | 'c++' | 'c#' | 'go' | 'rust' | 'javascript' | 'typescript' |
 'ruby' | 'php' | 'swift' | 'kotlin' | 'scala' | 'r' | 'matlab' | 'bash' | 'sql' |
 'haskell' | 'perl';
 framework: 'pytorch' | 'tensorflow' | 'keras' | 'scikit-learn' | 'xgboost' | 'lightgbm' |
 'opencv' | 'flask' | 'django' | 'spring' | 'express' | 'fastapi' |
 'next.js' | 'nuxt.js' | 'react' | 'vue' | 'angular' | 'bootstrap' |
 'laravel' | '.net' | 'asp.net' | 'electron' | 'flutter' | 'react native' |
-'node.js' | 'nestjs' | 'redux' | 'mui' | 'tailwindcss' | 'springboot';
+'node.js' | 'nestjs' | 'redux' | 'mui' | 'tailwindcss' | 'springboot'| 'pandas'| 'numpy';
 db: 'mysql' | 'postgresql' | 'sqlite' | 'mongodb' | 'redis' | 'mariadb' |
 'oracle' | 'sql server' | 'dynamodb' | 'cassandra' | 'elasticsearch' |
 'aws' | 'azure' | 'gcp' | 'google cloud' | 'amazon web services' |

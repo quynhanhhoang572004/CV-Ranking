@@ -3,8 +3,9 @@ import os
 import json
 
 class CVExtractor():
-    def __init__(self, candidate_dir):
+    def __init__(self, candidate_dir="data"):
         self.candidate_dir = candidate_dir
+        
         self.candidates = []
         self.extracted_CVs = []
 
@@ -32,15 +33,19 @@ class CVExtractor():
          
     # Utitlity function
     def extractCV(self,candidate):
-            level = candidate.get("Level", "")
 
             skills = (
                 candidate.get("TechnicalSkills", {}).get("ProgrammingLanguages", [])
                 + candidate.get("TechnicalSkills", {}).get("FrameworksLibraries", [])
                 + candidate.get("TechnicalSkills", {}).get("DatabasesCloudServices", [])
                 + candidate.get("TechnicalSkills", {}).get("Tools", [])
-                + list(candidate.get("TechnicalSkills", {}).get("Languages", {}).keys())
             )
+            # skills = {
+            #     "tools": candidate.get("TechnicalSkills", {}).get("Tools", []),
+            #     "programmingLanguages": candidate.get("TechnicalSkills", {}).get("ProgrammingLanguages", []),
+            #     "frameworksLibraries": candidate.get("TechnicalSkills", {}).get("FrameworksLibraries", []),
+            #     "databasesCloudServices": candidate.get("TechnicalSkills", {}).get("DatabasesCloudServices", []),
+            # }
 
             education = {
                 "degree": candidate.get("Education", {})
@@ -61,7 +66,6 @@ class CVExtractor():
             projects = candidate.get("Projects", [])
 
             return {
-                "level": level.lower(),
                 "skills": set([s.lower() for s in skills if isinstance(s, str)]),
                 "education": education,
                 "experience_years": experience_years,

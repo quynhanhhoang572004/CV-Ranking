@@ -9,7 +9,7 @@ DIR = os.path.dirname(__file__)
 ANTLR_JAR = 'C:/antlr4-4.9.2-complete.jar'
 
 CPL_Dest = 'parse'
-SRC = 'grammars\JD.g4'
+SRC = 'grammars\Hire.g4'
 TESTS = os.path.join(DIR, './tests')
 
 
@@ -40,7 +40,7 @@ def runTest():
             print(f"Input rejected: {msg}")
             exit(1)  # Exit the program with an error
 
-    filename = 'ExampleJD.txt'
+    filename = 'ShowConditional.txt'
     inputFile = os.path.join(DIR, './tests', filename)    
 
     print('List of token: ')
@@ -69,7 +69,11 @@ def runTest():
     lexer = HireLexer(FileStream(inputFile))
     token_stream = CommonTokenStream(lexer)
 
+<<<<<<< HEAD:runJD.py
     parser = HireParser(token_stream)
+=======
+    parser = HireParser(token_stream)   
+>>>>>>> 78a7718f4ced4b8944551c05325e1c75ce3ca506:tests/runJD.py
     parser.removeErrorListeners()
     parser.addErrorListener(CustomErrorListener())    
     try:

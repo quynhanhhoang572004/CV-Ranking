@@ -171,4 +171,8 @@ class HireProcessor(HireVisitor):
             val = self.visit(child)
             if isinstance(val, str):  # only collect meaningful results
                 values.append(val)
+<<<<<<< HEAD
         return (key, values)
+=======
+        return (key, values)
+>>>>>>> 78a7718f4ced4b8944551c05325e1c75ce3ca506

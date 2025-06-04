@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Generated from Hire.g4 by ANTLR 4.9.2
-=======
-# Generated from grammars/Hire.g4 by ANTLR 4.9.2
->>>>>>> 78a7718f4ced4b8944551c05325e1c75ce3ca506
+# Generated from grammars\Hire.g4 by ANTLR 4.9.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -462,20 +458,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_program
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterProgram" ):
-                listener.enterProgram(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitProgram" ):
-                listener.exitProgram(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitProgram" ):
-                return visitor.visitProgram(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -537,20 +519,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_showTop
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterShowTop" ):
-                listener.enterShowTop(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitShowTop" ):
-                listener.exitShowTop(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitShowTop" ):
-                return visitor.visitShowTop(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -599,20 +567,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_showConditional
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterShowConditional" ):
-                listener.enterShowConditional(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitShowConditional" ):
-                listener.exitShowConditional(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitShowConditional" ):
-                return visitor.visitShowConditional(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -689,20 +643,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_condition
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterCondition" ):
-                listener.enterCondition(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitCondition" ):
-                listener.exitCondition(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitCondition" ):
-                return visitor.visitCondition(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -795,20 +735,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_jd
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterJd" ):
-                listener.enterJd(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitJd" ):
-                listener.exitJd(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitJd" ):
-                return visitor.visitJd(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -880,20 +806,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_requirements
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequirements" ):
-                listener.enterRequirements(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequirements" ):
-                listener.exitRequirements(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequirements" ):
-                return visitor.visitRequirements(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -992,20 +904,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_preferences
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPreferences" ):
-                listener.enterPreferences(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPreferences" ):
-                listener.exitPreferences(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitPreferences" ):
-                return visitor.visitPreferences(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1121,20 +1019,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_requirePosition
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequirePosition" ):
-                listener.enterRequirePosition(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequirePosition" ):
-                listener.exitRequirePosition(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequirePosition" ):
-                return visitor.visitRequirePosition(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1173,20 +1057,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_requireLevel
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireLevel" ):
-                listener.enterRequireLevel(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireLevel" ):
-                listener.exitRequireLevel(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireLevel" ):
-                return visitor.visitRequireLevel(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1245,20 +1115,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_requireTechnicalSkills
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireTechnicalSkills" ):
-                listener.enterRequireTechnicalSkills(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireTechnicalSkills" ):
-                listener.exitRequireTechnicalSkills(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireTechnicalSkills" ):
-                return visitor.visitRequireTechnicalSkills(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1316,20 +1172,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_requireTools
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireTools" ):
-                listener.enterRequireTools(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireTools" ):
-                listener.exitRequireTools(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireTools" ):
-                return visitor.visitRequireTools(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1392,20 +1234,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_requireProLang
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireProLang" ):
-                listener.enterRequireProLang(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireProLang" ):
-                listener.exitRequireProLang(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireProLang" ):
-                return visitor.visitRequireProLang(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1467,20 +1295,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_requireFrameworks
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireFrameworks" ):
-                listener.enterRequireFrameworks(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireFrameworks" ):
-                listener.exitRequireFrameworks(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireFrameworks" ):
-                return visitor.visitRequireFrameworks(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1541,20 +1355,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_requireDB
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireDB" ):
-                listener.enterRequireDB(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireDB" ):
-                listener.exitRequireDB(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireDB" ):
-                return visitor.visitRequireDB(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1622,20 +1422,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_requireEducation
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireEducation" ):
-                listener.enterRequireEducation(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireEducation" ):
-                listener.exitRequireEducation(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireEducation" ):
-                return visitor.visitRequireEducation(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1696,20 +1482,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_requireMajor
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireMajor" ):
-                listener.enterRequireMajor(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireMajor" ):
-                listener.exitRequireMajor(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireMajor" ):
-                return visitor.visitRequireMajor(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1748,20 +1520,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_requireDegree
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireDegree" ):
-                listener.enterRequireDegree(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireDegree" ):
-                listener.exitRequireDegree(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireDegree" ):
-                return visitor.visitRequireDegree(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1803,20 +1561,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_requireGPA
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireGPA" ):
-                listener.enterRequireGPA(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireGPA" ):
-                listener.exitRequireGPA(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireGPA" ):
-                return visitor.visitRequireGPA(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1867,20 +1611,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_requireLanguage
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireLanguage" ):
-                listener.enterRequireLanguage(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireLanguage" ):
-                listener.exitRequireLanguage(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireLanguage" ):
-                return visitor.visitRequireLanguage(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1936,20 +1666,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_requireExperience
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireExperience" ):
-                listener.enterRequireExperience(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireExperience" ):
-                listener.exitRequireExperience(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireExperience" ):
-                return visitor.visitRequireExperience(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1992,20 +1708,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_requireActivites
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRequireActivites" ):
-                listener.enterRequireActivites(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRequireActivites" ):
-                listener.exitRequireActivites(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRequireActivites" ):
-                return visitor.visitRequireActivites(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2051,20 +1753,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_position
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPosition" ):
-                listener.enterPosition(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPosition" ):
-                listener.exitPosition(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitPosition" ):
-                return visitor.visitPosition(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2101,20 +1789,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_level
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterLevel" ):
-                listener.enterLevel(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitLevel" ):
-                listener.exitLevel(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitLevel" ):
-                return visitor.visitLevel(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2153,20 +1827,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_degree
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterDegree" ):
-                listener.enterDegree(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitDegree" ):
-                listener.exitDegree(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDegree" ):
-                return visitor.visitDegree(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2203,20 +1863,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_major
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterMajor" ):
-                listener.enterMajor(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitMajor" ):
-                listener.exitMajor(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitMajor" ):
-                return visitor.visitMajor(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2255,20 +1901,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_tool
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterTool" ):
-                listener.enterTool(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitTool" ):
-                listener.exitTool(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTool" ):
-                return visitor.visitTool(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2305,20 +1937,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_pro_lang
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPro_lang" ):
-                listener.enterPro_lang(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPro_lang" ):
-                listener.exitPro_lang(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitPro_lang" ):
-                return visitor.visitPro_lang(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2357,20 +1975,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_framework
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterFramework" ):
-                listener.enterFramework(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitFramework" ):
-                listener.exitFramework(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFramework" ):
-                return visitor.visitFramework(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2408,20 +2012,6 @@ class HireParser ( Parser ):
         def getRuleIndex(self):
             return HireParser.RULE_db
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterDb" ):
-                listener.enterDb(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitDb" ):
-                listener.exitDb(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDb" ):
-                return visitor.visitDb(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2458,20 +2048,6 @@ class HireParser ( Parser ):
 
         def getRuleIndex(self):
             return HireParser.RULE_lang
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterLang" ):
-                listener.enterLang(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitLang" ):
-                listener.exitLang(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitLang" ):
-                return visitor.visitLang(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
