@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Generated from grammars/Hire.g4 by ANTLR 4.9.2
+=======
+# Generated from Hire.g4 by ANTLR 4.9.2
+>>>>>>> 87c567f62372deea8f99ccea0a616120727943e7
 from antlr4 import *
 from io import StringIO
 import sys
