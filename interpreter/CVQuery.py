@@ -1,10 +1,9 @@
 from interpreter.CVExtractor import CVExtractor
 
 class CVQuery:
-    def __init__(self, candidate_dir, query, ):
-        self.extractor = CVExtractor(candidate_dir)
+    def __init__(self):
+        self.extractor = CVExtractor("data")
         self.candidates = self.extractor.load_candidates()
-        self.query = query
 
     def run(self):
         results = []

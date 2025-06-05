@@ -1,37 +1,36 @@
-from antlr4 import FileStream, CommonTokenStream
-from parse.HireXLexer import HireXLexer
-from parse.HireXParser import HireXParser
-from parse.HireXProcessor import HireXProcessor
 
-from interpreter.JDProcessor import JDProcessor
 from interpreter.CVRanker import CVRanker
 from interpreter.CVExtractor import CVExtractor
 from interpreter.CVQuery import CVQuery
 
 class Interpreter:
-    def __init__(self, candidate_folder="data", inputFile="./tests/ShowConditional.txt", jd_file="./tests/qanhtest.txt"):
+    def __init__(self, candidate_folder="data"):
         self.cv_extractor = CVExtractor(candidate_folder)
-        #CV HANDLING
-        all_candidates = self.cv_extractor.load_candidates()
+        self.all_candidates = self.cv_extractor.load_candidates()
+        self.parsed_jd = None
+        self.rankings = {}
 
-        input_stream = FileStream(inputFile)
-        lexer = HireXLexer(input_stream)
-        tokens = CommonTokenStream(lexer)
-        parser = HireXParser(tokens)
-        tree = parser.program()
-        processor = HireXProcessor()
-        self.input_tree = processor.visit(tree)
 
-        if self.input_tree["command"] == "jd":
-            print("JD Parsed Successfully:")
-            print(self.rank_candidates())
-        elif self.input_tree["command"] == "show_cv_with":
-            print(self.show_cv_with(self.input_tree["condition"]))
+    def run_command(self, command_dict: dict):
+        if command_dict["command"] == "jd":
+            self.parsed_jd = command_dict
+            result = self.rank_candidates()
+            print(result)
+        elif command_dict["command"] == "show_cv_with":
+            if not self.parsed_jd:
+                raise ValueError("You must load a JD before running query commands.")
+            if not self.rankings:
+                self.rank_candidates()
 
+            result = self.show_cv_with(command_dict["condition"])
+            print(result)    
+        else:
+            raise ValueError(f"Unknown command: {command_dict['command']}")
 
 
     #Tra ve all rows voi moi row la filename, parsed_cv, pass/fail, percentage, rank
     def rank_candidates(self):
+        print("ALL CANDIDATES RANKED")
         results = []  
         for candidate in self.all_candidates:
             extracted_cv = self.cv_extractor.extractCV(candidate)
@@ -56,36 +55,27 @@ class Interpreter:
         return self.rankings.get(filename, None)
 
     def show_top(self, n):
+        if not self.rankings:
+            self.rank_candidates()
         print(f"Showing top {n} candidates:")
-        ranked_candidates = self.rank_candidates() 
-        return sorted(ranked_candidates, key=lambda r: r["rank"])[:n]
+        return sorted(self.rankings.values(), key=lambda r: r["rank"])[:n]
 
     # Example usage in show_cv_with condition <- CHUA HOAN THIEN
-    def show_cv_with(self, candidate_folder, condition: tuple):
-        print(f"Showing CVs with condition: {condition}")
-        filtered_cv = CVQuery(candidate_folder, condition).run()
-        return filtered_cv.pop(1)
-
-    def run(self):
-        if self.input_tree["command"] == "jd":
-            print("JD Parsed Successfully:")
-            print(self.rank_candidates())
-        elif self.result["command"] == "show_cv_with":
-            print(self.show_cv_with(self.result["condition"]))
-        
-if __name__ == "__main__":
-    interpreter = Interpreter()
-    # interpreter.run()
-    # sorted_results = interpreter.rank_candidates()
-    # print(sorted_results)
-    # # Print the shortened results
-    # for res in sorted_results:
-    #     print(f"[Rank {res['rank']}] {res['cv'].get('FullName')}: {res['percentage']}% Pass: {res['pass']}")
-
-    # # Get ranking of 1 candidate by filename
-    # print("Candidate ranking by filename:")
-    # print(interpreter.get_candidate_by_filename("Carly_Barnes.json"))  
-
-    # print("SHOW TOP")
-    # print(interpreter.show_top(3))  
+    def show_cv_with(self, condition: tuple):
+        if not self.rankings:
+            self.rank_candidates()
+        print("QUERIED CANDIDATES FOR CONDITION:", condition)
+        matches = []
+        for candidate_data in self.rankings.values():
+            cv = candidate_data["cv"]
+            extracted_cv = self.cv_extractor.extractCV(cv)
+            if CVQuery(extracted_cv).match_condition(extracted_cv, condition):
+                matches.append({
+                    "filename": candidate_data["filename"],
+                    "cv": candidate_data["cv"],
+                    "pass": candidate_data["pass"],
+                    "percentage": candidate_data["percentage"],
+                    "rank": candidate_data["rank"]
+                })
+        return matches
 

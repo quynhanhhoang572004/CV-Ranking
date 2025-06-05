@@ -1,0 +1,10 @@
+show cv with name: Yolanda Nguyen
+show cv with tools: vscode
+show cv with programming languages: python
+show cv with framework libraries: react
+show cv with databases cloud services: mongodb
+show cv with degree: master
+show cv with major: computer science
+show cv with gpa: >= 3.0
+show cv with language: english
+show cv with experience >= 5 years

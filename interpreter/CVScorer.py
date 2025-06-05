@@ -40,8 +40,7 @@ class CVRanker:
         ]
 
         
-        
-        
+    
         if required_skills:
             matched_skills = sum(2 for req_skill in required_skills if req_skill in skills)
             skill_percentage = matched_skills / len(required_skills)

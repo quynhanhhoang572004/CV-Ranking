@@ -12,7 +12,7 @@ REQUIREMENTS {
     degree: bachelor
     gpa: >= 3.5
   }
-  experience: 5 years
+  experience: >= 5 years
   language: english, japanese
 }
 
@@ -23,7 +23,7 @@ PREFERENCES {
   databases cloud services: mongodb
   degree: phd
   gpa: > 3.8
-  experience: 2 years
+  experience: > 2 years
   language: korean
   activities: kaggle winner
 }
