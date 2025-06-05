@@ -1,0 +1,29 @@
+REQUIREMENTS {
+  position: ai engineer
+  level: senior
+  stack {
+    tools: git, docker, github actions
+    programming languages: python, c++
+    framework libraries: pytorch, tensorflow
+    databases cloud services: postgresql, aws
+  }
+  education {
+    major: artificial intelligence
+    degree: master
+    gpa: >= 3.5
+  }
+  experience: >= 3 years
+  language: english, japanese
+}
+
+PREFERENCES {
+  tools: vscode, slack
+  programming languages: java
+  framework libraries: flask
+  databases cloud services: mongodb
+  degree: phd
+  gpa: > 3.8
+  experience: > 6 years
+  language: korean
+  activities: kaggle winner
+}

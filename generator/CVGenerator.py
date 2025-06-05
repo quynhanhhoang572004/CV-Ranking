@@ -8,11 +8,30 @@ fake = Faker()
 class CVGenerator:
     def __init__(self):
         self.levels = ["Intern", "Fresher", "Junior", "Senior"]
-        self.positions = ["AI Engineer", "Data Engineer", "Back-end Developer", "ML Engineer", "DevOps Engineer"]
-        self.tools_pool = ["Docker", "Git", "Airflow", "Github Actions", "Kubernetes", "Jenkins"]
-        self.languages_pool = ["Python", "Typescript", "Go", "Java", "Rust"]
-        self.frameworks_pool = ["FastAPI", "NextJS", "Pytorch", "Numpy", "Pandas", "Tensorflow", "Selenium", "Scikit-learn"]
-        self.databases_pool = ["PineconeDB", "Faiss", "MongoDB", "GCP", "ElasticSearch", "PostgreSQL", "Neo4j", "Firebase"]
+        self.experience = ["1","2","3","4","5","6","7","8","9","10"]
+        self.positions = ["Frontend Developer", "Backend Developer", "Full-Stack Developer", "Software Engineer", "AI Engineer", "ML Engineer", "Data Scientist", "Data Engineer", "Data Analyst", "QA/QC Engineer", "Tester", "Security Engineer", "DevOps Engineer", "Cloud Engineer", "Network Engineer", "Embedded Engineer", "Mobile Developer", "Android Developer", "iOS Developer", "Solution Architect", "Technical Lead", "Product Manager", "Scrum Master", "Game Developer", "Blockchain Developer", "Research Engineer"]
+        self.tools_pool = [
+            "Docker", "Git", "Airflow", "Github Actions", "Kubernetes", "Jenkins",
+            "Terraform", "Ansible", "Prometheus", "Grafana", "CircleCI", "TravisCI",
+            "MLflow", "Weights & Biases", "DVC", "Makefile", "Pre-commit", "Poetry",
+            "VSCode", "PyCharm", "Vim", "tmux", "Nginx", "Postman", "Zsh", "Bash",
+            "Helm", "Cloud Build", "Skaffold"
+        ]
+        self.languages_pool = [
+            "Python", "Typescript", "Go", "Java", "Rust",
+            "C++", "C#", "JavaScript", "Kotlin", "Swift", "Ruby", "R", "PHP"
+        ]
+        self.frameworks_pool = [
+            "FastAPI", "NextJS", "Pytorch", "Numpy", "Pandas", "Tensorflow",
+            "Selenium", "Scikit-learn", "LangChain", "Flask", "Django", "React",
+            "Vue", "Express", "HuggingFace Transformers", "BeautifulSoup", "Matplotlib",
+            "Plotly", "Streamlit", "Airflow", "OpenCV"
+        ]
+        self.databases_pool = [
+            "PineconeDB", "Faiss", "MongoDB", "GCP", "ElasticSearch", "PostgreSQL",
+            "Neo4j", "Firebase", "MySQL", "Redis", "SQLite", "AWS DynamoDB",
+            "S3", "Weaviate", "Milvus", "Qdrant", "Azure Cosmos DB", "BigQuery"
+        ]
         self.language_levels = ["A1", "A2", "B1", "B2", "C1", "C2"]
         self.project_templates = self._load_project_templates()
         self.save_dir = os.path.join(os.getcwd(), "..", "data")
@@ -272,12 +291,13 @@ class CVGenerator:
 
         level = random.choice(self.levels)
         position = random.choice(self.positions)
-        profile = f"I am a {random.choice(['motivated', 'passionate', 'experienced', 'highly skilled'])} {position} focusing on {random.choice(['scalable AI systems', 'robust software solutions', 'data pipelines', 'cloud infrastructure', 'machine learning models'])}."
+       
 
         selected_projects = [self._random_project_instance(p) for p in random.sample(self.project_templates, 2)]
 
         cv_data = {
             "Level": level,
+            "Experience": random.choice(self.experience),
             "FullName": full_name,
             "Contact": {
                 "Phone": phone,
@@ -285,22 +305,34 @@ class CVGenerator:
                 "GitHub": github,
                 "LinkedIn": linkedin
             },
-            "Profile": profile,
+            "Position": position,
             "Education": self._generate_education(),
             "TechnicalSkills": {
                 "Tools": random.sample(self.tools_pool, k=random.randint(2, 4)),
                 "ProgrammingLanguages": random.sample(self.languages_pool, k=random.randint(1, 3)),
                 "FrameworksLibraries": random.sample(self.frameworks_pool, k=random.randint(3, 5)),
                 "DatabasesCloudServices": random.sample(self.databases_pool, k=random.randint(2, 4)),
+
+
+
             },
-             "Languages": {
-                 "English": random.choice(self.language_levels),
-                 "German": random.choice(self.language_levels) if random.random() > 0.4 else "A1",
-                 "Japanese": random.choice(self.language_levels) if random.random() > 0.4 else "A1"
-              }
+            "Languages": {
+                "English": random.choice(self.language_levels),
+                "German": random.choice(self.language_levels) if random.random() > 0.4 else "A1",
+                "Japanese": random.choice(self.language_levels) if random.random() > 0.4 else "A1",
+                "French": random.choice(self.language_levels) if random.random() > 0.5 else "A1",
+                "Spanish": random.choice(self.language_levels) if random.random() > 0.5 else "A1",
+                "Chinese": random.choice(self.language_levels) if random.random() > 0.6 else "A1",
+                "Korean": random.choice(self.language_levels) if random.random() > 0.6 else "A1",
+                "Russian": random.choice(self.language_levels) if random.random() > 0.7 else "A1",
+                "Vietnamese": random.choice(self.language_levels) if random.random() > 0.7 else "A1",
+                "Arabic": random.choice(self.language_levels) if random.random() > 0.8 else "A1",
+                "Portuguese": random.choice(self.language_levels) if random.random() > 0.6 else "A1",
+                "Italian": random.choice(self.language_levels) if random.random() > 0.6 else "A1"
             },
+
             "Projects": selected_projects,
-            "Leadership": [
+            "Activities": [
                 {
                     "Organization": random.choice(["GDSC", "IEEE", "ACM", "Toastmasters", "Code Club"]),
                     "Role": random.choice(["BackEnd Specialist", "AI Lead", "Technical Mentor", "Team Lead", "Chapter President"]),
@@ -313,25 +345,18 @@ class CVGenerator:
                     ])]
                 } if random.random() > 0.3 else None
             ],
-            "References": [
-                {
-                    "Name": fake.name(),
-                    "Institution": random.choice(self.institutions),
-                    "Email": fake.email()
-                } if random.random() > 0.5 else None
-            ]
+            
         }
         
         # Remove None values from lists
-        cv_data["Leadership"] = [item for item in cv_data["Leadership"] if item is not None]
-        cv_data["References"] = [item for item in cv_data["References"] if item is not None]
+        cv_data["Activities"] = [item for item in cv_data["Activities"] if item is not None]
         
         return cv_data
 
 
 if __name__ == "__main__":
     generator = CVGenerator()
-    num_cvs = 10
+    num_cvs = 50
 
     for _ in range(num_cvs):
         cv_data = generator.generate_cv()
