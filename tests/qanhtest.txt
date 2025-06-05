@@ -2,17 +2,17 @@ REQUIREMENTS {
   position: ai engineer
   level: intern
   stack {
-    tools: git
-    programming languages: rust, go
-    framework libraries: react
+    tools: docker
+    programming languages: python, scala
+    framework libraries: pytorch
     databases cloud services: aws
   }
   education {
     major: computer science
-    degree: mater
-    gpa: >=3.5
+    degree: bachelor
+    gpa: >=3.0
   }
-  experience: 4 years
+  experience: 5 years
   language: english
 }
 

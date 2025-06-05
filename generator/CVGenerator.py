@@ -9,7 +9,7 @@ class CVGenerator:
     def __init__(self):
         self.levels = ["Intern", "Fresher", "Junior", "Senior"]
         self.experience = ["1","2","3","4","5","6","7","8","9","10"]
-        self.positions = ["AI Engineer", "Data Engineer", "Back-end Developer", "ML Engineer", "DevOps Engineer"]
+        self.positions = ["Frontend Developer", "Backend Developer", "Full-Stack Developer", "Software Engineer", "AI Engineer", "ML Engineer", "Data Scientist", "Data Engineer", "Data Analyst", "QA/QC Engineer", "Tester", "Security Engineer", "DevOps Engineer", "Cloud Engineer", "Network Engineer", "Embedded Engineer", "Mobile Developer", "Android Developer", "iOS Developer", "Solution Architect", "Technical Lead", "Product Manager", "Scrum Master", "Game Developer", "Blockchain Developer", "Research Engineer"]
         self.tools_pool = [
             "Docker", "Git", "Airflow", "Github Actions", "Kubernetes", "Jenkins",
             "Terraform", "Ansible", "Prometheus", "Grafana", "CircleCI", "TravisCI",
@@ -291,7 +291,7 @@ class CVGenerator:
 
         level = random.choice(self.levels)
         position = random.choice(self.positions)
-        profile = f"I am a {random.choice(['motivated', 'passionate', 'experienced', 'highly skilled'])} {position} focusing on {random.choice(['scalable AI systems', 'robust software solutions', 'data pipelines', 'cloud infrastructure', 'machine learning models'])}."
+       
 
         selected_projects = [self._random_project_instance(p) for p in random.sample(self.project_templates, 2)]
 
@@ -305,7 +305,7 @@ class CVGenerator:
                 "GitHub": github,
                 "LinkedIn": linkedin
             },
-            "Profile": profile,
+            "Position": position,
             "Education": self._generate_education(),
             "TechnicalSkills": {
                 "Tools": random.sample(self.tools_pool, k=random.randint(2, 4)),
