@@ -1,0 +1,10 @@
+streamlit>=1.28.0
+antlr4-python3-runtime>=4.9.3
+pprint
+nltk>=3.8.1
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.2.0
+matplotlib>=3.7.0
+python-docx>=0.8.11
+PyPDF2>=3.0.0
