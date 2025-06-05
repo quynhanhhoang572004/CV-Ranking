@@ -17,8 +17,8 @@ REQUIREMENTS {
 }
 
 PREFERENCES {
-  tools: vscode, slack
-  programming languages: java
+  tools: vscode, bash
+  programming languages: go, kotlin, rust
   framework libraries: flask
   databases cloud services: mongodb
   degree: phd

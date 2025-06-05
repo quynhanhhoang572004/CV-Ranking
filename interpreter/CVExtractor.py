@@ -33,13 +33,6 @@ class CVExtractor():
          
     # Utitlity function
     def extractCV(self,candidate):
-            
-            # skills = (
-            #     candidate.get("TechnicalSkills", {}).get("ProgrammingLanguages", [])
-            #     + candidate.get("TechnicalSkills", {}).get("FrameworksLibraries", [])
-            #     + candidate.get("TechnicalSkills", {}).get("DatabasesCloudServices", [])
-            #     + candidate.get("TechnicalSkills", {}).get("Tools", [])
-            # )
             skills = {
                 "tools": [t.strip().lower() for t in candidate
                     .get("TechnicalSkills", {})
@@ -54,7 +47,7 @@ class CVExtractor():
                     .get("TechnicalSkills", {})
                     .get("DatabasesCloudServices", [])],
             }
-            
+
             education = {
                 "degree": candidate.get("Education", {})
                 .get("Degree", "")

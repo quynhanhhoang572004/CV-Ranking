@@ -69,7 +69,7 @@ class Interpreter:
         for candidate_data in self.rankings.values():
             cv = candidate_data["cv"]
             extracted_cv = self.cv_extractor.extractCV(cv)
-            if CVQuery(extracted_cv).match_condition(extracted_cv, condition):
+            if CVQuery().match_condition(extracted_cv, condition):
                 matches.append({
                     "filename": candidate_data["filename"],
                     "cv": candidate_data["cv"],
