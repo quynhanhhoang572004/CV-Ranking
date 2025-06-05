@@ -73,20 +73,18 @@ class CVQuery:
 if __name__ == "__main__":
     #EXAMPLE QUERIES
     query = ("name", "Yolanda Nguyen")
-    #query = ("tools", "vscode")  
+     #query = ("tools", "vscode")  
     #query = ("programming languages", "python")
     #query = ("framework libraries", "react")
     #query = ("databases cloud services", "mongodb")
 
     #query = ("degree", "bachelor") 
     #query = ("major", "computer science")
-    # query = ("gpa", ">= 3.0")
+    #query = ("gpa", ">= 3.0")
 
     #query = ("language", "english")
 
-    #query = ("experience", ">= 5")  
-
-    
+    #query = ("experience", ">= 5") 
 
     cv_query = CVQuery(query)
     results = cv_query.run()

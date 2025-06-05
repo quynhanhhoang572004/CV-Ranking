@@ -1,5 +1,5 @@
 
-from interpreter.CVRanker import CVRanker
+from interpreter.CVScorer import CVScorer
 from interpreter.CVExtractor import CVExtractor
 from interpreter.CVQuery import CVQuery
 
@@ -34,7 +34,7 @@ class Interpreter:
         results = []  
         for candidate in self.all_candidates:
             extracted_cv = self.cv_extractor.extractCV(candidate)
-            is_pass, percentage = CVRanker(self.parsed_jd, extracted_cv).scoreCV(extracted_cv)
+            is_pass, percentage = CVScorer(self.parsed_jd, extracted_cv).scoreCV(extracted_cv)
             results.append({
                 "filename": candidate["__filename__"],
                 "cv": candidate,

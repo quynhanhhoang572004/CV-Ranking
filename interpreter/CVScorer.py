@@ -1,9 +1,7 @@
-
-
 DEGREE_LEVELS = {"bachelor": 1, "master": 2, "PhD": 3}
 EXPERIENCE_LEVELS = {"intern": 0, "fresher": 1, "junior": 2, "senior": 3}
 
-class CVRanker:
+class CVScorer:
     def __init__(self, jd, candidate):
         self.jd = jd
         self.candidates = candidate
@@ -11,8 +9,6 @@ class CVRanker:
 
     def scoreCV(self, candidate):
         score = 0
-        
-        
         skills = [skill.lower() for skill in candidate.get("skills", [])]
         education = candidate.get("education", {})
         experience_years = candidate.get("experience_years", 0)
@@ -39,7 +35,6 @@ class CVRanker:
             if isinstance(skill, str)
         ]
 
-        
     
         if required_skills:
             matched_skills = sum(2 for req_skill in required_skills if req_skill in skills)
