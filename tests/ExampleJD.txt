@@ -12,7 +12,7 @@ REQUIREMENTS {
     degree: bachelor
     gpa: >= 3.2
   }
-  experience: 1 years
+  experience: > 1 years
   language: english, german
 }
 
@@ -20,5 +20,5 @@ PREFERENCES  {
   programming languages: javascript
   degree: master
   gpa: >= 3.5
-  experience: 2 years
+  experience: >= 2 years
 }
