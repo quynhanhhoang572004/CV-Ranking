@@ -17,7 +17,7 @@ st.markdown(
         color: white;
         margin-bottom: 20px;
     '>
-        ☁️ JD Prompt Builder + CV Matcher
+        ☁️ HireX ☁️
     </h1>
     """,
     unsafe_allow_html=True
@@ -142,17 +142,41 @@ def main():
         f.write(formatted_jd)
 
     interpreter = Interpreter(candidate_folder="data")
-    processor = InputProcessor("tests/qanhtest.txt")
-    jd_command = processor.getParsedInput()
-    interpreter.run_command(jd_command)
-    results = interpreter.show_top(100)
+    processor_normal = InputProcessor("tests/qanhtest.txt")
+    jd_command = processor_normal.getParsedInput()
+    print(jd_command)
+    results =  interpreter.run_command(jd_command)
+    print(interpreter.show_top(1))
+
+    show_top = st.selectbox("Show Top Candidates", ("All", "Top 10", "Top 20", "Top 50"))
 
     with st.expander("📄 Formatted JD Text Output"):
         st.code(formatted_jd, language="text")
+    queries= st.text_input("Query", placeholder="e.g show cv with")
 
-    show_output(results)
+    if not queries.strip():
+            if show_top == "Top 10":
+                filtered_results = interpreter.show_top(10)
+            elif show_top == "Top 20":
+                filtered_results = interpreter.show_top(20)
+            elif show_top == "Top 50":
+                filtered_results = interpreter.show_top(50)
+            else:
+                filtered_results = interpreter.show_top(len(interpreter.rankings))  
+            
+            show_output(filtered_results)
+    elif queries and queries.strip():
+        with open("./tests/ShowConditional.txt", "w", encoding="utf-8") as f:
+            f.write(f"{queries}")
+        
+        query_processor = InputProcessor("./tests/ShowConditional.txt")
+        custom_query = query_processor.getParsedInput()
+        print(custom_query)
+        custom_results = interpreter.run_command(custom_query)
+        show_output(custom_results)
 
-
+    else:
+        show_output(results)
 
 if __name__ == "__main__":
     main()

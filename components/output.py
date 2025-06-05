@@ -22,10 +22,10 @@ def show_output(results):
         with st.expander(f"#{idx} — {full_name} — Matching Score: {percentage:.2f}% {'✅ Pass' if passed else '❌ Fail'}"):
             st.markdown("####  Basic Info")
             st.markdown(f"- **Name:** {full_name}")
-            st.markdown(f"- **Position:** {cv.get('Position','N/A')}")
+            # st.markdown(f"- **Position:** {cv.get('Position','N/A')}")
             st.markdown(f"- **Level:** {cv.get('Level', 'N/A')}")
             st.markdown(f"- **Experience:** {cv.get('Experience', 'N/A')} years")
-            st.markdown(f"- **Profile:** {cv.get('Profile', 'N/A')}")
+      
 
             contact = cv.get("Contact", {})
             st.markdown("#### Contact")

@@ -79,8 +79,8 @@ class CVScorer:
         
         if req_degree and hasattr(self, 'DEGREE_LEVELS'):
             req_level = DEGREE_LEVELS.get(req_degree, 0)
-            candidate_level = DEGREE_LEVELS.get(candidate_degree, 0)
-            
+            candidate_level = DEGREE_LEVELS.get(cand_degree, 0)
+
             if candidate_level >= req_level:
                 score += 10 
             elif candidate_level > 0:

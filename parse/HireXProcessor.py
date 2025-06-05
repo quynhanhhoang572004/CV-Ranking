@@ -85,13 +85,22 @@ class HireXProcessor(HireXVisitor):
         return ("gpa", " ".join(tokens))
 
     def visitRequireExperience(self, ctx):
-        return self._build_simple_kv("experience", ctx)
+        tokens = [ctx.getChild(i).getText() for i in range(1, ctx.getChildCount())]
+        # Look for the first number in the tokens
+        for token in tokens:
+            if token.isdigit():
+                return ("experience", f"{token}")
+        return ("experience", "0") 
+            
 
     def visitRequireLanguage(self, ctx):
         return self._build_kv("language", ctx)
 
     def visitRequireActivites(self, ctx):
         return self._build_simple_kv("activities", ctx)
+    
+    def visitRequireName(self, ctx):
+        return self._build_simple_kv("name", ctx)
     
     def visitPosition(self, ctx):
         return ctx.getText()
@@ -135,6 +144,7 @@ class HireXProcessor(HireXVisitor):
     def visitLang(self, ctx):
         return ctx.getText()
 
+    
     # === Utility functions ===
 
 

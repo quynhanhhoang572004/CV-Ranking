@@ -1,1 +1,1 @@
-show cv with degree: master
+show cv with major: data science

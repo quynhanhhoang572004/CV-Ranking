@@ -93,11 +93,7 @@ framework: 'pytorch' | 'tensorflow' | 'keras' | 'scikit-learn' | 'xgboost' | 'li
 'opencv' | 'flask' | 'django' | 'spring' | 'express' | 'fastapi' |
 'next.js' | 'nuxt.js' | 'react' | 'vue' | 'angular' | 'bootstrap' |
 'laravel' | '.net' | 'asp.net' | 'electron' | 'flutter' | 'react native' |
-<<<<<<< HEAD:grammars/Hire.g4
-'node.js' | 'nestjs' | 'redux' | 'mui' | 'tailwindcss' | 'springboot';
-=======
 'node.js' | 'nestjs' | 'redux' | 'mui' | 'tailwindcss' | 'springboot'| 'pandas'| 'numpy';
->>>>>>> 669bff4db38c56335aeba01ab85b99207d85c14b:grammars/HireX.g4
 db: 'mysql' | 'postgresql' | 'sqlite' | 'mongodb' | 'redis' | 'mariadb' |
 'oracle' | 'sql server' | 'dynamodb' | 'cassandra' | 'elasticsearch' |
 'aws' | 'azure' | 'gcp' | 'google cloud' | 'amazon web services' |
