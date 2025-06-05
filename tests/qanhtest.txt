@@ -1,8 +1,8 @@
 REQUIREMENTS {
   position: backend developer
-  level: medium
+  level: intern
   stack {
-    tools: english, japanese
+    tools: git, docker
     programming languages: python
     framework libraries: pytorch
     databases cloud services: aws
@@ -12,7 +12,7 @@ REQUIREMENTS {
     degree: bachelor
     gpa: >=3.0
   }
-  experience: 2 years
+  experience: 6 years
   language: english
 }
 

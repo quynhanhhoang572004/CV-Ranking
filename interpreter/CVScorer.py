@@ -9,20 +9,33 @@ class CVScorer:
 
     def scoreCV(self, candidate):
         score = 0
-        skills = [skill.lower() for skill in candidate.get("skills", [])]
-        education = candidate.get("education", {})
-        experience_years = candidate.get("experience_years", 0)
-        leaderships = candidate.get("leaderships", [])
-        projects = candidate.get("projects", [])
-        references = candidate.get("references", [])
 
+        #GET ALL CANDIDATE INFO FOR SCORING
+        cand_skills = (
+                candidate.get("skills", {}).get("programmingLanguages", [])
+                + candidate.get("skills", {}).get("frameworksLibraries", [])
+                + candidate.get("skills", {}).get("databasesCloudServices", [])
+                + candidate.get("skills", {}).get("tools", [])
+        )
+        cand_edu = candidate.get("education", {})
+        cand_gpa = cand_edu.get("gpa", 0)
+        cand_degree = cand_edu.get("degree", "").lower()
+        cand_languages = candidate.get("languages", "")
+        cand_exp_years = candidate.get("experience_years", 0)
+        cand_activities = candidate.get("activities", [])
+        cand_projects = candidate.get("projects", [])
+
+
+
+        # GET ALL JD INFO FOR SCORING
         requirements = self.jd.get('requirements', {})
         preferences = self.jd.get("preferences", {})
 
         req_tech = requirements.get("technical skills", {})
         req_edu = requirements.get("education", {})
         req_gpa = float(req_edu.get("gpa", "GPA >= 0").split()[-1]) if req_edu.get("gpa") else 0
-        req_lan = requirements.get("language", "")
+        req_degree = req_edu.get("degree", "").lower()
+        req_languages = requirements.get("language", "")
         
         required_skills = [
             skill.lower()
@@ -35,9 +48,10 @@ class CVScorer:
             if isinstance(skill, str)
         ]
 
-    
+        #SCORING RULES
+        #Techincal skills
         if required_skills:
-            matched_skills = sum(2 for req_skill in required_skills if req_skill in skills)
+            matched_skills = sum(2 for req_skill in required_skills if req_skill in cand_skills)
             skill_percentage = matched_skills / len(required_skills)
             score += skill_percentage * 40
         else:
@@ -45,28 +59,23 @@ class CVScorer:
 
    
         if req_edu.get("major", "").lower():
-            if req_edu.get("major", "").lower() == education.get("major", "").lower():
+            if req_edu.get("major", "").lower() == cand_edu.get("major", "").lower():
                 score += 10
-            elif education.get("major", ""):  
+            elif cand_edu.get("major", ""):  
                 score += 5
         else:
             score += 8  
 
-     
-        candidate_gpa = education.get("gpa", 0)
-        if req_gpa > 0 and candidate_gpa > 0:
-            if candidate_gpa >= req_gpa:
-                score += 8 
+        cand_gpa = cand_edu.get("gpa", 0)
+        if req_gpa > 0 and cand_gpa > 0:
+            if cand_gpa >= req_gpa:
+                score += 8
             else:
-                
-                gpa_ratio = candidate_gpa / req_gpa
+                gpa_ratio = cand_gpa / req_gpa
                 score += max(gpa_ratio * 10, 2)
         else:
-            score += 6 
+            score += 6
 
-    
-        req_degree = req_edu.get("degree", "").lower()
-        candidate_degree = education.get("degree", "").lower()
         
         if req_degree and hasattr(self, 'DEGREE_LEVELS'):
             req_level = DEGREE_LEVELS.get(req_degree, 0)
@@ -92,15 +101,22 @@ class CVScorer:
                 req_exp_years = 0
         
         if req_exp_years > 0:
-            if int(experience_years) >= req_exp_years:
+            if int(cand_exp_years) >= req_exp_years:
                 score += 15 
             else:
             
-                exp_ratio = int(experience_years) / req_exp_years
+                exp_ratio = int(cand_exp_years) / req_exp_years
                 score += max(exp_ratio * 15, 3)
         else:
             score += 15
 
+
+        if req_languages:
+            matched_languages = sum(2 for req_lang in req_languages if req_lang in cand_languages)
+            lang_percentage = matched_languages / len(req_languages)
+            score += lang_percentage * 5
+        else:
+            score += 5
      
         pref_skills = []
         if preferences:
@@ -120,7 +136,7 @@ class CVScorer:
                 pref_skills.append(pref_language.lower())
 
         if pref_skills:
-            matched_prefs = sum(1 for pref_skill in pref_skills if pref_skill in skills)
+            matched_prefs = sum(1 for pref_skill in pref_skills if pref_skill in cand_skills)
             pref_percentage = matched_prefs / len(pref_skills)
             score += pref_percentage * 10
         else:
@@ -128,13 +144,11 @@ class CVScorer:
 
         
      
-        score += min(len(leaderships), 5)
+        score += min(len(cand_activities), 5)
         
       
-        score += min(len(projects), 5)
-        
-    
-        score += min(len(references), 5)
+        score += min(len(cand_projects), 5)
+ 
 
         percentage = score / 100
         

@@ -70,7 +70,6 @@ class Interpreter:
             cv = candidate_data["cv"]
             extracted_cv = self.cv_extractor.extractCV(cv)
             if CVQuery().match_condition(extracted_cv, condition):
-
                 matches.append({
                     "filename": candidate_data["filename"],
                     "cv": candidate_data["cv"],
