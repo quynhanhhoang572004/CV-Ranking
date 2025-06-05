@@ -1,0 +1,89 @@
+{
+  "Level": "Fresher",
+  "Experience": "10",
+  "FullName": "Amy Leonard",
+  "Contact": {
+    "Phone": "001-753-302-0678x54819",
+    "Email": "nicholas52@example.org",
+    "GitHub": "github.com/jonesbeverly",
+    "LinkedIn": "linkedin.com/in/bclements"
+  },
+  "Position": "DevOps Engineer",
+  "Education": {
+    "Degree": "Bachelor of Science in Computer Engineering",
+    "Institution": "University of Science, VNU-HCM",
+    "Duration": "2019-2023",
+    "GPA": 3.48
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "PyCharm",
+      "Makefile",
+      "Grafana"
+    ],
+    "ProgrammingLanguages": [
+      "Swift",
+      "C#",
+      "Python"
+    ],
+    "FrameworksLibraries": [
+      "Plotly",
+      "HuggingFace Transformers",
+      "Express",
+      "Flask",
+      "Airflow"
+    ],
+    "DatabasesCloudServices": [
+      "PineconeDB",
+      "Milvus"
+    ]
+  },
+  "Languages": {
+    "English": "C1",
+    "German": "A2",
+    "Japanese": "A1",
+    "French": "A2",
+    "Spanish": "C1",
+    "Chinese": "A1",
+    "Korean": "C1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Kubernetes Cluster Automation",
+      "Role": "DevOps Engineer",
+      "Duration": "January 2023 – May 2023",
+      "Details": [
+        "Automated EKS cluster provisioning using Terraform",
+        "Implemented GitOps workflow with ArgoCD",
+        "Set up monitoring with Prometheus and Grafana",
+        "Reduced deployment time by 70%"
+      ]
+    },
+    {
+      "Name": "Healthcare Appointment System",
+      "Role": "Full-stack Developer",
+      "Duration": "September 2024 – March 2025",
+      "Details": [
+        "Created patient portal with Next.js",
+        "Implemented calendar scheduling system",
+        "Added SMS/email notifications",
+        "Ensured HIPAA compliance for data security"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "ACM",
+      "Role": "Chapter President",
+      "Duration": "2020–2024",
+      "Activities": [
+        "Hosted workshops and guided technical best practices."
+      ]
+    }
+  ]
+}

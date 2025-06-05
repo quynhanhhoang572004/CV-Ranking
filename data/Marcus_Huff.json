@@ -1,0 +1,91 @@
+{
+  "Level": "Intern",
+  "Experience": "9",
+  "FullName": "Marcus Huff",
+  "Contact": {
+    "Phone": "(274)363-3920",
+    "Email": "javierbuck@example.com",
+    "GitHub": "github.com/tmanning",
+    "LinkedIn": "linkedin.com/in/wbrooks"
+  },
+  "Position": "Software Engineer",
+  "Education": {
+    "Degree": "PhD of Science in Computer Science",
+    "Institution": "University of Information Technology, VNU-HCM",
+    "Duration": "2016-2024",
+    "GPA": 3.57
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Skaffold",
+      "Pre-commit",
+      "Zsh",
+      "Prometheus"
+    ],
+    "ProgrammingLanguages": [
+      "Kotlin",
+      "Ruby",
+      "JavaScript"
+    ],
+    "FrameworksLibraries": [
+      "Django",
+      "BeautifulSoup",
+      "React",
+      "Flask",
+      "FastAPI"
+    ],
+    "DatabasesCloudServices": [
+      "Weaviate",
+      "ElasticSearch",
+      "S3"
+    ]
+  },
+  "Languages": {
+    "English": "A1",
+    "German": "A1",
+    "Japanese": "A1",
+    "French": "C2",
+    "Spanish": "A1",
+    "Chinese": "B2",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "E-commerce Platform API",
+      "Role": "Back-end Developer",
+      "Duration": "November 2023 – May 2023",
+      "Details": [
+        "Designed RESTful API for e-commerce platform using Django REST Framework",
+        "Implemented JWT authentication and role-based access control",
+        "Optimized database queries reducing response time by 40%",
+        "Integrated Stripe payment processing system"
+      ]
+    },
+    {
+      "Name": "AR Furniture Visualization",
+      "Role": "AR/VR Developer",
+      "Duration": "September 2023 – February 2025",
+      "Details": [
+        "Developed ARKit/ARCore application for furniture visualization",
+        "Implemented 3D model rendering with Unity",
+        "Added physics for realistic placement",
+        "Integrated with e-commerce backend"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "Technical Mentor",
+      "Duration": "2023–2024",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

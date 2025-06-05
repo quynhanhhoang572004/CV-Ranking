@@ -1,0 +1,90 @@
+{
+  "Level": "Junior",
+  "Experience": "10",
+  "FullName": "Jill Clark",
+  "Contact": {
+    "Phone": "(313)448-7050",
+    "Email": "juarezmaria@example.org",
+    "GitHub": "github.com/jennifer38",
+    "LinkedIn": "linkedin.com/in/aprilporter"
+  },
+  "Position": "Android Developer",
+  "Education": {
+    "Degree": "PhD of Science in Computer Science",
+    "Institution": "Hanoi University of Science and Technology",
+    "Duration": "2016-2024",
+    "GPA": 3.7
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "MLflow",
+      "Nginx",
+      "Zsh",
+      "VSCode"
+    ],
+    "ProgrammingLanguages": [
+      "Swift",
+      "Rust"
+    ],
+    "FrameworksLibraries": [
+      "Tensorflow",
+      "BeautifulSoup",
+      "Vue",
+      "Express",
+      "Numpy"
+    ],
+    "DatabasesCloudServices": [
+      "MongoDB",
+      "Faiss",
+      "Qdrant"
+    ]
+  },
+  "Languages": {
+    "English": "B1",
+    "German": "B2",
+    "Japanese": "C1",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "C1",
+    "Korean": "B2",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "C2"
+  },
+  "Projects": [
+    {
+      "Name": "E-commerce Platform API",
+      "Role": "Back-end Developer",
+      "Duration": "June 2023 – April 2025",
+      "Details": [
+        "Designed RESTful API for e-commerce platform using Django REST Framework",
+        "Implemented JWT authentication and role-based access control",
+        "Optimized database queries reducing response time by 40%",
+        "Integrated Stripe payment processing system"
+      ]
+    },
+    {
+      "Name": "Healthcare Appointment System",
+      "Role": "Full-stack Developer",
+      "Duration": "October 2023 – June 2025",
+      "Details": [
+        "Created patient portal with Next.js",
+        "Implemented calendar scheduling system",
+        "Added SMS/email notifications",
+        "Ensured HIPAA compliance for data security"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "AI Lead",
+      "Duration": "2021–2024",
+      "Activities": [
+        "Hosted workshops and guided technical best practices."
+      ]
+    }
+  ]
+}

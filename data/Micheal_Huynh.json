@@ -1,0 +1,76 @@
+{
+  "Level": "Fresher",
+  "Experience": "5",
+  "FullName": "Micheal Huynh",
+  "Contact": {
+    "Phone": "+1-843-254-3767x1065",
+    "Email": "kwright@example.com",
+    "GitHub": "github.com/shannonyoung",
+    "LinkedIn": "linkedin.com/in/ryangary"
+  },
+  "Position": "Frontend Developer",
+  "Education": {
+    "Degree": "Bachelor of Science in Computer Science",
+    "Institution": "FPT University",
+    "Duration": "2018-2024",
+    "GPA": 3.57
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Terraform",
+      "Vim"
+    ],
+    "ProgrammingLanguages": [
+      "JavaScript"
+    ],
+    "FrameworksLibraries": [
+      "Vue",
+      "NextJS",
+      "FastAPI"
+    ],
+    "DatabasesCloudServices": [
+      "BigQuery",
+      "PostgreSQL",
+      "S3"
+    ]
+  },
+  "Languages": {
+    "English": "B1",
+    "German": "C2",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "C1",
+    "Arabic": "C1",
+    "Portuguese": "A1",
+    "Italian": "A2"
+  },
+  "Projects": [
+    {
+      "Name": "Personal Finance Tracker",
+      "Role": "Mobile Developer",
+      "Duration": "August 2023 – March 2024",
+      "Details": [
+        "Developed Flutter app for expense tracking",
+        "Implemented data visualization charts",
+        "Added budget alerts",
+        "Integrated with bank APIs"
+      ]
+    },
+    {
+      "Name": "Healthcare Appointment System",
+      "Role": "Full-stack Developer",
+      "Duration": "February 2023 – October 2023",
+      "Details": [
+        "Created patient portal with Next.js",
+        "Implemented calendar scheduling system",
+        "Added SMS/email notifications",
+        "Ensured HIPAA compliance for data security"
+      ]
+    }
+  ],
+  "Activities": []
+}

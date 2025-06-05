@@ -1,0 +1,81 @@
+{
+  "Level": "Fresher",
+  "Experience": "2",
+  "FullName": "Chelsea Hudson",
+  "Contact": {
+    "Phone": "001-789-385-1183x14285",
+    "Email": "edwardgregory@example.net",
+    "GitHub": "github.com/thomashannah",
+    "LinkedIn": "linkedin.com/in/ayersnicole"
+  },
+  "Position": "Game Developer",
+  "Education": {
+    "Degree": "Bachelor of Science in Computer Science",
+    "Institution": "University of Science, VNU-HCM",
+    "Duration": "2018-2023",
+    "GPA": 3.52
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Zsh",
+      "PyCharm",
+      "Bash",
+      "TravisCI"
+    ],
+    "ProgrammingLanguages": [
+      "Kotlin",
+      "Go",
+      "Typescript"
+    ],
+    "FrameworksLibraries": [
+      "Django",
+      "BeautifulSoup",
+      "Streamlit"
+    ],
+    "DatabasesCloudServices": [
+      "BigQuery",
+      "Neo4j",
+      "AWS DynamoDB",
+      "Redis"
+    ]
+  },
+  "Languages": {
+    "English": "C1",
+    "German": "A1",
+    "Japanese": "C2",
+    "French": "C2",
+    "Spanish": "C1",
+    "Chinese": "B1",
+    "Korean": "A1",
+    "Russian": "B1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "CI/CD Pipeline Optimization",
+      "Role": "DevOps Engineer",
+      "Duration": "May 2023 – March 2023",
+      "Details": [
+        "Migrated from Jenkins to GitHub Actions",
+        "Implemented parallel test execution",
+        "Reduced pipeline duration from 45 to 12 minutes",
+        "Added security scanning with Trivy and OWASP ZAP"
+      ]
+    },
+    {
+      "Name": "Healthcare Appointment System",
+      "Role": "Full-stack Developer",
+      "Duration": "February 2024 – April 2025",
+      "Details": [
+        "Created patient portal with Next.js",
+        "Implemented calendar scheduling system",
+        "Added SMS/email notifications",
+        "Ensured HIPAA compliance for data security"
+      ]
+    }
+  ],
+  "Activities": []
+}

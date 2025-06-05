@@ -1,0 +1,88 @@
+{
+  "Level": "Fresher",
+  "Experience": "1",
+  "FullName": "Jacqueline Carlson",
+  "Contact": {
+    "Phone": "7419313070",
+    "Email": "drhodes@example.org",
+    "GitHub": "github.com/jeffreymoore",
+    "LinkedIn": "linkedin.com/in/xmcfarland"
+  },
+  "Position": "Software Engineer",
+  "Education": {
+    "Degree": "Bachelor of Science in Data Science",
+    "Institution": "Hanoi University of Science and Technology",
+    "Duration": "2018-2022",
+    "GPA": 2.98
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Helm",
+      "DVC",
+      "Kubernetes",
+      "CircleCI"
+    ],
+    "ProgrammingLanguages": [
+      "R",
+      "C#"
+    ],
+    "FrameworksLibraries": [
+      "React",
+      "Scikit-learn",
+      "Express",
+      "Django"
+    ],
+    "DatabasesCloudServices": [
+      "Weaviate",
+      "MongoDB"
+    ]
+  },
+  "Languages": {
+    "English": "A1",
+    "German": "A1",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "C2",
+    "Chinese": "A2",
+    "Korean": "C2",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "C1"
+  },
+  "Projects": [
+    {
+      "Name": "Property Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "December 2024 – January 2025",
+      "Details": [
+        "Developed React frontend with TypeScript",
+        "Built backend services using NestJS",
+        "Implemented PDF generation for contracts",
+        "Added role-based access control"
+      ]
+    },
+    {
+      "Name": "E-commerce Platform API",
+      "Role": "Back-end Developer",
+      "Duration": "April 2023 – June 2023",
+      "Details": [
+        "Designed RESTful API for e-commerce platform using Django REST Framework",
+        "Implemented JWT authentication and role-based access control",
+        "Optimized database queries reducing response time by 40%",
+        "Integrated Stripe payment processing system"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "ACM",
+      "Role": "BackEnd Specialist",
+      "Duration": "2022–2023",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

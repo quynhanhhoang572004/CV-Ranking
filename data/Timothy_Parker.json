@@ -1,0 +1,86 @@
+{
+  "Level": "Senior",
+  "Experience": "9",
+  "FullName": "Timothy Parker",
+  "Contact": {
+    "Phone": "+1-545-524-3755x1925",
+    "Email": "hmooney@example.com",
+    "GitHub": "github.com/perrygary",
+    "LinkedIn": "linkedin.com/in/harrisjames"
+  },
+  "Position": "DevOps Engineer",
+  "Education": {
+    "Degree": "Bachelor of Science in Computer Science",
+    "Institution": "University of Information Technology, VNU-HCM",
+    "Duration": "2019-2024",
+    "GPA": 3.75
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Ansible",
+      "Jenkins",
+      "Vim"
+    ],
+    "ProgrammingLanguages": [
+      "Go"
+    ],
+    "FrameworksLibraries": [
+      "Airflow",
+      "FastAPI",
+      "Pandas",
+      "Vue"
+    ],
+    "DatabasesCloudServices": [
+      "Faiss",
+      "AWS DynamoDB"
+    ]
+  },
+  "Languages": {
+    "English": "B2",
+    "German": "A1",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A2",
+    "Portuguese": "A2",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Medical Image Segmentation System",
+      "Role": "ML Engineer",
+      "Duration": "April 2023 – December 2023",
+      "Details": [
+        "Developed U-Net architecture for medical image segmentation",
+        "Preprocessed DICOM images using NumPy and OpenCV",
+        "Achieved 92% dice score on test dataset",
+        "Deployed model as microservice using FastAPI"
+      ]
+    },
+    {
+      "Name": "Real-time Chat Application",
+      "Role": "Back-end Developer",
+      "Duration": "July 2024 – December 2025",
+      "Details": [
+        "Built WebSocket-based chat service using Socket.io",
+        "Implemented message persistence with MongoDB",
+        "Added end-to-end encryption using AES-256",
+        "Deployed on AWS with auto-scaling"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "Team Lead",
+      "Duration": "2020–2023",
+      "Activities": [
+        "Led a team of developers to build community projects."
+      ]
+    }
+  ]
+}

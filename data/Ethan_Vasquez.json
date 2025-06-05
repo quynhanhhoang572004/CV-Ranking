@@ -1,0 +1,89 @@
+{
+  "Level": "Intern",
+  "Experience": "3",
+  "FullName": "Ethan Vasquez",
+  "Contact": {
+    "Phone": "(430)488-2132",
+    "Email": "brendamontgomery@example.org",
+    "GitHub": "github.com/pmitchell",
+    "LinkedIn": "linkedin.com/in/pittmanrobert"
+  },
+  "Position": "Security Engineer",
+  "Education": {
+    "Degree": "Master of Science in Computer Science",
+    "Institution": "Posts and Telecommunications Institute of Technology",
+    "Duration": "2022-2022",
+    "GPA": 3.06
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Kubernetes",
+      "Skaffold"
+    ],
+    "ProgrammingLanguages": [
+      "Python",
+      "Swift"
+    ],
+    "FrameworksLibraries": [
+      "Selenium",
+      "Flask",
+      "Tensorflow",
+      "LangChain",
+      "Pytorch"
+    ],
+    "DatabasesCloudServices": [
+      "MongoDB",
+      "ElasticSearch",
+      "AWS DynamoDB",
+      "PineconeDB"
+    ]
+  },
+  "Languages": {
+    "English": "B2",
+    "German": "C1",
+    "Japanese": "A1",
+    "French": "C2",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "A2",
+    "Russian": "A1",
+    "Vietnamese": "C2",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Data Lake for IoT Devices",
+      "Role": "Data Engineer",
+      "Duration": "August 2023 – December 2023",
+      "Details": [
+        "Designed data ingestion pipeline processing 10M+ events daily",
+        "Implemented stream processing using Apache Flink",
+        "Built data quality monitoring with Great Expectations",
+        "Optimized Parquet storage for efficient querying"
+      ]
+    },
+    {
+      "Name": "Personal Finance Tracker",
+      "Role": "Mobile Developer",
+      "Duration": "September 2023 – September 2025",
+      "Details": [
+        "Developed Flutter app for expense tracking",
+        "Implemented data visualization charts",
+        "Added budget alerts",
+        "Integrated with bank APIs"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "GDSC",
+      "Role": "Team Lead",
+      "Duration": "2020–2023",
+      "Activities": [
+        "Mentored junior members in their technical growth."
+      ]
+    }
+  ]
+}

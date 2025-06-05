@@ -1,0 +1,87 @@
+{
+  "Level": "Senior",
+  "Experience": "10",
+  "FullName": "Jessica Gomez",
+  "Contact": {
+    "Phone": "806-486-3574",
+    "Email": "anthonywagner@example.com",
+    "GitHub": "github.com/oclark",
+    "LinkedIn": "linkedin.com/in/asanchez"
+  },
+  "Position": "Network Engineer",
+  "Education": {
+    "Degree": "PhD of Science in Information Technology",
+    "Institution": "Posts and Telecommunications Institute of Technology",
+    "Duration": "2017-2023",
+    "GPA": 3.93
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Makefile",
+      "Nginx"
+    ],
+    "ProgrammingLanguages": [
+      "Rust"
+    ],
+    "FrameworksLibraries": [
+      "Plotly",
+      "Vue",
+      "Numpy",
+      "OpenCV"
+    ],
+    "DatabasesCloudServices": [
+      "Redis",
+      "S3",
+      "MongoDB",
+      "Qdrant"
+    ]
+  },
+  "Languages": {
+    "English": "A1",
+    "German": "A1",
+    "Japanese": "A2",
+    "French": "A1",
+    "Spanish": "C2",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "AI-Powered Fashion Recommender",
+      "Role": "AI Engineer",
+      "Duration": "September 2024 – August 2024",
+      "Details": [
+        "Developed recommendation engine using collaborative filtering and content-based approaches",
+        "Implemented computer vision model for style analysis using PyTorch",
+        "Built Flask API for serving recommendations",
+        "Optimized model performance using ONNX runtime"
+      ]
+    },
+    {
+      "Name": "Campus Event Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "April 2024 – June 2025",
+      "Details": [
+        "Built student portal for event registration",
+        "Implemented admin dashboard for event management",
+        "Added notification system",
+        "Deployed on university servers"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "GDSC",
+      "Role": "BackEnd Specialist",
+      "Duration": "2021–2023",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "Level": "Intern",
+  "Experience": "10",
+  "FullName": "Keith Stafford",
+  "Contact": {
+    "Phone": "+1-658-505-2975x52353",
+    "Email": "gonzalezaaron@example.net",
+    "GitHub": "github.com/steven88",
+    "LinkedIn": "linkedin.com/in/marshallnicholas"
+  },
+  "Position": "Blockchain Developer",
+  "Education": {
+    "Degree": "Bachelor of Science in Information Technology",
+    "Institution": "University of Technology, VNU-HCM",
+    "Duration": "2018-2023",
+    "GPA": 3.97
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Postman",
+      "Docker",
+      "Zsh",
+      "Git"
+    ],
+    "ProgrammingLanguages": [
+      "C#",
+      "JavaScript"
+    ],
+    "FrameworksLibraries": [
+      "Flask",
+      "React",
+      "HuggingFace Transformers",
+      "Numpy"
+    ],
+    "DatabasesCloudServices": [
+      "Faiss",
+      "Redis"
+    ]
+  },
+  "Languages": {
+    "English": "C2",
+    "German": "B2",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "B1",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Campus Event Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "July 2023 – April 2023",
+      "Details": [
+        "Built student portal for event registration",
+        "Implemented admin dashboard for event management",
+        "Added notification system",
+        "Deployed on university servers"
+      ]
+    },
+    {
+      "Name": "AI-Powered Fashion Recommender",
+      "Role": "AI Engineer",
+      "Duration": "July 2023 – October 2025",
+      "Details": [
+        "Developed recommendation engine using collaborative filtering and content-based approaches",
+        "Implemented computer vision model for style analysis using PyTorch",
+        "Built Flask API for serving recommendations",
+        "Optimized model performance using ONNX runtime"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "ACM",
+      "Role": "AI Lead",
+      "Duration": "2020–2023",
+      "Activities": [
+        "Hosted workshops and guided technical best practices."
+      ]
+    }
+  ]
+}

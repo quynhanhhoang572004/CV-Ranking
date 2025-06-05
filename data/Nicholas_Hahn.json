@@ -1,0 +1,88 @@
+{
+  "Level": "Intern",
+  "Experience": "8",
+  "FullName": "Nicholas Hahn",
+  "Contact": {
+    "Phone": "001-333-602-9858",
+    "Email": "cedwards@example.org",
+    "GitHub": "github.com/tortiz",
+    "LinkedIn": "linkedin.com/in/ksalazar"
+  },
+  "Position": "iOS Developer",
+  "Education": {
+    "Degree": "Master of Science in Data Science",
+    "Institution": "RMIT University Vietnam",
+    "Duration": "2021-2024",
+    "GPA": 3.6
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Jenkins",
+      "Kubernetes",
+      "DVC",
+      "Docker"
+    ],
+    "ProgrammingLanguages": [
+      "Typescript",
+      "Rust"
+    ],
+    "FrameworksLibraries": [
+      "Scikit-learn",
+      "Plotly",
+      "OpenCV"
+    ],
+    "DatabasesCloudServices": [
+      "Milvus",
+      "Weaviate",
+      "Firebase"
+    ]
+  },
+  "Languages": {
+    "English": "B2",
+    "German": "C1",
+    "Japanese": "B1",
+    "French": "A1",
+    "Spanish": "C1",
+    "Chinese": "B1",
+    "Korean": "A2",
+    "Russian": "A1",
+    "Vietnamese": "A2",
+    "Arabic": "C1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "E-commerce Platform API",
+      "Role": "Back-end Developer",
+      "Duration": "February 2024 – December 2025",
+      "Details": [
+        "Designed RESTful API for e-commerce platform using Django REST Framework",
+        "Implemented JWT authentication and role-based access control",
+        "Optimized database queries reducing response time by 40%",
+        "Integrated Stripe payment processing system"
+      ]
+    },
+    {
+      "Name": "AR Furniture Visualization",
+      "Role": "AR/VR Developer",
+      "Duration": "January 2024 – May 2024",
+      "Details": [
+        "Developed ARKit/ARCore application for furniture visualization",
+        "Implemented 3D model rendering with Unity",
+        "Added physics for realistic placement",
+        "Integrated with e-commerce backend"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "ACM",
+      "Role": "Chapter President",
+      "Duration": "2020–2023",
+      "Activities": [
+        "Mentored junior members in their technical growth."
+      ]
+    }
+  ]
+}

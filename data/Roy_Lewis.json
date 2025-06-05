@@ -1,0 +1,88 @@
+{
+  "Level": "Senior",
+  "Experience": "9",
+  "FullName": "Roy Lewis",
+  "Contact": {
+    "Phone": "(794)675-2691x098",
+    "Email": "tamara87@example.org",
+    "GitHub": "github.com/xfoster",
+    "LinkedIn": "linkedin.com/in/melody48"
+  },
+  "Position": "Solution Architect",
+  "Education": {
+    "Degree": "Master of Science in Artificial Intelligence",
+    "Institution": "Posts and Telecommunications Institute of Technology",
+    "Duration": "2022-2024",
+    "GPA": 3.75
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Bash",
+      "Vim"
+    ],
+    "ProgrammingLanguages": [
+      "JavaScript",
+      "PHP"
+    ],
+    "FrameworksLibraries": [
+      "Django",
+      "Selenium",
+      "React",
+      "Express",
+      "NextJS"
+    ],
+    "DatabasesCloudServices": [
+      "MongoDB",
+      "GCP",
+      "BigQuery"
+    ]
+  },
+  "Languages": {
+    "English": "A2",
+    "German": "A1",
+    "Japanese": "B1",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Campus Event Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "December 2023 – October 2023",
+      "Details": [
+        "Built student portal for event registration",
+        "Implemented admin dashboard for event management",
+        "Added notification system",
+        "Deployed on university servers"
+      ]
+    },
+    {
+      "Name": "AI-Powered Fashion Recommender",
+      "Role": "AI Engineer",
+      "Duration": "April 2023 – October 2024",
+      "Details": [
+        "Developed recommendation engine using collaborative filtering and content-based approaches",
+        "Implemented computer vision model for style analysis using PyTorch",
+        "Built Flask API for serving recommendations",
+        "Optimized model performance using ONNX runtime"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "ACM",
+      "Role": "Technical Mentor",
+      "Duration": "2020–2023",
+      "Activities": [
+        "Led a team of developers to build community projects."
+      ]
+    }
+  ]
+}

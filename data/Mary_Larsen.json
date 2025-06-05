@@ -1,0 +1,88 @@
+{
+  "Level": "Senior",
+  "Experience": "8",
+  "FullName": "Mary Larsen",
+  "Contact": {
+    "Phone": "+1-514-727-9614x31610",
+    "Email": "isaacferguson@example.com",
+    "GitHub": "github.com/wallacematthew",
+    "LinkedIn": "linkedin.com/in/floydscott"
+  },
+  "Position": "Android Developer",
+  "Education": {
+    "Degree": "Bachelor of Science in Data Science",
+    "Institution": "FPT University",
+    "Duration": "2019-2024",
+    "GPA": 3.33
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Git",
+      "CircleCI",
+      "Bash"
+    ],
+    "ProgrammingLanguages": [
+      "Python",
+      "Go"
+    ],
+    "FrameworksLibraries": [
+      "Tensorflow",
+      "HuggingFace Transformers",
+      "Selenium",
+      "Pytorch"
+    ],
+    "DatabasesCloudServices": [
+      "Milvus",
+      "MySQL",
+      "GCP"
+    ]
+  },
+  "Languages": {
+    "English": "A1",
+    "German": "A1",
+    "Japanese": "B2",
+    "French": "A1",
+    "Spanish": "A2",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A2",
+    "Italian": "B1"
+  },
+  "Projects": [
+    {
+      "Name": "E-commerce Platform API",
+      "Role": "Back-end Developer",
+      "Duration": "August 2024 – October 2024",
+      "Details": [
+        "Designed RESTful API for e-commerce platform using Django REST Framework",
+        "Implemented JWT authentication and role-based access control",
+        "Optimized database queries reducing response time by 40%",
+        "Integrated Stripe payment processing system"
+      ]
+    },
+    {
+      "Name": "Campus Event Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "November 2024 – April 2024",
+      "Details": [
+        "Built student portal for event registration",
+        "Implemented admin dashboard for event management",
+        "Added notification system",
+        "Deployed on university servers"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "ACM",
+      "Role": "BackEnd Specialist",
+      "Duration": "2022–2024",
+      "Activities": [
+        "Mentored junior members in their technical growth."
+      ]
+    }
+  ]
+}

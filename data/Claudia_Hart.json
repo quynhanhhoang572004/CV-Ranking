@@ -1,0 +1,90 @@
+{
+  "Level": "Senior",
+  "Experience": "2",
+  "FullName": "Claudia Hart",
+  "Contact": {
+    "Phone": "(814)569-7295x995",
+    "Email": "martinmarissa@example.net",
+    "GitHub": "github.com/walter29",
+    "LinkedIn": "linkedin.com/in/ahogan"
+  },
+  "Position": "Data Analyst",
+  "Education": {
+    "Degree": "Bachelor of Science in Computer Science",
+    "Institution": "University of Technology, VNU-HCM",
+    "Duration": "2020-2023",
+    "GPA": 3.35
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Vim",
+      "CircleCI",
+      "Terraform",
+      "PyCharm"
+    ],
+    "ProgrammingLanguages": [
+      "Go",
+      "R",
+      "JavaScript"
+    ],
+    "FrameworksLibraries": [
+      "Matplotlib",
+      "OpenCV",
+      "BeautifulSoup",
+      "Express"
+    ],
+    "DatabasesCloudServices": [
+      "Neo4j",
+      "Firebase",
+      "MongoDB"
+    ]
+  },
+  "Languages": {
+    "English": "A1",
+    "German": "A1",
+    "Japanese": "B2",
+    "French": "A1",
+    "Spanish": "B2",
+    "Chinese": "A1",
+    "Korean": "A2",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "C1"
+  },
+  "Projects": [
+    {
+      "Name": "Data Lake for IoT Devices",
+      "Role": "Data Engineer",
+      "Duration": "January 2023 – August 2025",
+      "Details": [
+        "Designed data ingestion pipeline processing 10M+ events daily",
+        "Implemented stream processing using Apache Flink",
+        "Built data quality monitoring with Great Expectations",
+        "Optimized Parquet storage for efficient querying"
+      ]
+    },
+    {
+      "Name": "Healthcare Appointment System",
+      "Role": "Full-stack Developer",
+      "Duration": "July 2024 – October 2024",
+      "Details": [
+        "Created patient portal with Next.js",
+        "Implemented calendar scheduling system",
+        "Added SMS/email notifications",
+        "Ensured HIPAA compliance for data security"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "Team Lead",
+      "Duration": "2021–2023",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

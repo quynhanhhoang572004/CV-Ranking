@@ -1,0 +1,86 @@
+{
+  "Level": "Fresher",
+  "Experience": "2",
+  "FullName": "Nathan Alexander",
+  "Contact": {
+    "Phone": "001-405-919-5637",
+    "Email": "josephjohnson@example.net",
+    "GitHub": "github.com/kmiller",
+    "LinkedIn": "linkedin.com/in/moralesjanet"
+  },
+  "Position": "Network Engineer",
+  "Education": {
+    "Degree": "Bachelor of Science in Data Science",
+    "Institution": "FPT University",
+    "Duration": "2020-2023",
+    "GPA": 3.88
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Prometheus",
+      "Terraform"
+    ],
+    "ProgrammingLanguages": [
+      "Swift"
+    ],
+    "FrameworksLibraries": [
+      "Plotly",
+      "FastAPI",
+      "React"
+    ],
+    "DatabasesCloudServices": [
+      "SQLite",
+      "Weaviate",
+      "ElasticSearch",
+      "Firebase"
+    ]
+  },
+  "Languages": {
+    "English": "A1",
+    "German": "A1",
+    "Japanese": "A2",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "C2",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Kubernetes Cluster Automation",
+      "Role": "DevOps Engineer",
+      "Duration": "September 2024 – April 2025",
+      "Details": [
+        "Automated EKS cluster provisioning using Terraform",
+        "Implemented GitOps workflow with ArgoCD",
+        "Set up monitoring with Prometheus and Grafana",
+        "Reduced deployment time by 70%"
+      ]
+    },
+    {
+      "Name": "CI/CD Pipeline Optimization",
+      "Role": "DevOps Engineer",
+      "Duration": "April 2024 – February 2025",
+      "Details": [
+        "Migrated from Jenkins to GitHub Actions",
+        "Implemented parallel test execution",
+        "Reduced pipeline duration from 45 to 12 minutes",
+        "Added security scanning with Trivy and OWASP ZAP"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "Technical Mentor",
+      "Duration": "2023–2024",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

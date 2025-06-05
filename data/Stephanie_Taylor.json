@@ -1,0 +1,87 @@
+{
+  "Level": "Junior",
+  "Experience": "3",
+  "FullName": "Stephanie Taylor",
+  "Contact": {
+    "Phone": "(780)679-9467",
+    "Email": "melaniemclaughlin@example.net",
+    "GitHub": "github.com/briangomez",
+    "LinkedIn": "linkedin.com/in/fhubbard"
+  },
+  "Position": "Backend Developer",
+  "Education": {
+    "Degree": "PhD of Science in Artificial Intelligence",
+    "Institution": "University of Information Technology, VNU-HCM",
+    "Duration": "2016-2024",
+    "GPA": 3.7
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "CircleCI",
+      "Makefile",
+      "Vim"
+    ],
+    "ProgrammingLanguages": [
+      "Python",
+      "Swift"
+    ],
+    "FrameworksLibraries": [
+      "OpenCV",
+      "Vue",
+      "Flask",
+      "Scikit-learn"
+    ],
+    "DatabasesCloudServices": [
+      "Neo4j",
+      "ElasticSearch"
+    ]
+  },
+  "Languages": {
+    "English": "C2",
+    "German": "A1",
+    "Japanese": "B2",
+    "French": "B2",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "B1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "AI-Powered Fashion Recommender",
+      "Role": "AI Engineer",
+      "Duration": "March 2023 – June 2024",
+      "Details": [
+        "Developed recommendation engine using collaborative filtering and content-based approaches",
+        "Implemented computer vision model for style analysis using PyTorch",
+        "Built Flask API for serving recommendations",
+        "Optimized model performance using ONNX runtime"
+      ]
+    },
+    {
+      "Name": "CI/CD Pipeline Optimization",
+      "Role": "DevOps Engineer",
+      "Duration": "December 2023 – May 2024",
+      "Details": [
+        "Migrated from Jenkins to GitHub Actions",
+        "Implemented parallel test execution",
+        "Reduced pipeline duration from 45 to 12 minutes",
+        "Added security scanning with Trivy and OWASP ZAP"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "Technical Mentor",
+      "Duration": "2022–2023",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

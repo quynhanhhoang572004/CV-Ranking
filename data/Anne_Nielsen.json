@@ -1,0 +1,87 @@
+{
+  "Level": "Senior",
+  "Experience": "8",
+  "FullName": "Anne Nielsen",
+  "Contact": {
+    "Phone": "001-836-603-3556x840",
+    "Email": "alexis88@example.com",
+    "GitHub": "github.com/ohammond",
+    "LinkedIn": "linkedin.com/in/zblair"
+  },
+  "Position": "Technical Lead",
+  "Education": {
+    "Degree": "Bachelor of Science in Data Science",
+    "Institution": "Posts and Telecommunications Institute of Technology",
+    "Duration": "2020-2022",
+    "GPA": 3.38
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Github Actions",
+      "TravisCI",
+      "PyCharm"
+    ],
+    "ProgrammingLanguages": [
+      "Rust"
+    ],
+    "FrameworksLibraries": [
+      "Pandas",
+      "FastAPI",
+      "Tensorflow",
+      "Plotly",
+      "Matplotlib"
+    ],
+    "DatabasesCloudServices": [
+      "Azure Cosmos DB",
+      "Neo4j"
+    ]
+  },
+  "Languages": {
+    "English": "B1",
+    "German": "A2",
+    "Japanese": "A1",
+    "French": "B2",
+    "Spanish": "C1",
+    "Chinese": "C1",
+    "Korean": "A2",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "B1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Customer 360 Data Warehouse",
+      "Role": "Data Engineer",
+      "Duration": "May 2024 – October 2025",
+      "Details": [
+        "Built dimensional data model using Kimball methodology",
+        "Implemented slowly changing dimensions Type 2",
+        "Created data marts for different business units",
+        "Reduced report generation time from hours to minutes"
+      ]
+    },
+    {
+      "Name": "Data Lake for IoT Devices",
+      "Role": "Data Engineer",
+      "Duration": "May 2024 – January 2025",
+      "Details": [
+        "Designed data ingestion pipeline processing 10M+ events daily",
+        "Implemented stream processing using Apache Flink",
+        "Built data quality monitoring with Great Expectations",
+        "Optimized Parquet storage for efficient querying"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "GDSC",
+      "Role": "Technical Mentor",
+      "Duration": "2021–2024",
+      "Activities": [
+        "Led a team of developers to build community projects."
+      ]
+    }
+  ]
+}

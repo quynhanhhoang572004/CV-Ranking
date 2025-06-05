@@ -1,0 +1,88 @@
+{
+  "Level": "Intern",
+  "Experience": "6",
+  "FullName": "Daniel Adkins",
+  "Contact": {
+    "Phone": "+1-971-736-3390x4439",
+    "Email": "cherylallen@example.com",
+    "GitHub": "github.com/keith75",
+    "LinkedIn": "linkedin.com/in/kblanchard"
+  },
+  "Position": "Solution Architect",
+  "Education": {
+    "Degree": "Master of Science in Software Engineering",
+    "Institution": "University of Information Technology, VNU-HCM",
+    "Duration": "2020-2022",
+    "GPA": 3.91
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Weights & Biases",
+      "MLflow"
+    ],
+    "ProgrammingLanguages": [
+      "JavaScript",
+      "R",
+      "Kotlin"
+    ],
+    "FrameworksLibraries": [
+      "Scikit-learn",
+      "OpenCV",
+      "HuggingFace Transformers",
+      "Flask",
+      "Plotly"
+    ],
+    "DatabasesCloudServices": [
+      "Firebase",
+      "Milvus"
+    ]
+  },
+  "Languages": {
+    "English": "C2",
+    "German": "B1",
+    "Japanese": "A1",
+    "French": "B1",
+    "Spanish": "C1",
+    "Chinese": "A1",
+    "Korean": "B2",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "C2",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Data Lake for IoT Devices",
+      "Role": "Data Engineer",
+      "Duration": "July 2024 – November 2025",
+      "Details": [
+        "Designed data ingestion pipeline processing 10M+ events daily",
+        "Implemented stream processing using Apache Flink",
+        "Built data quality monitoring with Great Expectations",
+        "Optimized Parquet storage for efficient querying"
+      ]
+    },
+    {
+      "Name": "Blockchain Supply Chain Tracker",
+      "Role": "Blockchain Developer",
+      "Duration": "June 2023 – October 2024",
+      "Details": [
+        "Developed smart contracts for supply chain tracking",
+        "Built React frontend for supply chain visualization",
+        "Integrated with IoT devices for real-time tracking",
+        "Implemented zero-knowledge proofs for sensitive data"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "ACM",
+      "Role": "Chapter President",
+      "Duration": "2023–2023",
+      "Activities": [
+        "Led a team of developers to build community projects."
+      ]
+    }
+  ]
+}

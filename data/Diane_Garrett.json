@@ -1,0 +1,91 @@
+{
+  "Level": "Fresher",
+  "Experience": "5",
+  "FullName": "Diane Garrett",
+  "Contact": {
+    "Phone": "001-311-708-6355x968",
+    "Email": "wflynn@example.com",
+    "GitHub": "github.com/andrew86",
+    "LinkedIn": "linkedin.com/in/martinezdon"
+  },
+  "Position": "Technical Lead",
+  "Education": {
+    "Degree": "Master of Science in Computer Engineering",
+    "Institution": "University of Information Technology, VNU-HCM",
+    "Duration": "2021-2024",
+    "GPA": 3.11
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Poetry",
+      "Github Actions",
+      "Zsh",
+      "Helm"
+    ],
+    "ProgrammingLanguages": [
+      "Typescript",
+      "C#"
+    ],
+    "FrameworksLibraries": [
+      "Tensorflow",
+      "Matplotlib",
+      "Pytorch",
+      "Selenium",
+      "Django"
+    ],
+    "DatabasesCloudServices": [
+      "Neo4j",
+      "MongoDB",
+      "PineconeDB",
+      "Qdrant"
+    ]
+  },
+  "Languages": {
+    "English": "C1",
+    "German": "A1",
+    "Japanese": "B2",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "B2",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A2",
+    "Portuguese": "B2",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "AR Furniture Visualization",
+      "Role": "AR/VR Developer",
+      "Duration": "December 2024 – October 2024",
+      "Details": [
+        "Developed ARKit/ARCore application for furniture visualization",
+        "Implemented 3D model rendering with Unity",
+        "Added physics for realistic placement",
+        "Integrated with e-commerce backend"
+      ]
+    },
+    {
+      "Name": "Medical Image Segmentation System",
+      "Role": "ML Engineer",
+      "Duration": "June 2023 – January 2024",
+      "Details": [
+        "Developed U-Net architecture for medical image segmentation",
+        "Preprocessed DICOM images using NumPy and OpenCV",
+        "Achieved 92% dice score on test dataset",
+        "Deployed model as microservice using FastAPI"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "Toastmasters",
+      "Role": "Team Lead",
+      "Duration": "2021–2023",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

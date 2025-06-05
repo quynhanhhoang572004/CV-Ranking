@@ -1,0 +1,79 @@
+{
+  "Level": "Senior",
+  "Experience": "10",
+  "FullName": "Christine Acevedo",
+  "Contact": {
+    "Phone": "407-938-1848",
+    "Email": "nguyenjason@example.net",
+    "GitHub": "github.com/andrew82",
+    "LinkedIn": "linkedin.com/in/stevengreene"
+  },
+  "Position": "Blockchain Developer",
+  "Education": {
+    "Degree": "Bachelor of Science in Software Engineering",
+    "Institution": "International University-VNU, HCMC",
+    "Duration": "2020-2024",
+    "GPA": 4.0
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Docker",
+      "CircleCI",
+      "Grafana",
+      "Postman"
+    ],
+    "ProgrammingLanguages": [
+      "Typescript"
+    ],
+    "FrameworksLibraries": [
+      "Tensorflow",
+      "Flask",
+      "Vue"
+    ],
+    "DatabasesCloudServices": [
+      "ElasticSearch",
+      "S3",
+      "Weaviate",
+      "Milvus"
+    ]
+  },
+  "Languages": {
+    "English": "C2",
+    "German": "B2",
+    "Japanese": "A2",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "C1",
+    "Korean": "C2",
+    "Russian": "A1",
+    "Vietnamese": "C1",
+    "Arabic": "C1",
+    "Portuguese": "A1",
+    "Italian": "C2"
+  },
+  "Projects": [
+    {
+      "Name": "Data Lake for IoT Devices",
+      "Role": "Data Engineer",
+      "Duration": "December 2024 – June 2025",
+      "Details": [
+        "Designed data ingestion pipeline processing 10M+ events daily",
+        "Implemented stream processing using Apache Flink",
+        "Built data quality monitoring with Great Expectations",
+        "Optimized Parquet storage for efficient querying"
+      ]
+    },
+    {
+      "Name": "Property Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "March 2023 – June 2023",
+      "Details": [
+        "Developed React frontend with TypeScript",
+        "Built backend services using NestJS",
+        "Implemented PDF generation for contracts",
+        "Added role-based access control"
+      ]
+    }
+  ],
+  "Activities": []
+}

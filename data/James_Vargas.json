@@ -1,0 +1,77 @@
+{
+  "Level": "Senior",
+  "Experience": "4",
+  "FullName": "James Vargas",
+  "Contact": {
+    "Phone": "921-724-0823x1047",
+    "Email": "ronniewhite@example.org",
+    "GitHub": "github.com/jonathan21",
+    "LinkedIn": "linkedin.com/in/katherinepruitt"
+  },
+  "Position": "Tester",
+  "Education": {
+    "Degree": "PhD of Science in Computer Engineering",
+    "Institution": "Hanoi University of Science and Technology",
+    "Duration": "2016-2023",
+    "GPA": 3.86
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Nginx",
+      "MLflow"
+    ],
+    "ProgrammingLanguages": [
+      "C#",
+      "Rust"
+    ],
+    "FrameworksLibraries": [
+      "NextJS",
+      "Numpy",
+      "Flask",
+      "HuggingFace Transformers"
+    ],
+    "DatabasesCloudServices": [
+      "Weaviate",
+      "Redis"
+    ]
+  },
+  "Languages": {
+    "English": "C2",
+    "German": "C2",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "B2",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A2",
+    "Italian": "C2"
+  },
+  "Projects": [
+    {
+      "Name": "Personal Finance Tracker",
+      "Role": "Mobile Developer",
+      "Duration": "June 2023 – April 2024",
+      "Details": [
+        "Developed Flutter app for expense tracking",
+        "Implemented data visualization charts",
+        "Added budget alerts",
+        "Integrated with bank APIs"
+      ]
+    },
+    {
+      "Name": "E-commerce Platform API",
+      "Role": "Back-end Developer",
+      "Duration": "February 2024 – August 2024",
+      "Details": [
+        "Designed RESTful API for e-commerce platform using Django REST Framework",
+        "Implemented JWT authentication and role-based access control",
+        "Optimized database queries reducing response time by 40%",
+        "Integrated Stripe payment processing system"
+      ]
+    }
+  ],
+  "Activities": []
+}

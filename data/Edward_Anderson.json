@@ -1,0 +1,81 @@
+{
+  "Level": "Junior",
+  "Experience": "6",
+  "FullName": "Edward Anderson",
+  "Contact": {
+    "Phone": "001-908-687-0063x6625",
+    "Email": "kristen63@example.net",
+    "GitHub": "github.com/srivera",
+    "LinkedIn": "linkedin.com/in/aingram"
+  },
+  "Position": "Android Developer",
+  "Education": {
+    "Degree": "PhD of Science in Artificial Intelligence",
+    "Institution": "University of Science, VNU-HCM",
+    "Duration": "2018-2023",
+    "GPA": 3.87
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "TravisCI",
+      "Makefile",
+      "Pre-commit",
+      "Airflow"
+    ],
+    "ProgrammingLanguages": [
+      "C#",
+      "Go"
+    ],
+    "FrameworksLibraries": [
+      "Pandas",
+      "HuggingFace Transformers",
+      "Vue",
+      "React"
+    ],
+    "DatabasesCloudServices": [
+      "ElasticSearch",
+      "Neo4j",
+      "Azure Cosmos DB",
+      "PineconeDB"
+    ]
+  },
+  "Languages": {
+    "English": "C1",
+    "German": "B2",
+    "Japanese": "A1",
+    "French": "C2",
+    "Spanish": "C2",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A2",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Campus Event Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "April 2023 – June 2024",
+      "Details": [
+        "Built student portal for event registration",
+        "Implemented admin dashboard for event management",
+        "Added notification system",
+        "Deployed on university servers"
+      ]
+    },
+    {
+      "Name": "AR Furniture Visualization",
+      "Role": "AR/VR Developer",
+      "Duration": "October 2023 – August 2025",
+      "Details": [
+        "Developed ARKit/ARCore application for furniture visualization",
+        "Implemented 3D model rendering with Unity",
+        "Added physics for realistic placement",
+        "Integrated with e-commerce backend"
+      ]
+    }
+  ],
+  "Activities": []
+}

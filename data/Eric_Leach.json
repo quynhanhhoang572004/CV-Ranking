@@ -1,0 +1,78 @@
+{
+  "Level": "Fresher",
+  "Experience": "5",
+  "FullName": "Eric Leach",
+  "Contact": {
+    "Phone": "300-997-7674",
+    "Email": "ericpennington@example.com",
+    "GitHub": "github.com/rwarren",
+    "LinkedIn": "linkedin.com/in/nmcdowell"
+  },
+  "Position": "Full-Stack Developer",
+  "Education": {
+    "Degree": "PhD of Science in Software Engineering",
+    "Institution": "International University-VNU, HCMC",
+    "Duration": "2017-2024",
+    "GPA": 3.96
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Terraform",
+      "Kubernetes"
+    ],
+    "ProgrammingLanguages": [
+      "Kotlin",
+      "C#",
+      "Go"
+    ],
+    "FrameworksLibraries": [
+      "OpenCV",
+      "FastAPI",
+      "Plotly",
+      "Pandas"
+    ],
+    "DatabasesCloudServices": [
+      "S3",
+      "Redis"
+    ]
+  },
+  "Languages": {
+    "English": "A2",
+    "German": "A1",
+    "Japanese": "B2",
+    "French": "B1",
+    "Spanish": "B1",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "B1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "AR Furniture Visualization",
+      "Role": "AR/VR Developer",
+      "Duration": "July 2024 – September 2024",
+      "Details": [
+        "Developed ARKit/ARCore application for furniture visualization",
+        "Implemented 3D model rendering with Unity",
+        "Added physics for realistic placement",
+        "Integrated with e-commerce backend"
+      ]
+    },
+    {
+      "Name": "CI/CD Pipeline Optimization",
+      "Role": "DevOps Engineer",
+      "Duration": "August 2024 – June 2025",
+      "Details": [
+        "Migrated from Jenkins to GitHub Actions",
+        "Implemented parallel test execution",
+        "Reduced pipeline duration from 45 to 12 minutes",
+        "Added security scanning with Trivy and OWASP ZAP"
+      ]
+    }
+  ],
+  "Activities": []
+}

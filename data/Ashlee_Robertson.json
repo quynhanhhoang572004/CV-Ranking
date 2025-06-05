@@ -1,0 +1,88 @@
+{
+  "Level": "Senior",
+  "Experience": "4",
+  "FullName": "Ashlee Robertson",
+  "Contact": {
+    "Phone": "6154940343",
+    "Email": "haley43@example.org",
+    "GitHub": "github.com/robinsonmichaela",
+    "LinkedIn": "linkedin.com/in/sjohnson"
+  },
+  "Position": "Full-Stack Developer",
+  "Education": {
+    "Degree": "PhD of Science in Computer Science",
+    "Institution": "University of Technology, VNU-HCM",
+    "Duration": "2016-2024",
+    "GPA": 3.62
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Postman",
+      "Helm",
+      "Grafana"
+    ],
+    "ProgrammingLanguages": [
+      "Rust"
+    ],
+    "FrameworksLibraries": [
+      "BeautifulSoup",
+      "Flask",
+      "Scikit-learn",
+      "Pandas"
+    ],
+    "DatabasesCloudServices": [
+      "MySQL",
+      "Qdrant",
+      "MongoDB",
+      "Azure Cosmos DB"
+    ]
+  },
+  "Languages": {
+    "English": "A2",
+    "German": "B2",
+    "Japanese": "A1",
+    "French": "B1",
+    "Spanish": "A1",
+    "Chinese": "C1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "C1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Property Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "August 2023 – July 2025",
+      "Details": [
+        "Developed React frontend with TypeScript",
+        "Built backend services using NestJS",
+        "Implemented PDF generation for contracts",
+        "Added role-based access control"
+      ]
+    },
+    {
+      "Name": "Customer 360 Data Warehouse",
+      "Role": "Data Engineer",
+      "Duration": "April 2024 – June 2025",
+      "Details": [
+        "Built dimensional data model using Kimball methodology",
+        "Implemented slowly changing dimensions Type 2",
+        "Created data marts for different business units",
+        "Reduced report generation time from hours to minutes"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "Code Club",
+      "Role": "AI Lead",
+      "Duration": "2023–2023",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "Level": "Junior",
+  "Experience": "5",
+  "FullName": "Angela Williams",
+  "Contact": {
+    "Phone": "3939203413",
+    "Email": "vwalsh@example.com",
+    "GitHub": "github.com/reynoldslaura",
+    "LinkedIn": "linkedin.com/in/laurenstrickland"
+  },
+  "Position": "QA/QC Engineer",
+  "Education": {
+    "Degree": "Master of Science in Data Science",
+    "Institution": "Ton Duc Thang University",
+    "Duration": "2020-2022",
+    "GPA": 3.69
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "CircleCI",
+      "DVC",
+      "Poetry",
+      "Pre-commit"
+    ],
+    "ProgrammingLanguages": [
+      "Java"
+    ],
+    "FrameworksLibraries": [
+      "HuggingFace Transformers",
+      "Streamlit",
+      "BeautifulSoup",
+      "Tensorflow"
+    ],
+    "DatabasesCloudServices": [
+      "ElasticSearch",
+      "Faiss",
+      "PineconeDB"
+    ]
+  },
+  "Languages": {
+    "English": "B2",
+    "German": "A1",
+    "Japanese": "A1",
+    "French": "C1",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "A2",
+    "Russian": "A2",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "B2",
+    "Italian": "B1"
+  },
+  "Projects": [
+    {
+      "Name": "Data Lake for IoT Devices",
+      "Role": "Data Engineer",
+      "Duration": "April 2023 – November 2024",
+      "Details": [
+        "Designed data ingestion pipeline processing 10M+ events daily",
+        "Implemented stream processing using Apache Flink",
+        "Built data quality monitoring with Great Expectations",
+        "Optimized Parquet storage for efficient querying"
+      ]
+    },
+    {
+      "Name": "CI/CD Pipeline Optimization",
+      "Role": "DevOps Engineer",
+      "Duration": "October 2024 – March 2024",
+      "Details": [
+        "Migrated from Jenkins to GitHub Actions",
+        "Implemented parallel test execution",
+        "Reduced pipeline duration from 45 to 12 minutes",
+        "Added security scanning with Trivy and OWASP ZAP"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "Toastmasters",
+      "Role": "Team Lead",
+      "Duration": "2021–2024",
+      "Activities": [
+        "Mentored junior members in their technical growth."
+      ]
+    }
+  ]
+}

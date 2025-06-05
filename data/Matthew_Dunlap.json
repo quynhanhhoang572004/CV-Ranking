@@ -1,0 +1,89 @@
+{
+  "Level": "Fresher",
+  "Experience": "5",
+  "FullName": "Matthew Dunlap",
+  "Contact": {
+    "Phone": "5937953911",
+    "Email": "danielle57@example.org",
+    "GitHub": "github.com/kgonzalez",
+    "LinkedIn": "linkedin.com/in/charlesfitzgerald"
+  },
+  "Position": "Frontend Developer",
+  "Education": {
+    "Degree": "Master of Science in Data Science",
+    "Institution": "University of Technology, VNU-HCM",
+    "Duration": "2022-2023",
+    "GPA": 3.17
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "CircleCI",
+      "DVC",
+      "MLflow"
+    ],
+    "ProgrammingLanguages": [
+      "PHP"
+    ],
+    "FrameworksLibraries": [
+      "Tensorflow",
+      "Flask",
+      "Pytorch",
+      "Matplotlib",
+      "Streamlit"
+    ],
+    "DatabasesCloudServices": [
+      "Faiss",
+      "MySQL",
+      "Milvus",
+      "Firebase"
+    ]
+  },
+  "Languages": {
+    "English": "A2",
+    "German": "C1",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "C2",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A2",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Property Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "January 2024 – July 2024",
+      "Details": [
+        "Developed React frontend with TypeScript",
+        "Built backend services using NestJS",
+        "Implemented PDF generation for contracts",
+        "Added role-based access control"
+      ]
+    },
+    {
+      "Name": "AR Furniture Visualization",
+      "Role": "AR/VR Developer",
+      "Duration": "April 2023 – May 2023",
+      "Details": [
+        "Developed ARKit/ARCore application for furniture visualization",
+        "Implemented 3D model rendering with Unity",
+        "Added physics for realistic placement",
+        "Integrated with e-commerce backend"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "Toastmasters",
+      "Role": "Team Lead",
+      "Duration": "2023–2023",
+      "Activities": [
+        "Hosted workshops and guided technical best practices."
+      ]
+    }
+  ]
+}

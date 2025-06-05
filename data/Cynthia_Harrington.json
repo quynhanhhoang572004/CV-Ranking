@@ -1,0 +1,81 @@
+{
+  "Level": "Fresher",
+  "Experience": "9",
+  "FullName": "Cynthia Harrington",
+  "Contact": {
+    "Phone": "761.694.4928x371",
+    "Email": "owensamanda@example.org",
+    "GitHub": "github.com/penningtonlisa",
+    "LinkedIn": "linkedin.com/in/mercedes49"
+  },
+  "Position": "QA/QC Engineer",
+  "Education": {
+    "Degree": "Master of Science in Software Engineering",
+    "Institution": "RMIT University Vietnam",
+    "Duration": "2020-2023",
+    "GPA": 3.54
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Kubernetes",
+      "Zsh",
+      "DVC",
+      "Prometheus"
+    ],
+    "ProgrammingLanguages": [
+      "Kotlin",
+      "C#"
+    ],
+    "FrameworksLibraries": [
+      "Numpy",
+      "Flask",
+      "NextJS",
+      "LangChain"
+    ],
+    "DatabasesCloudServices": [
+      "Azure Cosmos DB",
+      "PostgreSQL",
+      "AWS DynamoDB",
+      "Redis"
+    ]
+  },
+  "Languages": {
+    "English": "B2",
+    "German": "A1",
+    "Japanese": "A1",
+    "French": "C1",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Healthcare Appointment System",
+      "Role": "Full-stack Developer",
+      "Duration": "September 2024 – June 2024",
+      "Details": [
+        "Created patient portal with Next.js",
+        "Implemented calendar scheduling system",
+        "Added SMS/email notifications",
+        "Ensured HIPAA compliance for data security"
+      ]
+    },
+    {
+      "Name": "Property Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "March 2024 – September 2025",
+      "Details": [
+        "Developed React frontend with TypeScript",
+        "Built backend services using NestJS",
+        "Implemented PDF generation for contracts",
+        "Added role-based access control"
+      ]
+    }
+  ],
+  "Activities": []
+}

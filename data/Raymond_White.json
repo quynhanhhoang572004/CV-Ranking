@@ -1,0 +1,89 @@
+{
+  "Level": "Junior",
+  "Experience": "5",
+  "FullName": "Raymond White",
+  "Contact": {
+    "Phone": "847.221.2088x5633",
+    "Email": "derrickblankenship@example.com",
+    "GitHub": "github.com/rodriguezkelly",
+    "LinkedIn": "linkedin.com/in/hoodmaria"
+  },
+  "Position": "ML Engineer",
+  "Education": {
+    "Degree": "PhD of Science in Data Science",
+    "Institution": "International University-VNU, HCMC",
+    "Duration": "2016-2023",
+    "GPA": 3.83
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Skaffold",
+      "Prometheus",
+      "Postman",
+      "Zsh"
+    ],
+    "ProgrammingLanguages": [
+      "Typescript",
+      "Rust",
+      "Ruby"
+    ],
+    "FrameworksLibraries": [
+      "Pytorch",
+      "Flask",
+      "LangChain"
+    ],
+    "DatabasesCloudServices": [
+      "ElasticSearch",
+      "MongoDB",
+      "Firebase"
+    ]
+  },
+  "Languages": {
+    "English": "A1",
+    "German": "B1",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "B1",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "C2"
+  },
+  "Projects": [
+    {
+      "Name": "Kubernetes Cluster Automation",
+      "Role": "DevOps Engineer",
+      "Duration": "March 2024 – August 2025",
+      "Details": [
+        "Automated EKS cluster provisioning using Terraform",
+        "Implemented GitOps workflow with ArgoCD",
+        "Set up monitoring with Prometheus and Grafana",
+        "Reduced deployment time by 70%"
+      ]
+    },
+    {
+      "Name": "Data Lake for IoT Devices",
+      "Role": "Data Engineer",
+      "Duration": "October 2024 – April 2025",
+      "Details": [
+        "Designed data ingestion pipeline processing 10M+ events daily",
+        "Implemented stream processing using Apache Flink",
+        "Built data quality monitoring with Great Expectations",
+        "Optimized Parquet storage for efficient querying"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "Code Club",
+      "Role": "Technical Mentor",
+      "Duration": "2020–2023",
+      "Activities": [
+        "Hosted workshops and guided technical best practices."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "Level": "Senior",
+  "Experience": "3",
+  "FullName": "Jody Oliver",
+  "Contact": {
+    "Phone": "(905)213-4586x595",
+    "Email": "aware@example.com",
+    "GitHub": "github.com/mitchellhannah",
+    "LinkedIn": "linkedin.com/in/daviddickerson"
+  },
+  "Position": "Android Developer",
+  "Education": {
+    "Degree": "Bachelor of Science in Software Engineering",
+    "Institution": "Posts and Telecommunications Institute of Technology",
+    "Duration": "2020-2023",
+    "GPA": 3.51
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Weights & Biases",
+      "Docker"
+    ],
+    "ProgrammingLanguages": [
+      "PHP",
+      "Rust"
+    ],
+    "FrameworksLibraries": [
+      "Streamlit",
+      "Matplotlib",
+      "HuggingFace Transformers",
+      "FastAPI",
+      "Selenium"
+    ],
+    "DatabasesCloudServices": [
+      "Firebase",
+      "ElasticSearch"
+    ]
+  },
+  "Languages": {
+    "English": "C1",
+    "German": "A2",
+    "Japanese": "A1",
+    "French": "C1",
+    "Spanish": "B1",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "B1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "C2"
+  },
+  "Projects": [
+    {
+      "Name": "Kubernetes Cluster Automation",
+      "Role": "DevOps Engineer",
+      "Duration": "May 2023 – September 2024",
+      "Details": [
+        "Automated EKS cluster provisioning using Terraform",
+        "Implemented GitOps workflow with ArgoCD",
+        "Set up monitoring with Prometheus and Grafana",
+        "Reduced deployment time by 70%"
+      ]
+    },
+    {
+      "Name": "AR Furniture Visualization",
+      "Role": "AR/VR Developer",
+      "Duration": "June 2023 – November 2024",
+      "Details": [
+        "Developed ARKit/ARCore application for furniture visualization",
+        "Implemented 3D model rendering with Unity",
+        "Added physics for realistic placement",
+        "Integrated with e-commerce backend"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "ACM",
+      "Role": "Chapter President",
+      "Duration": "2022–2023",
+      "Activities": [
+        "Led a team of developers to build community projects."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "Level": "Fresher",
+  "Experience": "2",
+  "FullName": "Jennifer Lam",
+  "Contact": {
+    "Phone": "311.372.6522x8316",
+    "Email": "ubrown@example.net",
+    "GitHub": "github.com/handerson",
+    "LinkedIn": "linkedin.com/in/taylorvictoria"
+  },
+  "Position": "Security Engineer",
+  "Education": {
+    "Degree": "Bachelor of Science in Computer Science",
+    "Institution": "FPT University",
+    "Duration": "2018-2023",
+    "GPA": 2.79
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Github Actions",
+      "Airflow"
+    ],
+    "ProgrammingLanguages": [
+      "PHP",
+      "Ruby"
+    ],
+    "FrameworksLibraries": [
+      "Express",
+      "Streamlit",
+      "Tensorflow"
+    ],
+    "DatabasesCloudServices": [
+      "PineconeDB",
+      "ElasticSearch"
+    ]
+  },
+  "Languages": {
+    "English": "C1",
+    "German": "A1",
+    "Japanese": "A2",
+    "French": "A2",
+    "Spanish": "A1",
+    "Chinese": "A2",
+    "Korean": "A1",
+    "Russian": "C1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "AI-Powered Fashion Recommender",
+      "Role": "AI Engineer",
+      "Duration": "November 2024 – August 2024",
+      "Details": [
+        "Developed recommendation engine using collaborative filtering and content-based approaches",
+        "Implemented computer vision model for style analysis using PyTorch",
+        "Built Flask API for serving recommendations",
+        "Optimized model performance using ONNX runtime"
+      ]
+    },
+    {
+      "Name": "E-commerce Platform API",
+      "Role": "Back-end Developer",
+      "Duration": "February 2024 – December 2024",
+      "Details": [
+        "Designed RESTful API for e-commerce platform using Django REST Framework",
+        "Implemented JWT authentication and role-based access control",
+        "Optimized database queries reducing response time by 40%",
+        "Integrated Stripe payment processing system"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "Toastmasters",
+      "Role": "AI Lead",
+      "Duration": "2020–2023",
+      "Activities": [
+        "Led a team of developers to build community projects."
+      ]
+    }
+  ]
+}

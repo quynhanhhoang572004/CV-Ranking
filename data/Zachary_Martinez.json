@@ -1,0 +1,92 @@
+{
+  "Level": "Junior",
+  "Experience": "2",
+  "FullName": "Zachary Martinez",
+  "Contact": {
+    "Phone": "559.482.1155",
+    "Email": "carlsonshannon@example.com",
+    "GitHub": "github.com/nwebb",
+    "LinkedIn": "linkedin.com/in/fjacobson"
+  },
+  "Position": "QA/QC Engineer",
+  "Education": {
+    "Degree": "PhD of Science in Software Engineering",
+    "Institution": "University of Information Technology, VNU-HCM",
+    "Duration": "2016-2022",
+    "GPA": 3.71
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "PyCharm",
+      "Poetry",
+      "Nginx",
+      "tmux"
+    ],
+    "ProgrammingLanguages": [
+      "Rust",
+      "PHP",
+      "Java"
+    ],
+    "FrameworksLibraries": [
+      "Airflow",
+      "Flask",
+      "Django",
+      "Selenium",
+      "OpenCV"
+    ],
+    "DatabasesCloudServices": [
+      "MySQL",
+      "Neo4j",
+      "PostgreSQL",
+      "GCP"
+    ]
+  },
+  "Languages": {
+    "English": "C2",
+    "German": "B2",
+    "Japanese": "A1",
+    "French": "B1",
+    "Spanish": "A1",
+    "Chinese": "B2",
+    "Korean": "B1",
+    "Russian": "C1",
+    "Vietnamese": "C2",
+    "Arabic": "A1",
+    "Portuguese": "B2",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "CI/CD Pipeline Optimization",
+      "Role": "DevOps Engineer",
+      "Duration": "January 2024 – March 2025",
+      "Details": [
+        "Migrated from Jenkins to GitHub Actions",
+        "Implemented parallel test execution",
+        "Reduced pipeline duration from 45 to 12 minutes",
+        "Added security scanning with Trivy and OWASP ZAP"
+      ]
+    },
+    {
+      "Name": "Property Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "February 2024 – January 2024",
+      "Details": [
+        "Developed React frontend with TypeScript",
+        "Built backend services using NestJS",
+        "Implemented PDF generation for contracts",
+        "Added role-based access control"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "ACM",
+      "Role": "Chapter President",
+      "Duration": "2020–2024",
+      "Activities": [
+        "Led a team of developers to build community projects."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "Level": "Senior",
+  "Experience": "6",
+  "FullName": "Michelle Harvey",
+  "Contact": {
+    "Phone": "001-533-429-2133x46258",
+    "Email": "virginiathompson@example.com",
+    "GitHub": "github.com/cameron73",
+    "LinkedIn": "linkedin.com/in/llong"
+  },
+  "Position": "QA/QC Engineer",
+  "Education": {
+    "Degree": "Bachelor of Science in Artificial Intelligence",
+    "Institution": "Hanoi University of Science and Technology",
+    "Duration": "2019-2023",
+    "GPA": 2.53
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Git",
+      "VSCode"
+    ],
+    "ProgrammingLanguages": [
+      "Python",
+      "Go",
+      "Swift"
+    ],
+    "FrameworksLibraries": [
+      "Selenium",
+      "Pandas",
+      "LangChain",
+      "Numpy"
+    ],
+    "DatabasesCloudServices": [
+      "Milvus",
+      "PostgreSQL",
+      "Azure Cosmos DB"
+    ]
+  },
+  "Languages": {
+    "English": "A2",
+    "German": "A1",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "B1",
+    "Chinese": "A1",
+    "Korean": "A2",
+    "Russian": "A1",
+    "Vietnamese": "B2",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Healthcare Appointment System",
+      "Role": "Full-stack Developer",
+      "Duration": "April 2024 – August 2025",
+      "Details": [
+        "Created patient portal with Next.js",
+        "Implemented calendar scheduling system",
+        "Added SMS/email notifications",
+        "Ensured HIPAA compliance for data security"
+      ]
+    },
+    {
+      "Name": "Property Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "November 2024 – November 2025",
+      "Details": [
+        "Developed React frontend with TypeScript",
+        "Built backend services using NestJS",
+        "Implemented PDF generation for contracts",
+        "Added role-based access control"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "BackEnd Specialist",
+      "Duration": "2023–2024",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

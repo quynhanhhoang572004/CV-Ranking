@@ -1,0 +1,85 @@
+{
+  "Level": "Fresher",
+  "Experience": "4",
+  "FullName": "Rebecca Baker",
+  "Contact": {
+    "Phone": "601-734-2237x4006",
+    "Email": "jamesmedina@example.org",
+    "GitHub": "github.com/ithornton",
+    "LinkedIn": "linkedin.com/in/qfrancis"
+  },
+  "Position": "Cloud Engineer",
+  "Education": {
+    "Degree": "Master of Science in Data Science",
+    "Institution": "FPT University",
+    "Duration": "2022-2023",
+    "GPA": 3.02
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Helm",
+      "Pre-commit"
+    ],
+    "ProgrammingLanguages": [
+      "Java",
+      "Python"
+    ],
+    "FrameworksLibraries": [
+      "Matplotlib",
+      "Numpy",
+      "Express"
+    ],
+    "DatabasesCloudServices": [
+      "Neo4j",
+      "MySQL"
+    ]
+  },
+  "Languages": {
+    "English": "B1",
+    "German": "B2",
+    "Japanese": "A1",
+    "French": "B1",
+    "Spanish": "C2",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "B1",
+    "Italian": "C1"
+  },
+  "Projects": [
+    {
+      "Name": "Personal Finance Tracker",
+      "Role": "Mobile Developer",
+      "Duration": "February 2024 – December 2025",
+      "Details": [
+        "Developed Flutter app for expense tracking",
+        "Implemented data visualization charts",
+        "Added budget alerts",
+        "Integrated with bank APIs"
+      ]
+    },
+    {
+      "Name": "Real-time Chat Application",
+      "Role": "Back-end Developer",
+      "Duration": "September 2024 – March 2025",
+      "Details": [
+        "Built WebSocket-based chat service using Socket.io",
+        "Implemented message persistence with MongoDB",
+        "Added end-to-end encryption using AES-256",
+        "Deployed on AWS with auto-scaling"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "ACM",
+      "Role": "Team Lead",
+      "Duration": "2020–2024",
+      "Activities": [
+        "Mentored junior members in their technical growth."
+      ]
+    }
+  ]
+}

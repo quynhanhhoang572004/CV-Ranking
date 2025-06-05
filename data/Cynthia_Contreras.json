@@ -1,0 +1,86 @@
+{
+  "Level": "Junior",
+  "Experience": "5",
+  "FullName": "Cynthia Contreras",
+  "Contact": {
+    "Phone": "874.200.2939",
+    "Email": "sbeltran@example.com",
+    "GitHub": "github.com/tstrickland",
+    "LinkedIn": "linkedin.com/in/davidsonchase"
+  },
+  "Position": "Mobile Developer",
+  "Education": {
+    "Degree": "PhD of Science in Data Science",
+    "Institution": "Ton Duc Thang University",
+    "Duration": "2016-2023",
+    "GPA": 3.65
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Makefile",
+      "Postman"
+    ],
+    "ProgrammingLanguages": [
+      "Rust"
+    ],
+    "FrameworksLibraries": [
+      "FastAPI",
+      "Pytorch",
+      "Numpy"
+    ],
+    "DatabasesCloudServices": [
+      "SQLite",
+      "PineconeDB",
+      "AWS DynamoDB",
+      "ElasticSearch"
+    ]
+  },
+  "Languages": {
+    "English": "A2",
+    "German": "A1",
+    "Japanese": "C2",
+    "French": "B2",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "B2",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "C2"
+  },
+  "Projects": [
+    {
+      "Name": "Healthcare Appointment System",
+      "Role": "Full-stack Developer",
+      "Duration": "November 2024 – June 2024",
+      "Details": [
+        "Created patient portal with Next.js",
+        "Implemented calendar scheduling system",
+        "Added SMS/email notifications",
+        "Ensured HIPAA compliance for data security"
+      ]
+    },
+    {
+      "Name": "Medical Image Segmentation System",
+      "Role": "ML Engineer",
+      "Duration": "March 2024 – December 2024",
+      "Details": [
+        "Developed U-Net architecture for medical image segmentation",
+        "Preprocessed DICOM images using NumPy and OpenCV",
+        "Achieved 92% dice score on test dataset",
+        "Deployed model as microservice using FastAPI"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "Code Club",
+      "Role": "Team Lead",
+      "Duration": "2023–2024",
+      "Activities": [
+        "Led a team of developers to build community projects."
+      ]
+    }
+  ]
+}

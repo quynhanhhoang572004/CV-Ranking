@@ -1,0 +1,89 @@
+{
+  "Level": "Junior",
+  "Experience": "4",
+  "FullName": "Willie Dodson",
+  "Contact": {
+    "Phone": "339-924-5546x943",
+    "Email": "nathanielvazquez@example.com",
+    "GitHub": "github.com/wfigueroa",
+    "LinkedIn": "linkedin.com/in/edwin26"
+  },
+  "Position": "Android Developer",
+  "Education": {
+    "Degree": "Master of Science in Data Science",
+    "Institution": "Posts and Telecommunications Institute of Technology",
+    "Duration": "2021-2024",
+    "GPA": 3.22
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Jenkins",
+      "Cloud Build",
+      "Airflow"
+    ],
+    "ProgrammingLanguages": [
+      "Python",
+      "Ruby"
+    ],
+    "FrameworksLibraries": [
+      "Django",
+      "FastAPI",
+      "Express",
+      "LangChain"
+    ],
+    "DatabasesCloudServices": [
+      "Redis",
+      "MongoDB",
+      "Firebase",
+      "GCP"
+    ]
+  },
+  "Languages": {
+    "English": "B1",
+    "German": "A1",
+    "Japanese": "B1",
+    "French": "A1",
+    "Spanish": "B2",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A2",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "B1",
+    "Italian": "B2"
+  },
+  "Projects": [
+    {
+      "Name": "Campus Event Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "September 2023 – July 2023",
+      "Details": [
+        "Built student portal for event registration",
+        "Implemented admin dashboard for event management",
+        "Added notification system",
+        "Deployed on university servers"
+      ]
+    },
+    {
+      "Name": "Real-time Chat Application",
+      "Role": "Back-end Developer",
+      "Duration": "December 2023 – April 2023",
+      "Details": [
+        "Built WebSocket-based chat service using Socket.io",
+        "Implemented message persistence with MongoDB",
+        "Added end-to-end encryption using AES-256",
+        "Deployed on AWS with auto-scaling"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "GDSC",
+      "Role": "AI Lead",
+      "Duration": "2022–2024",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

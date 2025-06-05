@@ -1,0 +1,84 @@
+{
+  "Level": "Fresher",
+  "Experience": "1",
+  "FullName": "Rodney Campbell",
+  "Contact": {
+    "Phone": "(751)937-6195x61434",
+    "Email": "john45@example.com",
+    "GitHub": "github.com/medinaelizabeth",
+    "LinkedIn": "linkedin.com/in/thomas75"
+  },
+  "Position": "ML Engineer",
+  "Education": {
+    "Degree": "PhD of Science in Computer Engineering",
+    "Institution": "Ton Duc Thang University",
+    "Duration": "2016-2022",
+    "GPA": 3.6
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Cloud Build",
+      "tmux"
+    ],
+    "ProgrammingLanguages": [
+      "Rust"
+    ],
+    "FrameworksLibraries": [
+      "Numpy",
+      "Django",
+      "LangChain"
+    ],
+    "DatabasesCloudServices": [
+      "Qdrant",
+      "SQLite"
+    ]
+  },
+  "Languages": {
+    "English": "B1",
+    "German": "A1",
+    "Japanese": "C1",
+    "French": "C2",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "B2",
+    "Russian": "B2",
+    "Vietnamese": "B2",
+    "Arabic": "A1",
+    "Portuguese": "B1",
+    "Italian": "C1"
+  },
+  "Projects": [
+    {
+      "Name": "Personal Finance Tracker",
+      "Role": "Mobile Developer",
+      "Duration": "October 2023 – September 2025",
+      "Details": [
+        "Developed Flutter app for expense tracking",
+        "Implemented data visualization charts",
+        "Added budget alerts",
+        "Integrated with bank APIs"
+      ]
+    },
+    {
+      "Name": "Campus Event Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "March 2024 – March 2024",
+      "Details": [
+        "Built student portal for event registration",
+        "Implemented admin dashboard for event management",
+        "Added notification system",
+        "Deployed on university servers"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "Technical Mentor",
+      "Duration": "2020–2024",
+      "Activities": [
+        "Mentored junior members in their technical growth."
+      ]
+    }
+  ]
+}

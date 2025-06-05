@@ -1,0 +1,88 @@
+{
+  "Level": "Fresher",
+  "Experience": "8",
+  "FullName": "Yolanda Johnson",
+  "Contact": {
+    "Phone": "213.492.2909",
+    "Email": "rmartin@example.com",
+    "GitHub": "github.com/michaeltucker",
+    "LinkedIn": "linkedin.com/in/taylordebbie"
+  },
+  "Position": "Technical Lead",
+  "Education": {
+    "Degree": "PhD of Science in Software Engineering",
+    "Institution": "University of Technology, VNU-HCM",
+    "Duration": "2018-2023",
+    "GPA": 3.57
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Bash",
+      "Weights & Biases",
+      "Kubernetes"
+    ],
+    "ProgrammingLanguages": [
+      "Ruby",
+      "Typescript",
+      "JavaScript"
+    ],
+    "FrameworksLibraries": [
+      "Matplotlib",
+      "Tensorflow",
+      "Pytorch",
+      "Selenium"
+    ],
+    "DatabasesCloudServices": [
+      "Qdrant",
+      "PostgreSQL"
+    ]
+  },
+  "Languages": {
+    "English": "C2",
+    "German": "C2",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "B2",
+    "Korean": "B1",
+    "Russian": "B2",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "B1"
+  },
+  "Projects": [
+    {
+      "Name": "Medical Image Segmentation System",
+      "Role": "ML Engineer",
+      "Duration": "March 2024 – January 2024",
+      "Details": [
+        "Developed U-Net architecture for medical image segmentation",
+        "Preprocessed DICOM images using NumPy and OpenCV",
+        "Achieved 92% dice score on test dataset",
+        "Deployed model as microservice using FastAPI"
+      ]
+    },
+    {
+      "Name": "Real-time Chat Application",
+      "Role": "Back-end Developer",
+      "Duration": "February 2024 – May 2024",
+      "Details": [
+        "Built WebSocket-based chat service using Socket.io",
+        "Implemented message persistence with MongoDB",
+        "Added end-to-end encryption using AES-256",
+        "Deployed on AWS with auto-scaling"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "Toastmasters",
+      "Role": "Technical Mentor",
+      "Duration": "2021–2023",
+      "Activities": [
+        "Led a team of developers to build community projects."
+      ]
+    }
+  ]
+}

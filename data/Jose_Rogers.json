@@ -1,0 +1,90 @@
+{
+  "Level": "Junior",
+  "Experience": "9",
+  "FullName": "Jose Rogers",
+  "Contact": {
+    "Phone": "(979)519-7401x6874",
+    "Email": "phillipsashley@example.net",
+    "GitHub": "github.com/stephanie34",
+    "LinkedIn": "linkedin.com/in/christensenrobert"
+  },
+  "Position": "Network Engineer",
+  "Education": {
+    "Degree": "Bachelor of Science in Artificial Intelligence",
+    "Institution": "Posts and Telecommunications Institute of Technology",
+    "Duration": "2018-2024",
+    "GPA": 2.76
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Jenkins",
+      "DVC",
+      "Helm"
+    ],
+    "ProgrammingLanguages": [
+      "C#",
+      "Python"
+    ],
+    "FrameworksLibraries": [
+      "Django",
+      "Flask",
+      "Selenium",
+      "Tensorflow",
+      "Plotly"
+    ],
+    "DatabasesCloudServices": [
+      "PostgreSQL",
+      "Faiss",
+      "PineconeDB",
+      "Neo4j"
+    ]
+  },
+  "Languages": {
+    "English": "A2",
+    "German": "A1",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "B2",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A2",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Healthcare Appointment System",
+      "Role": "Full-stack Developer",
+      "Duration": "June 2023 – December 2023",
+      "Details": [
+        "Created patient portal with Next.js",
+        "Implemented calendar scheduling system",
+        "Added SMS/email notifications",
+        "Ensured HIPAA compliance for data security"
+      ]
+    },
+    {
+      "Name": "Data Lake for IoT Devices",
+      "Role": "Data Engineer",
+      "Duration": "May 2024 – September 2025",
+      "Details": [
+        "Designed data ingestion pipeline processing 10M+ events daily",
+        "Implemented stream processing using Apache Flink",
+        "Built data quality monitoring with Great Expectations",
+        "Optimized Parquet storage for efficient querying"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "Team Lead",
+      "Duration": "2022–2024",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

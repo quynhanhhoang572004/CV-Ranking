@@ -1,0 +1,89 @@
+{
+  "Level": "Senior",
+  "Experience": "10",
+  "FullName": "Bradley Dixon",
+  "Contact": {
+    "Phone": "(394)640-2002x01536",
+    "Email": "greeneeric@example.net",
+    "GitHub": "github.com/lyonsscott",
+    "LinkedIn": "linkedin.com/in/vcrosby"
+  },
+  "Position": "Backend Developer",
+  "Education": {
+    "Degree": "PhD of Science in Computer Engineering",
+    "Institution": "FPT University",
+    "Duration": "2018-2023",
+    "GPA": 3.81
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Poetry",
+      "Helm",
+      "Docker"
+    ],
+    "ProgrammingLanguages": [
+      "Typescript",
+      "C#"
+    ],
+    "FrameworksLibraries": [
+      "HuggingFace Transformers",
+      "Vue",
+      "Selenium",
+      "Express",
+      "Streamlit"
+    ],
+    "DatabasesCloudServices": [
+      "PineconeDB",
+      "MySQL",
+      "MongoDB"
+    ]
+  },
+  "Languages": {
+    "English": "A1",
+    "German": "A2",
+    "Japanese": "C2",
+    "French": "A1",
+    "Spanish": "C1",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "B2"
+  },
+  "Projects": [
+    {
+      "Name": "Data Lake for IoT Devices",
+      "Role": "Data Engineer",
+      "Duration": "September 2024 – September 2025",
+      "Details": [
+        "Designed data ingestion pipeline processing 10M+ events daily",
+        "Implemented stream processing using Apache Flink",
+        "Built data quality monitoring with Great Expectations",
+        "Optimized Parquet storage for efficient querying"
+      ]
+    },
+    {
+      "Name": "Campus Event Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "October 2024 – May 2025",
+      "Details": [
+        "Built student portal for event registration",
+        "Implemented admin dashboard for event management",
+        "Added notification system",
+        "Deployed on university servers"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "Code Club",
+      "Role": "BackEnd Specialist",
+      "Duration": "2020–2023",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

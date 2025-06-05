@@ -1,0 +1,91 @@
+{
+  "Level": "Intern",
+  "Experience": "4",
+  "FullName": "Ann Crawford",
+  "Contact": {
+    "Phone": "(624)501-7725",
+    "Email": "samuelrodriguez@example.net",
+    "GitHub": "github.com/criley",
+    "LinkedIn": "linkedin.com/in/james41"
+  },
+  "Position": "Solution Architect",
+  "Education": {
+    "Degree": "PhD of Science in Artificial Intelligence",
+    "Institution": "International University-VNU, HCMC",
+    "Duration": "2018-2023",
+    "GPA": 3.54
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Skaffold",
+      "MLflow",
+      "Kubernetes"
+    ],
+    "ProgrammingLanguages": [
+      "JavaScript",
+      "C++",
+      "Swift"
+    ],
+    "FrameworksLibraries": [
+      "Numpy",
+      "React",
+      "Scikit-learn",
+      "Selenium",
+      "Flask"
+    ],
+    "DatabasesCloudServices": [
+      "BigQuery",
+      "GCP",
+      "PineconeDB",
+      "Weaviate"
+    ]
+  },
+  "Languages": {
+    "English": "B2",
+    "German": "A1",
+    "Japanese": "A2",
+    "French": "A2",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "B2",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A2",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Personal Finance Tracker",
+      "Role": "Mobile Developer",
+      "Duration": "February 2023 – August 2024",
+      "Details": [
+        "Developed Flutter app for expense tracking",
+        "Implemented data visualization charts",
+        "Added budget alerts",
+        "Integrated with bank APIs"
+      ]
+    },
+    {
+      "Name": "AR Furniture Visualization",
+      "Role": "AR/VR Developer",
+      "Duration": "April 2024 – December 2025",
+      "Details": [
+        "Developed ARKit/ARCore application for furniture visualization",
+        "Implemented 3D model rendering with Unity",
+        "Added physics for realistic placement",
+        "Integrated with e-commerce backend"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "Code Club",
+      "Role": "Team Lead",
+      "Duration": "2020–2024",
+      "Activities": [
+        "Led a team of developers to build community projects."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "Level": "Fresher",
+  "Experience": "5",
+  "FullName": "Elizabeth Ewing",
+  "Contact": {
+    "Phone": "200-697-3193",
+    "Email": "dana90@example.com",
+    "GitHub": "github.com/lisa93",
+    "LinkedIn": "linkedin.com/in/nancy81"
+  },
+  "Position": "Blockchain Developer",
+  "Education": {
+    "Degree": "Master of Science in Computer Science",
+    "Institution": "Ton Duc Thang University",
+    "Duration": "2022-2023",
+    "GPA": 3.11
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Prometheus",
+      "Grafana",
+      "tmux"
+    ],
+    "ProgrammingLanguages": [
+      "C++"
+    ],
+    "FrameworksLibraries": [
+      "Pandas",
+      "Matplotlib",
+      "Vue",
+      "Express"
+    ],
+    "DatabasesCloudServices": [
+      "Qdrant",
+      "MySQL",
+      "AWS DynamoDB"
+    ]
+  },
+  "Languages": {
+    "English": "A2",
+    "German": "B1",
+    "Japanese": "A2",
+    "French": "A1",
+    "Spanish": "B2",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "B1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "E-commerce Platform API",
+      "Role": "Back-end Developer",
+      "Duration": "October 2024 – August 2024",
+      "Details": [
+        "Designed RESTful API for e-commerce platform using Django REST Framework",
+        "Implemented JWT authentication and role-based access control",
+        "Optimized database queries reducing response time by 40%",
+        "Integrated Stripe payment processing system"
+      ]
+    },
+    {
+      "Name": "Blockchain Supply Chain Tracker",
+      "Role": "Blockchain Developer",
+      "Duration": "June 2023 – September 2024",
+      "Details": [
+        "Developed smart contracts for supply chain tracking",
+        "Built React frontend for supply chain visualization",
+        "Integrated with IoT devices for real-time tracking",
+        "Implemented zero-knowledge proofs for sensitive data"
+      ]
+    }
+  ],
+  "Activities": []
+}

@@ -1,0 +1,87 @@
+{
+  "Level": "Fresher",
+  "Experience": "8",
+  "FullName": "Michele Ellis",
+  "Contact": {
+    "Phone": "+1-561-765-9741x00915",
+    "Email": "williamsheather@example.net",
+    "GitHub": "github.com/tgomez",
+    "LinkedIn": "linkedin.com/in/rachelvalenzuela"
+  },
+  "Position": "Backend Developer",
+  "Education": {
+    "Degree": "PhD of Science in Computer Science",
+    "Institution": "FPT University",
+    "Duration": "2017-2022",
+    "GPA": 3.84
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Vim",
+      "Jenkins",
+      "PyCharm"
+    ],
+    "ProgrammingLanguages": [
+      "Typescript",
+      "Kotlin"
+    ],
+    "FrameworksLibraries": [
+      "FastAPI",
+      "Numpy",
+      "OpenCV",
+      "Plotly"
+    ],
+    "DatabasesCloudServices": [
+      "S3",
+      "AWS DynamoDB"
+    ]
+  },
+  "Languages": {
+    "English": "A2",
+    "German": "C1",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "B1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Customer 360 Data Warehouse",
+      "Role": "Data Engineer",
+      "Duration": "September 2024 – February 2024",
+      "Details": [
+        "Built dimensional data model using Kimball methodology",
+        "Implemented slowly changing dimensions Type 2",
+        "Created data marts for different business units",
+        "Reduced report generation time from hours to minutes"
+      ]
+    },
+    {
+      "Name": "Campus Event Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "November 2024 – September 2024",
+      "Details": [
+        "Built student portal for event registration",
+        "Implemented admin dashboard for event management",
+        "Added notification system",
+        "Deployed on university servers"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "ACM",
+      "Role": "Team Lead",
+      "Duration": "2023–2024",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

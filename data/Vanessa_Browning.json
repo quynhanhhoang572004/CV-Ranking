@@ -1,0 +1,90 @@
+{
+  "Level": "Junior",
+  "Experience": "9",
+  "FullName": "Vanessa Browning",
+  "Contact": {
+    "Phone": "+1-205-612-9176x178",
+    "Email": "kbauer@example.net",
+    "GitHub": "github.com/buckleyamy",
+    "LinkedIn": "linkedin.com/in/alejandrojones"
+  },
+  "Position": "Android Developer",
+  "Education": {
+    "Degree": "Bachelor of Science in Software Engineering",
+    "Institution": "Hanoi University of Science and Technology",
+    "Duration": "2020-2023",
+    "GPA": 3.5
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Ansible",
+      "Poetry",
+      "Zsh",
+      "Kubernetes"
+    ],
+    "ProgrammingLanguages": [
+      "Rust",
+      "R",
+      "Ruby"
+    ],
+    "FrameworksLibraries": [
+      "NextJS",
+      "LangChain",
+      "Selenium"
+    ],
+    "DatabasesCloudServices": [
+      "Firebase",
+      "PostgreSQL",
+      "Azure Cosmos DB",
+      "MySQL"
+    ]
+  },
+  "Languages": {
+    "English": "A2",
+    "German": "C2",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "C1",
+    "Chinese": "A1",
+    "Korean": "B2",
+    "Russian": "A1",
+    "Vietnamese": "C1",
+    "Arabic": "B1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "AI-Powered Fashion Recommender",
+      "Role": "AI Engineer",
+      "Duration": "December 2024 – March 2025",
+      "Details": [
+        "Developed recommendation engine using collaborative filtering and content-based approaches",
+        "Implemented computer vision model for style analysis using PyTorch",
+        "Built Flask API for serving recommendations",
+        "Optimized model performance using ONNX runtime"
+      ]
+    },
+    {
+      "Name": "E-commerce Platform API",
+      "Role": "Back-end Developer",
+      "Duration": "June 2023 – January 2025",
+      "Details": [
+        "Designed RESTful API for e-commerce platform using Django REST Framework",
+        "Implemented JWT authentication and role-based access control",
+        "Optimized database queries reducing response time by 40%",
+        "Integrated Stripe payment processing system"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "Technical Mentor",
+      "Duration": "2021–2024",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

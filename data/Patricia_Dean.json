@@ -1,0 +1,80 @@
+{
+  "Level": "Junior",
+  "Experience": "4",
+  "FullName": "Patricia Dean",
+  "Contact": {
+    "Phone": "226.351.5579",
+    "Email": "esalazar@example.org",
+    "GitHub": "github.com/gallowaykaitlyn",
+    "LinkedIn": "linkedin.com/in/mark45"
+  },
+  "Position": "AI Engineer",
+  "Education": {
+    "Degree": "Master of Science in Artificial Intelligence",
+    "Institution": "FPT University",
+    "Duration": "2022-2024",
+    "GPA": 3.11
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Cloud Build",
+      "tmux",
+      "Helm"
+    ],
+    "ProgrammingLanguages": [
+      "PHP"
+    ],
+    "FrameworksLibraries": [
+      "React",
+      "Express",
+      "Numpy",
+      "LangChain",
+      "NextJS"
+    ],
+    "DatabasesCloudServices": [
+      "PineconeDB",
+      "ElasticSearch",
+      "Faiss",
+      "Milvus"
+    ]
+  },
+  "Languages": {
+    "English": "C1",
+    "German": "A1",
+    "Japanese": "C1",
+    "French": "A1",
+    "Spanish": "B2",
+    "Chinese": "A2",
+    "Korean": "A1",
+    "Russian": "C2",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Healthcare Appointment System",
+      "Role": "Full-stack Developer",
+      "Duration": "June 2023 – April 2025",
+      "Details": [
+        "Created patient portal with Next.js",
+        "Implemented calendar scheduling system",
+        "Added SMS/email notifications",
+        "Ensured HIPAA compliance for data security"
+      ]
+    },
+    {
+      "Name": "Personal Finance Tracker",
+      "Role": "Mobile Developer",
+      "Duration": "March 2023 – February 2023",
+      "Details": [
+        "Developed Flutter app for expense tracking",
+        "Implemented data visualization charts",
+        "Added budget alerts",
+        "Integrated with bank APIs"
+      ]
+    }
+  ],
+  "Activities": []
+}

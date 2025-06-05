@@ -1,0 +1,87 @@
+{
+  "Level": "Intern",
+  "Experience": "10",
+  "FullName": "Sandra Merritt",
+  "Contact": {
+    "Phone": "+1-271-701-6446",
+    "Email": "mary14@example.org",
+    "GitHub": "github.com/beanpeggy",
+    "LinkedIn": "linkedin.com/in/roy33"
+  },
+  "Position": "Network Engineer",
+  "Education": {
+    "Degree": "PhD of Science in Computer Science",
+    "Institution": "Posts and Telecommunications Institute of Technology",
+    "Duration": "2017-2022",
+    "GPA": 3.92
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Jenkins",
+      "Bash"
+    ],
+    "ProgrammingLanguages": [
+      "C++",
+      "Swift"
+    ],
+    "FrameworksLibraries": [
+      "Plotly",
+      "Scikit-learn",
+      "BeautifulSoup",
+      "Tensorflow",
+      "FastAPI"
+    ],
+    "DatabasesCloudServices": [
+      "Neo4j",
+      "ElasticSearch"
+    ]
+  },
+  "Languages": {
+    "English": "A1",
+    "German": "C1",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "A1",
+    "Korean": "B1",
+    "Russian": "A1",
+    "Vietnamese": "B2",
+    "Arabic": "A1",
+    "Portuguese": "C1",
+    "Italian": "B2"
+  },
+  "Projects": [
+    {
+      "Name": "Medical Image Segmentation System",
+      "Role": "ML Engineer",
+      "Duration": "August 2023 – February 2025",
+      "Details": [
+        "Developed U-Net architecture for medical image segmentation",
+        "Preprocessed DICOM images using NumPy and OpenCV",
+        "Achieved 92% dice score on test dataset",
+        "Deployed model as microservice using FastAPI"
+      ]
+    },
+    {
+      "Name": "CI/CD Pipeline Optimization",
+      "Role": "DevOps Engineer",
+      "Duration": "March 2023 – October 2024",
+      "Details": [
+        "Migrated from Jenkins to GitHub Actions",
+        "Implemented parallel test execution",
+        "Reduced pipeline duration from 45 to 12 minutes",
+        "Added security scanning with Trivy and OWASP ZAP"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "Team Lead",
+      "Duration": "2022–2024",
+      "Activities": [
+        "Mentored junior members in their technical growth."
+      ]
+    }
+  ]
+}

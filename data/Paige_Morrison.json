@@ -1,0 +1,88 @@
+{
+  "Level": "Senior",
+  "Experience": "9",
+  "FullName": "Paige Morrison",
+  "Contact": {
+    "Phone": "+1-509-594-1088",
+    "Email": "psalazar@example.com",
+    "GitHub": "github.com/paulagarcia",
+    "LinkedIn": "linkedin.com/in/pollardmonica"
+  },
+  "Position": "Mobile Developer",
+  "Education": {
+    "Degree": "Master of Science in Computer Science",
+    "Institution": "Hanoi University of Science and Technology",
+    "Duration": "2021-2024",
+    "GPA": 3.3
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Bash",
+      "Ansible",
+      "Airflow"
+    ],
+    "ProgrammingLanguages": [
+      "R",
+      "Rust",
+      "Kotlin"
+    ],
+    "FrameworksLibraries": [
+      "BeautifulSoup",
+      "React",
+      "Pytorch"
+    ],
+    "DatabasesCloudServices": [
+      "SQLite",
+      "S3",
+      "ElasticSearch"
+    ]
+  },
+  "Languages": {
+    "English": "A1",
+    "German": "B1",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "C2",
+    "Korean": "C2",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "B1",
+    "Italian": "C1"
+  },
+  "Projects": [
+    {
+      "Name": "Blockchain Supply Chain Tracker",
+      "Role": "Blockchain Developer",
+      "Duration": "August 2024 – August 2025",
+      "Details": [
+        "Developed smart contracts for supply chain tracking",
+        "Built React frontend for supply chain visualization",
+        "Integrated with IoT devices for real-time tracking",
+        "Implemented zero-knowledge proofs for sensitive data"
+      ]
+    },
+    {
+      "Name": "AR Furniture Visualization",
+      "Role": "AR/VR Developer",
+      "Duration": "October 2024 – April 2025",
+      "Details": [
+        "Developed ARKit/ARCore application for furniture visualization",
+        "Implemented 3D model rendering with Unity",
+        "Added physics for realistic placement",
+        "Integrated with e-commerce backend"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "Technical Mentor",
+      "Duration": "2022–2023",
+      "Activities": [
+        "Led a team of developers to build community projects."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "Level": "Senior",
+  "Experience": "1",
+  "FullName": "Gary Little",
+  "Contact": {
+    "Phone": "874.748.0162",
+    "Email": "ryanbooker@example.com",
+    "GitHub": "github.com/christinemartinez",
+    "LinkedIn": "linkedin.com/in/deniseacosta"
+  },
+  "Position": "Security Engineer",
+  "Education": {
+    "Degree": "PhD of Science in Information Technology",
+    "Institution": "University of Science, VNU-HCM",
+    "Duration": "2016-2023",
+    "GPA": 3.54
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Pre-commit",
+      "Skaffold"
+    ],
+    "ProgrammingLanguages": [
+      "Typescript",
+      "JavaScript"
+    ],
+    "FrameworksLibraries": [
+      "Tensorflow",
+      "Selenium",
+      "BeautifulSoup",
+      "Matplotlib"
+    ],
+    "DatabasesCloudServices": [
+      "Qdrant",
+      "Neo4j"
+    ]
+  },
+  "Languages": {
+    "English": "B2",
+    "German": "A2",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "C1",
+    "Chinese": "A1",
+    "Korean": "A1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "A1"
+  },
+  "Projects": [
+    {
+      "Name": "Medical Image Segmentation System",
+      "Role": "ML Engineer",
+      "Duration": "July 2024 – March 2025",
+      "Details": [
+        "Developed U-Net architecture for medical image segmentation",
+        "Preprocessed DICOM images using NumPy and OpenCV",
+        "Achieved 92% dice score on test dataset",
+        "Deployed model as microservice using FastAPI"
+      ]
+    },
+    {
+      "Name": "AI-Powered Fashion Recommender",
+      "Role": "AI Engineer",
+      "Duration": "March 2023 – October 2025",
+      "Details": [
+        "Developed recommendation engine using collaborative filtering and content-based approaches",
+        "Implemented computer vision model for style analysis using PyTorch",
+        "Built Flask API for serving recommendations",
+        "Optimized model performance using ONNX runtime"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "GDSC",
+      "Role": "Team Lead",
+      "Duration": "2021–2023",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "Level": "Junior",
+  "Experience": "2",
+  "FullName": "Jonathan Nguyen",
+  "Contact": {
+    "Phone": "(858)488-7354x92673",
+    "Email": "aarongallegos@example.com",
+    "GitHub": "github.com/sparkszachary",
+    "LinkedIn": "linkedin.com/in/wmills"
+  },
+  "Position": "Frontend Developer",
+  "Education": {
+    "Degree": "Master of Science in Data Science",
+    "Institution": "RMIT University Vietnam",
+    "Duration": "2022-2024",
+    "GPA": 3.33
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Jenkins",
+      "Ansible",
+      "Makefile",
+      "Kubernetes"
+    ],
+    "ProgrammingLanguages": [
+      "Swift",
+      "Ruby",
+      "Python"
+    ],
+    "FrameworksLibraries": [
+      "FastAPI",
+      "Numpy",
+      "Flask",
+      "Matplotlib"
+    ],
+    "DatabasesCloudServices": [
+      "Weaviate",
+      "Milvus"
+    ]
+  },
+  "Languages": {
+    "English": "C2",
+    "German": "A1",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "A1",
+    "Chinese": "B1",
+    "Korean": "B1",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "C1"
+  },
+  "Projects": [
+    {
+      "Name": "AI-Powered Fashion Recommender",
+      "Role": "AI Engineer",
+      "Duration": "January 2023 – February 2024",
+      "Details": [
+        "Developed recommendation engine using collaborative filtering and content-based approaches",
+        "Implemented computer vision model for style analysis using PyTorch",
+        "Built Flask API for serving recommendations",
+        "Optimized model performance using ONNX runtime"
+      ]
+    },
+    {
+      "Name": "Healthcare Appointment System",
+      "Role": "Full-stack Developer",
+      "Duration": "March 2024 – July 2024",
+      "Details": [
+        "Created patient portal with Next.js",
+        "Implemented calendar scheduling system",
+        "Added SMS/email notifications",
+        "Ensured HIPAA compliance for data security"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "Toastmasters",
+      "Role": "Technical Mentor",
+      "Duration": "2021–2024",
+      "Activities": [
+        "Mentored junior members in their technical growth."
+      ]
+    }
+  ]
+}

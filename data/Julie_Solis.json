@@ -1,0 +1,89 @@
+{
+  "Level": "Intern",
+  "Experience": "5",
+  "FullName": "Julie Solis",
+  "Contact": {
+    "Phone": "570.948.9346",
+    "Email": "collinsgregory@example.org",
+    "GitHub": "github.com/kingzachary",
+    "LinkedIn": "linkedin.com/in/tcastillo"
+  },
+  "Position": "Software Engineer",
+  "Education": {
+    "Degree": "Bachelor of Science in Artificial Intelligence",
+    "Institution": "Ton Duc Thang University",
+    "Duration": "2018-2024",
+    "GPA": 3.39
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Grafana",
+      "Cloud Build",
+      "Skaffold",
+      "tmux"
+    ],
+    "ProgrammingLanguages": [
+      "Ruby",
+      "C++",
+      "R"
+    ],
+    "FrameworksLibraries": [
+      "LangChain",
+      "NextJS",
+      "React",
+      "Scikit-learn"
+    ],
+    "DatabasesCloudServices": [
+      "MySQL",
+      "SQLite"
+    ]
+  },
+  "Languages": {
+    "English": "C1",
+    "German": "A1",
+    "Japanese": "B2",
+    "French": "B2",
+    "Spanish": "A1",
+    "Chinese": "A2",
+    "Korean": "A2",
+    "Russian": "A1",
+    "Vietnamese": "A1",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "C1"
+  },
+  "Projects": [
+    {
+      "Name": "CI/CD Pipeline Optimization",
+      "Role": "DevOps Engineer",
+      "Duration": "February 2023 – May 2025",
+      "Details": [
+        "Migrated from Jenkins to GitHub Actions",
+        "Implemented parallel test execution",
+        "Reduced pipeline duration from 45 to 12 minutes",
+        "Added security scanning with Trivy and OWASP ZAP"
+      ]
+    },
+    {
+      "Name": "Healthcare Appointment System",
+      "Role": "Full-stack Developer",
+      "Duration": "January 2024 – July 2024",
+      "Details": [
+        "Created patient portal with Next.js",
+        "Implemented calendar scheduling system",
+        "Added SMS/email notifications",
+        "Ensured HIPAA compliance for data security"
+      ]
+    }
+  ],
+  "Activities": [
+    {
+      "Organization": "IEEE",
+      "Role": "Technical Mentor",
+      "Duration": "2023–2024",
+      "Activities": [
+        "Organized hackathons and coding competitions."
+      ]
+    }
+  ]
+}

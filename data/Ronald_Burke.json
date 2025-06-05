@@ -1,0 +1,76 @@
+{
+  "Level": "Senior",
+  "Experience": "1",
+  "FullName": "Ronald Burke",
+  "Contact": {
+    "Phone": "+1-792-922-1323",
+    "Email": "robertschristina@example.org",
+    "GitHub": "github.com/pdonaldson",
+    "LinkedIn": "linkedin.com/in/meghan30"
+  },
+  "Position": "Frontend Developer",
+  "Education": {
+    "Degree": "Bachelor of Science in Software Engineering",
+    "Institution": "Posts and Telecommunications Institute of Technology",
+    "Duration": "2019-2024",
+    "GPA": 3.36
+  },
+  "TechnicalSkills": {
+    "Tools": [
+      "Cloud Build",
+      "Terraform"
+    ],
+    "ProgrammingLanguages": [
+      "Python",
+      "Swift"
+    ],
+    "FrameworksLibraries": [
+      "Plotly",
+      "Tensorflow",
+      "Scikit-learn"
+    ],
+    "DatabasesCloudServices": [
+      "GCP",
+      "S3"
+    ]
+  },
+  "Languages": {
+    "English": "B1",
+    "German": "A1",
+    "Japanese": "A1",
+    "French": "A1",
+    "Spanish": "C2",
+    "Chinese": "A1",
+    "Korean": "B2",
+    "Russian": "A1",
+    "Vietnamese": "C2",
+    "Arabic": "A1",
+    "Portuguese": "A1",
+    "Italian": "B2"
+  },
+  "Projects": [
+    {
+      "Name": "Customer 360 Data Warehouse",
+      "Role": "Data Engineer",
+      "Duration": "September 2024 – February 2025",
+      "Details": [
+        "Built dimensional data model using Kimball methodology",
+        "Implemented slowly changing dimensions Type 2",
+        "Created data marts for different business units",
+        "Reduced report generation time from hours to minutes"
+      ]
+    },
+    {
+      "Name": "Campus Event Management System",
+      "Role": "Full-stack Developer",
+      "Duration": "August 2024 – December 2024",
+      "Details": [
+        "Built student portal for event registration",
+        "Implemented admin dashboard for event management",
+        "Added notification system",
+        "Deployed on university servers"
+      ]
+    }
+  ],
+  "Activities": []
+}
