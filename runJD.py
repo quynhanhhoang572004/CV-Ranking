@@ -9,7 +9,7 @@ DIR = os.path.dirname(__file__)
 ANTLR_JAR = 'C:/antlr4-4.9.2-complete.jar'
 
 CPL_Dest = 'parse'
-SRC = 'grammars\Hire.g4'
+SRC = 'grammars\HireX.g4'
 TESTS = os.path.join(DIR, './tests')
 
 

@@ -15,7 +15,7 @@ class Interpreter:
         if command_dict["command"] == "jd":
             self.parsed_jd = command_dict
             result = self.rank_candidates()
-            print(result)
+            return result
         elif command_dict["command"] == "show_cv_with":
             if not self.parsed_jd:
                 raise ValueError("You must load a JD before running query commands.")
@@ -23,9 +23,12 @@ class Interpreter:
                 self.rank_candidates()
 
             result = self.show_cv_with(command_dict["condition"])
-            print(result)    
+            return result
+            
         else:
             raise ValueError(f"Unknown command: {command_dict['command']}")
+        
+       
 
 
     #Tra ve all rows voi moi row la filename, parsed_cv, pass/fail, percentage, rank
@@ -77,5 +80,6 @@ class Interpreter:
                     "percentage": candidate_data["percentage"],
                     "rank": candidate_data["rank"]
                 })
+        print(matches)
         return matches
 
