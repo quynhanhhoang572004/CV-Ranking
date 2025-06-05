@@ -12,6 +12,6 @@ interpreter.run_command(jd_command)
 print(interpreter.show_top(1))
 
 # Run query
-processor = InputProcessor("./tests/ShowConditional.txt")
-query_command = processor.getParsedInput()
-interpreter.run_command(query_command)
+# processor = InputProcessor("./tests/ShowConditional.txt")
+# query_command = processor.getParsedInput()
+# interpreter.run_command(query_command)
