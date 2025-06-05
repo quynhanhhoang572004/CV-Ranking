@@ -1,8 +1,7 @@
 DEGREE_LEVELS = {"bachelor": 1, "master": 2, "PhD": 3}
 EXPERIENCE_LEVELS = {"intern": 0, "fresher": 1, "junior": 2, "senior": 3}
 
-
-class CVRanker:
+class CVScorer:
     def __init__(self, jd, candidate):
         self.jd = jd
         self.candidates = candidate
@@ -10,8 +9,6 @@ class CVRanker:
 
     def scoreCV(self, candidate):
         score = 0
-        
-        
         skills = [skill.lower() for skill in candidate.get("skills", [])]
         education = candidate.get("education", {})
         experience_years = candidate.get("experience_years", 0)
@@ -38,9 +35,7 @@ class CVRanker:
             if isinstance(skill, str)
         ]
 
-        
-        
-        
+    
         if required_skills:
             matched_skills = sum(2 for req_skill in required_skills if req_skill in skills)
             skill_percentage = matched_skills / len(required_skills)
@@ -74,8 +69,8 @@ class CVRanker:
         candidate_degree = education.get("degree", "").lower()
         
         if req_degree and hasattr(self, 'DEGREE_LEVELS'):
-            req_level = self.DEGREE_LEVELS.get(req_degree, 0)
-            candidate_level = self.DEGREE_LEVELS.get(candidate_degree, 0)
+            req_level = DEGREE_LEVELS.get(req_degree, 0)
+            candidate_level = DEGREE_LEVELS.get(candidate_degree, 0)
             
             if candidate_level >= req_level:
                 score += 10 

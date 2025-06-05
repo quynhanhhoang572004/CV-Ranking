@@ -31,8 +31,8 @@ def runTest():
     print('Running testcases...')
     
 
-    from parse.HireLexer import HireLexer
-    from parse.HireParser import HireParser
+    from parse.HireXLexer import HireXLexer
+    from parse.HireXParser import HireXParser
     from antlr4.error.ErrorListener import ErrorListener
 
     class CustomErrorListener(ErrorListener):
@@ -44,7 +44,7 @@ def runTest():
     inputFile = os.path.join(DIR, './tests', filename)    
 
     print('List of token: ')
-    lexer = HireLexer(FileStream(inputFile))        
+    lexer = HireXLexer(FileStream(inputFile))        
     tokens = []
     token = lexer.nextToken()
     while token.type != Token.EOF:
@@ -55,9 +55,9 @@ def runTest():
 
     # test
     input_stream = FileStream(inputFile)
-    lexer = HireLexer(input_stream)
+    lexer = HireXLexer(input_stream)
     stream = CommonTokenStream(lexer)
-    parser = HireParser(stream)
+    parser = HireXParser(stream)
     tree = parser.program()  # Start parsing at the `program` rule
 
     # Print the parse tree (for debugging)
@@ -66,10 +66,10 @@ def runTest():
 
     
     # Reset the input stream for parsing and catch the error
-    lexer = HireLexer(FileStream(inputFile))
+    lexer = HireXLexer(FileStream(inputFile))
     token_stream = CommonTokenStream(lexer)
 
-    parser = HireParser(token_stream)   
+    parser = HireXParser(token_stream)
     parser.removeErrorListeners()
     parser.addErrorListener(CustomErrorListener())    
     try:

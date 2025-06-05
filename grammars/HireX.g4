@@ -1,19 +1,20 @@
-grammar Hire;
+grammar HireX;
 
-program: jd | showTop | showConditional;
-showTop: SHOW TOP INT CV;
+program: jd | showConditional;
 
+//QUERIES COMMAND
 showConditional: SHOW CV WITH condition;
 
-condition: requireLevel | requireTools | requireProLang | requireFrameworks | requireDB
-             | requireDegree | requireGPA | requireExperience | requireLanguage| requireActivites;
+condition: requireName | requireTools | requireProLang | requireFrameworks | requireDB
+             | requireDegree | requireMajor | requireGPA | requireExperience | requireLanguage ;
 
+//INPUT JD COMMAND
 jd: requirements preferences?;
 
 requirements: REQUIRE_SECTION OPEN_CURLY 
                 requirePosition requireLevel requireTechnicalSkills 
                 requireEducation requireExperience requireLanguage? CLOSE_CURLY;
-preferences: PREFER_SECTION OPEN_CURLY requireTools? requireProLang? requireFrameworks? requireDB?
+preferences: PREFER_SECTION OPEN_CURLY requireTools? requireProLang? requireFrameworks? requireDB? 
              requireDegree? requireGPA?
              requireExperience? requireLanguage? 
              requireActivites? CLOSE_CURLY;
@@ -23,7 +24,7 @@ requireLevel: LEVEL_LABEL level;
 
 requireTechnicalSkills: STACK_SECTION OPEN_CURLY requireTools requireProLang requireFrameworks requireDB CLOSE_CURLY;
 requireTools: TOOL_LABEL tool (COMMA tool)*;
-requireProLang: PROG_LANG_LABEL pro_lang (COMMA pro_lang)*;
+requireProLang: PROG_LANG_LABEL proLang (COMMA proLang)*;
 requireFrameworks: FRAMEWORK_LABEL framework (COMMA framework)*;
 requireDB: DATA_LABEL db (COMMA db)*;
 
@@ -34,20 +35,20 @@ requireGPA: GPA_LABEL COMPARATOR FLOAT;
 
 requireLanguage: LANG_LABEL lang (COMMA lang)*;
 
-requireExperience: EXP_LABEL INT YEARS;
+requireExperience: EXP_LABEL COMPARATOR INT YEARS;
 
 requireActivites: ACTIVITY_LABEL ID+;
 
+requireName: NAME_LABEL ID+;
 
-
-//Constants:
+//CONSTANTS
 REQUIRE_SECTION: 'REQUIREMENTS'; 
 PREFER_SECTION: 'PREFERENCES'; 
-POSITION_LABEL: 'position:';
-LEVEL_LABEL: 'level:';
-
 STACK_SECTION: 'stack';
 EDU_SECTION: 'education';
+
+POSITION_LABEL: 'position:';
+LEVEL_LABEL: 'level:';
 LANG_LABEL: 'language:';
 ACTIVITY_LABEL: 'activities:'; 
 EXP_LABEL: 'experience:';
@@ -59,16 +60,17 @@ DATA_LABEL: 'databases cloud services:';
 MAJOR_LABEL: 'major:';
 DEGREE_LABEL: 'degree:';
 GPA_LABEL: 'gpa:';
+NAME_LABEL: 'name: ';
+
 YEARS: 'years';
 SHOW: 'show';
-TOP: 'top';
 CV: 'CV' | 'cv';
 WITH: 'with';
 OPEN_CURLY: '{';
 CLOSE_CURLY: '}';
 COMMA: ',';
 
-//Parser
+
 position: 'frontend developer' | 'backend developer' | 'full-stack developer' | 'software engineer' |
 'ai engineer' | 'ml engineer' | 'data scientist' | 'data engineer' | 'data analyst' |
 'qa/qc engineer' |'tester' | 'security engineer' | 'devops engineer' | 'cloud engineer' |
@@ -84,14 +86,18 @@ major: 'computer science' | 'computer engineering' | 'network engineering' | 'da
 tool: 'git' | 'docker' | 'kubernetes' | 'jenkins' | 'jira' | 'postman' | 'webpack' | 'npm' |
 'yarn' | 'vscode' | 'intellij' | 'eclipse' | 'figma' | 'trello' | 'slack' | 'notion' |
  'aws cli' | 'gcp sdk' | 'azure cli' | 'terraform' | 'github actions';
-pro_lang: 'python' | 'java' | 'c' | 'c++' | 'c#' | 'go' | 'rust' | 'javascript' | 'typescript' |
+proLang: 'python' | 'java' | 'c' | 'c++' | 'c#' | 'go' | 'rust' | 'javascript' | 'typescript' |
 'ruby' | 'php' | 'swift' | 'kotlin' | 'scala' | 'r' | 'matlab' | 'bash' | 'sql' |
 'haskell' | 'perl';
 framework: 'pytorch' | 'tensorflow' | 'keras' | 'scikit-learn' | 'xgboost' | 'lightgbm' |
 'opencv' | 'flask' | 'django' | 'spring' | 'express' | 'fastapi' |
 'next.js' | 'nuxt.js' | 'react' | 'vue' | 'angular' | 'bootstrap' |
 'laravel' | '.net' | 'asp.net' | 'electron' | 'flutter' | 'react native' |
+<<<<<<< HEAD:grammars/Hire.g4
 'node.js' | 'nestjs' | 'redux' | 'mui' | 'tailwindcss' | 'springboot';
+=======
+'node.js' | 'nestjs' | 'redux' | 'mui' | 'tailwindcss' | 'springboot'| 'pandas'| 'numpy';
+>>>>>>> 669bff4db38c56335aeba01ab85b99207d85c14b:grammars/HireX.g4
 db: 'mysql' | 'postgresql' | 'sqlite' | 'mongodb' | 'redis' | 'mariadb' |
 'oracle' | 'sql server' | 'dynamodb' | 'cassandra' | 'elasticsearch' |
 'aws' | 'azure' | 'gcp' | 'google cloud' | 'amazon web services' |

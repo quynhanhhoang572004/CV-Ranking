@@ -1,7 +1,7 @@
 from antlr4 import FileStream, CommonTokenStream
 from parse.HireLexer import HireLexer
 from parse.HireParser import HireParser
-from parse.HireProcessor import HireProcessor
+from parse.HireXProcessor import HireProcessor
 from pprint import pprint
 
 input_stream = FileStream("./tests/JD.txt")

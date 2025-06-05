@@ -1,1 +1,1 @@
-show cv with major: computer science
+show cv with degree: master

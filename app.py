@@ -3,6 +3,7 @@ from components.jd_input import jd_input
 from components.config_output import config_output
 from components.output import show_output
 from interpreter.Interpreter import Interpreter
+from interpreter.InputProcessor import InputProcessor
 
 st.set_page_config(layout="wide")
 st.markdown(
@@ -140,8 +141,11 @@ def main():
     with open("tests/qanhtest.txt", "w", encoding="utf-8") as f:
         f.write(formatted_jd)
 
-    interpreter = Interpreter(jd_file="tests/qanhtest.txt")
-    results = interpreter.rank_candidates()
+    interpreter = Interpreter(candidate_folder="data")
+    processor = InputProcessor("tests/qanhtest.txt")
+    jd_command = processor.getParsedInput()
+    interpreter.run_command(jd_command)
+    results = interpreter.show_top(100)
 
     with st.expander("📄 Formatted JD Text Output"):
         st.code(formatted_jd, language="text")

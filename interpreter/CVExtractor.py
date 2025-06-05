@@ -3,11 +3,11 @@ import os
 import json
 
 class CVExtractor():
-    def __init__(self, candidate_dir):
+    def __init__(self, candidate_dir="data"):
         self.candidate_dir = candidate_dir
+        
         self.candidates = []
         self.extracted_CVs = []
-        self.load_candidates()
 
     def load_candidates(self):
         for filename in os.listdir(self.candidate_dir):
@@ -33,14 +33,28 @@ class CVExtractor():
          
     # Utitlity function
     def extractCV(self,candidate):
-            skills = (
-                candidate.get("TechnicalSkills", {}).get("ProgrammingLanguages", [])
-                + candidate.get("TechnicalSkills", {}).get("FrameworksLibraries", [])
-                + candidate.get("TechnicalSkills", {}).get("DatabasesCloudServices", [])
-                + candidate.get("TechnicalSkills", {}).get("Tools", [])
-                + list(candidate.get("TechnicalSkills", {}).get("Languages", {}).keys())
-            )
-
+            
+            # skills = (
+            #     candidate.get("TechnicalSkills", {}).get("ProgrammingLanguages", [])
+            #     + candidate.get("TechnicalSkills", {}).get("FrameworksLibraries", [])
+            #     + candidate.get("TechnicalSkills", {}).get("DatabasesCloudServices", [])
+            #     + candidate.get("TechnicalSkills", {}).get("Tools", [])
+            # )
+            skills = {
+                "tools": [t.strip().lower() for t in candidate
+                    .get("TechnicalSkills", {})
+                    .get("Tools", [])],
+                "programmingLanguages": [p.strip().lower() for p in candidate
+                    .get("TechnicalSkills", {})
+                    .get("ProgrammingLanguages", [])],
+                "frameworksLibraries": [f.strip().lower() for f in candidate
+                    .get("TechnicalSkills", {})
+                    .get("FrameworksLibraries", [])],
+                "databasesCloudServices": [d.strip().lower() for d in candidate
+                    .get("TechnicalSkills", {})
+                    .get("DatabasesCloudServices", [])],
+            }
+            
             education = {
                 "degree": candidate.get("Education", {})
                 .get("Degree", "")
@@ -56,15 +70,17 @@ class CVExtractor():
             }
 
             experience_years = candidate.get("Experience", 0)
-            leaderships = candidate.get("Leadership", [])
+            languages = candidate.get("Languages", [])
+            activities = candidate.get("Activities", [])
             projects = candidate.get("Projects", [])
-            references = candidate.get("References", [])
 
             return {
-                "skills": set([s.lower() for s in skills if isinstance(s, str)]),
+                "full_name": candidate["FullName"],
+                "skills": skills,
                 "education": education,
                 "experience_years": experience_years,
-                "leaderships": leaderships,
+                "languages": [lang.lower() for lang in languages if isinstance(lang, str)],
+                "activities": activities,
                 "projects": projects,
-                "references": references,
             }
+    
