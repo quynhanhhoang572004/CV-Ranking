@@ -1,28 +1,21 @@
-from parse.HireVisitor import HireVisitor
-from parse.HireParser import HireParser
+from parse.HireXVisitor import HireXVisitor
+from parse.HireXParser import HireXParser
 
-class HireProcessor(HireVisitor):
-    def visitProgram(self, ctx:HireParser.ProgramContext):
+class HireXProcessor(HireXVisitor):
+    def visitProgram(self, ctx:HireXParser.ProgramContext):
         return self.visitChildren(ctx)
-    def visitShowTop(self, ctx:HireParser.ShowTopContext):
-        return {
-            "command": "show_top",
-            "number": int(ctx.INT().getText())  
-        }
-
     
-    def visitShowConditional(self, ctx:HireParser.ShowConditionalContext):
+    def visitShowConditional(self, ctx:HireXParser.ShowConditionalContext):
         return {
             "command": "show_cv_with",
             "condition": self.visit(ctx.condition())  # e.g., {"level": "senior"}
         }
     
-    def visitCondition(self, ctx:HireParser.ConditionContext):
+    def visitCondition(self, ctx:HireXParser.ConditionContext):
         return self.visitChildren(ctx)
 
 
-
-    def visitJd(self, ctx:HireParser.JdContext):
+    def visitJd(self, ctx:HireXParser.JdContext):
         return {
             "command": "jd",
             "requirements": self.visit(ctx.requirements()),
@@ -31,7 +24,7 @@ class HireProcessor(HireVisitor):
     
         
 
-    def visitRequirements(self, ctx: HireParser.RequirementsContext):
+    def visitRequirements(self, ctx: HireXParser.RequirementsContext):
         return dict(
         filter(
             lambda pair: isinstance(pair, tuple),
@@ -39,7 +32,7 @@ class HireProcessor(HireVisitor):
         )
     )
 
-    def visitPreferences(self, ctx: HireParser.PreferencesContext):
+    def visitPreferences(self, ctx: HireXParser.PreferencesContext):
         return dict(
         filter(
             lambda pair: isinstance(pair, tuple),
@@ -48,7 +41,6 @@ class HireProcessor(HireVisitor):
     )
 
     
-
     def visitRequirePosition(self, ctx):
         return self._build_kv("position", ctx)
 
@@ -105,41 +97,41 @@ class HireProcessor(HireVisitor):
         return ctx.getText()
 
 
-    # Visit a parse tree produced by HireParser#level.
+    # Visit a parse tree produced by HireXParser#level.
     def visitLevel(self, ctx):
         return ctx.getText()
 
 
-    # Visit a parse tree produced by HireParser#degree.
+    # Visit a parse tree produced by HireXParser#degree.
     def visitDegree(self, ctx):
         return ctx.getText()
 
 
-    # Visit a parse tree produced by HireParser#major.
+    # Visit a parse tree produced by HireXParser#major.
     def visitMajor(self, ctx):
         return ctx.getText()
 
 
-    # Visit a parse tree produced by HireParser#tool.
+    # Visit a parse tree produced by HireXParser#tool.
     def visitTool(self, ctx):
         return ctx.getText()
 
 
-    # Visit a parse tree produced by HireParser#pro_lang.
-    def visitPro_lang(self, ctx):
+    # Visit a parse tree produced by HireXParser#pro_lang.
+    def visitProLang(self, ctx):
         return ctx.getText()
 
-    # Visit a parse tree produced by HireParser#framework.
+    # Visit a parse tree produced by HireXParser#framework.
     def visitFramework(self, ctx):
         return ctx.getText()
 
 
-    # Visit a parse tree produced by HireParser#db.
+    # Visit a parse tree produced by HireXParser#db.
     def visitDb(self, ctx):
         return ctx.getText()
 
 
-    # Visit a parse tree produced by HireParser#lang.
+    # Visit a parse tree produced by HireXParser#lang.
     def visitLang(self, ctx):
         return ctx.getText()
 
@@ -171,8 +163,4 @@ class HireProcessor(HireVisitor):
             val = self.visit(child)
             if isinstance(val, str):  # only collect meaningful results
                 values.append(val)
-<<<<<<< HEAD
         return (key, values)
-=======
-        return (key, values)
->>>>>>> 78a7718f4ced4b8944551c05325e1c75ce3ca506

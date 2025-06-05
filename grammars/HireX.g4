@@ -1,14 +1,14 @@
-grammar Hire;
+grammar HireX;
 
-program: jd | showTop | showConditional;
-showTop: SHOW TOP INT CV;
+program: jd | showConditional;
 
+//QUERIES COMMAND
 showConditional: SHOW CV WITH condition;
 
+condition: requireName | requireTools | requireProLang | requireFrameworks | requireDB
+             | requireDegree | requireMajor | requireGPA | requireExperience | requireLanguage ;
 
-condition: requireTools | requireProLang | requireFrameworks | requireDB
-             | requireDegree | requireGPA | requireExperience | requireLanguage| requireActivites | requireMajor;
-
+//INPUT JD COMMAND
 jd: requirements preferences?;
 
 requirements: REQUIRE_SECTION OPEN_CURLY 
@@ -24,7 +24,7 @@ requireLevel: LEVEL_LABEL level;
 
 requireTechnicalSkills: STACK_SECTION OPEN_CURLY requireTools requireProLang requireFrameworks requireDB CLOSE_CURLY;
 requireTools: TOOL_LABEL tool (COMMA tool)*;
-requireProLang: PROG_LANG_LABEL pro_lang (COMMA pro_lang)*;
+requireProLang: PROG_LANG_LABEL proLang (COMMA proLang)*;
 requireFrameworks: FRAMEWORK_LABEL framework (COMMA framework)*;
 requireDB: DATA_LABEL db (COMMA db)*;
 
@@ -35,21 +35,20 @@ requireGPA: GPA_LABEL COMPARATOR FLOAT;
 
 requireLanguage: LANG_LABEL lang (COMMA lang)*;
 
-requireExperience: EXP_LABEL INT YEARS;
+requireExperience: EXP_LABEL COMPARATOR INT YEARS;
 
 requireActivites: ACTIVITY_LABEL ID+;
 
+requireName: NAME_LABEL ID+;
 
-
-
-//Constants:
+//CONSTANTS
 REQUIRE_SECTION: 'REQUIREMENTS'; 
 PREFER_SECTION: 'PREFERENCES'; 
-POSITION_LABEL: 'position:';
-LEVEL_LABEL: 'level:';
-
 STACK_SECTION: 'stack';
 EDU_SECTION: 'education';
+
+POSITION_LABEL: 'position:';
+LEVEL_LABEL: 'level:';
 LANG_LABEL: 'language:';
 ACTIVITY_LABEL: 'activities:'; 
 EXP_LABEL: 'experience:';
@@ -61,16 +60,17 @@ DATA_LABEL: 'databases cloud services:';
 MAJOR_LABEL: 'major:';
 DEGREE_LABEL: 'degree:';
 GPA_LABEL: 'gpa:';
+NAME_LABEL: 'name: ';
+
 YEARS: 'years';
 SHOW: 'show';
-TOP: 'top';
 CV: 'CV' | 'cv';
 WITH: 'with';
 OPEN_CURLY: '{';
 CLOSE_CURLY: '}';
 COMMA: ',';
 
-//Parser
+
 position: 'frontend developer' | 'backend developer' | 'full-stack developer' | 'software engineer' |
 'ai engineer' | 'ml engineer' | 'data scientist' | 'data engineer' | 'data analyst' |
 'qa/qc engineer' |'tester' | 'security engineer' | 'devops engineer' | 'cloud engineer' |

@@ -1,7 +1,7 @@
 from antlr4 import FileStream, CommonTokenStream
-from parse.HireLexer import HireLexer
-from parse.HireParser import HireParser
-from parse.HireProcessor import HireProcessor
+from parse.HireXLexer import HireXLexer
+from parse.HireXParser import HireXParser
+from parse.HireXProcessor import HireXProcessor
 from pprint import pprint
 
 
@@ -13,12 +13,12 @@ class JDProcessor:
 
     def getParsedJD(self):
         input_stream = FileStream(self.jd_file_path)
-        lexer = HireLexer(input_stream)
+        lexer = HireXLexer(input_stream)
         tokens = CommonTokenStream(lexer)
-        parser = HireParser(tokens)
+        parser = HireXParser(tokens)
         tree = parser.program()
 
-        validator = HireProcessor()
+        validator = HireXProcessor()
         self.jd = validator.visit(tree)
 
         return self.jd
