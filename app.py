@@ -163,18 +163,33 @@ def main():
                 filtered_results = interpreter.show_top(50)
             else:
                 filtered_results = interpreter.show_top(len(interpreter.rankings))  
-            
+                
             show_output(filtered_results)
-    elif queries and queries.strip():
-        with open("./tests/ShowConditional.txt", "w", encoding="utf-8") as f:
-            f.write(f"{queries}")
-        
-        query_processor = InputProcessor("./tests/ShowConditional.txt")
-        custom_query = query_processor.getParsedInput()
-        print(custom_query)
-        custom_results = interpreter.run_command(custom_query)
-        show_output(custom_results)
 
+    elif queries and queries.strip():
+        try:
+            with open("./tests/ShowConditional.txt", "w", encoding="utf-8") as f:
+                f.write(f"{queries}")
+            
+            query_processor = InputProcessor("./tests/ShowConditional.txt")
+            custom_query = query_processor.getParsedInput()
+            print(custom_query)
+            
+            if custom_query is None or "command" not in custom_query:
+                st.error("Invalid query format. Please check your query syntax.")
+                return
+                
+            custom_results = interpreter.run_command(custom_query)
+            
+            if custom_results is None or (isinstance(custom_results, list) and len(custom_results) == 0):
+                st.warning(f"No candidates match the query: '{queries}'")
+
+            else:
+                show_output(custom_results)
+                
+        except Exception as e:
+            st.error("Your input is wrong, please check again")
+            
     else:
         show_output(results)
 

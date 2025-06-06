@@ -13,7 +13,7 @@ def jd_input():
 
     col1, col2 = st.columns(2)
     with col1:
-        experience = st.text_input(" Experience", placeholder="e.g. 5 years")
+        experience = st.text_input(" Experience", placeholder="e.g. > 5 years")
     with col2:
         languages_required = st.text_input(" Required Language(s)", placeholder="e.g. english, japanese")
 
@@ -52,7 +52,7 @@ def jd_input():
     with col2:
         pref_gpa = st.text_input(" GPA (Preferred)", placeholder="e.g. > 3.8")
     with col3:
-        pref_experience = st.text_input(" Experience (Preferred)", placeholder="e.g. 2 years")
+        pref_experience = st.text_input(" Experience (Preferred)", placeholder="e.g. > 2 years")
 
     col1, col2 = st.columns(2)
     with col1:
