@@ -1,18 +1,18 @@
 REQUIREMENTS {
-  position: ml engineer
-  level: junior
+  position: backend developer
+  level: intern
   stack {
-    tools: git, docker, postman
-    programming languages: python, go
+    tools: git
+    programming languages: python
     framework libraries: pytorch
-    databases cloud services: aws, gcp
+    databases cloud services: aws
   }
   education {
     major: computer science
     degree: bachelor
     gpa: >=3.0
   }
-  experience: > 10 years
+  experience: > 6 years
   language: english
 }
 
