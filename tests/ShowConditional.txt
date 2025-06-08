@@ -1,1 +1,1 @@
-show cv with major: data science
+show cv with databases cloud services: mongodb

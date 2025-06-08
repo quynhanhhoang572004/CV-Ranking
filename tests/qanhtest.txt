@@ -16,14 +16,3 @@ REQUIREMENTS {
   language: english
 }
 
-PREFERENCES {
-  tools: 
-  programming languages: 
-  framework libraries: 
-  databases cloud services: 
-  degree: 
-  gpa: 
-  experience: 
-  language: 
-  activities: 
-}

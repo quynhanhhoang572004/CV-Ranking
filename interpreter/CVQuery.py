@@ -17,8 +17,9 @@ class CVQuery:
         return results
 
     def match_condition(self, cv_data, condition):
+
         field, value = condition
-        field = field.lower()
+        field = field
         value = value.lower() if isinstance(value, str) else value
         if field == "name":
             return cv_data["full_name"].lower() == value
@@ -54,13 +55,46 @@ class CVQuery:
                 return int(cv_data["experience_years"]) == int(value)
 
         elif field == "tools":
-            return value in cv_data["skills"]["tools"]
-        elif field == "programming languages":
-            return value in cv_data["skills"]["programmingLanguages"]
-        elif field == "framework libraries":
-            return value in cv_data["skills"]["frameworksLibraries"]
-        elif field == "databases cloud services":
-            return value in cv_data["skills"]["databasesCloudServices"]
+            if isinstance(value, list):
+            # Check if any tool in value is in the candidate's tools
+                candidate_tools = [tool.lower() for tool in cv_data["skills"]["tools"]]
+                
+                # Check if at least one tool from value is in candidate_tools
+                for tool in value:
+                    if tool.lower() in candidate_tools:
+                        return True
+                return False
+        
+        elif field == "programmingLanguages":
+            
+            if isinstance(value, list):
+                candidate_langs = [lang.lower() for lang in cv_data["skills"]["programmingLanguages"]]
+                for lang in value:
+                    if lang.lower() in candidate_langs:
+                        return True
+                return False
+            else:
+                return value.lower() in [lang.lower() for lang in cv_data["skills"]["programmingLanguages"]]
+        elif field == "frameworksLibraries":
+            
+            if isinstance(value, list):
+        
+                candidate_frameworks = [lib.lower() for lib in cv_data["skills"]["frameworksLibraries"]]
+                for lib in value:
+                    if lib.lower() in candidate_frameworks:
+                        return True
+                return False
+            else:
+                return value.lower() in [lib.lower() for lib in cv_data["skills"]["frameworksLibraries"]]
+        elif field == "databasescloudServices":
+            if isinstance(value, list):
+                candidate_databases = [db.lower() for db in cv_data["skills"]["databasesCloudServices"]]
+                for db in value:
+                    if db.lower() in candidate_databases:
+                        return True
+                return False
+            else:
+                return value.lower() in [db.lower() for db in cv_data["skills"]["databasesCloudServices"]]
         elif field == "language":
             return value in [lang.lower() for lang in cv_data.get("languages", [])]
 
