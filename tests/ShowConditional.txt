@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+show cv with databases cloud services: mongodb
+=======
 kaggle winner
+>>>>>>> c1871c4ea20e89aea3746097c3b0a5889c23bfd9

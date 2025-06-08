@@ -188,8 +188,7 @@ def main():
                 show_output(custom_results)
                 
         except Exception as e:
-            st.error("Your input is wrong, please check again")
-            
+            st.error("Query error! Please check your input and try again.")
     else:
         show_output(results)
 

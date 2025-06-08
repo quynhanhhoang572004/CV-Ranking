@@ -6,7 +6,6 @@ from pprint import pprint
 
 
 class InputProcessor:
-
     def __init__(self, input_file_path):
         self.input_file_path = input_file_path
         input_stream = FileStream(self.input_file_path)

@@ -10,7 +10,6 @@ class Interpreter:
         self.parsed_jd = None
         self.rankings = {}
 
-
     def run_command(self, command_dict: dict):
         if command_dict["command"] == "jd":
             self.parsed_jd = command_dict
